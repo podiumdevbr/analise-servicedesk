@@ -31,7 +31,7 @@ if df is None or df.empty:
     st.stop()
 
 # --- BARRA LATERAL (FILTROS) ---
-st.sidebar.image("https://www.tre-pb.jus.br/++theme++portlet_tre_pb/img/logo-tre-pb.png", width=200) # Logo institucional opcional
+st.sidebar.image("https://www.tre-pb.jus.br/++theme++portlet_tre_pb/img/logo-tre-pb.png", width=200) # Logo institucional
 st.sidebar.title("Filtros de Análise")
 
 # --- FILTRO POR DATA ---
@@ -66,7 +66,6 @@ status_selecionado = st.sidebar.selectbox("Filtrar por Status", status_disponive
 # --- APLICANDO FILTROS ---
 df_filtrado = df.copy()
 
-# Aplicação do filtro de data (garante seleção do intervalo [data_inicio, data_fim])
 if intervalo_datas and len(intervalo_datas) == 2:
     data_inicio_sel, data_fim_sel = intervalo_datas
     df_filtrado = df_filtrado[
@@ -151,12 +150,18 @@ st.markdown("---")
 
 # --- TABELA DETALHADA DE PROTOCOLOS ---
 st.subheader("📋 Detalhamento dos Protocolos Analisados")
+
+cols_exibicao = [
+    'Protocolo', 'Data_Inicio', 'Hora_Inicio', 'Agente', 
+    'assunto_principal', 'status_solucao', 'qualidade_atendimento', 
+    'resumo_atendimento', 'Duracao'
+]
+
+if 'Historico_Limpo' in df_filtrado.columns:
+    cols_exibicao.append('Historico_Limpo')
+
 st.dataframe(
-    df_filtrado[[
-        'Protocolo', 'Data_Inicio', 'Hora_Inicio', 'Agente', 
-        'assunto_principal', 'status_solucao', 'qualidade_atendimento', 
-        'resumo_atendimento', 'Duracao'
-    ]],
+    df_filtrado[cols_exibicao],
     use_container_width=True
 )
 
