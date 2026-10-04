@@ -5,7 +5,7 @@ import os
 
 # Configuração da página do Streamlit
 st.set_page_config(
-    page_title="Dashboard Service Desk - TRE-PB",
+    page_title="Dashboard SZ Chat - TRE-PB",
     page_icon="⚖️",
     layout="wide"
 )
@@ -81,7 +81,7 @@ if status_selecionado != "Todos":
     df_filtrado = df_filtrado[df_filtrado['status_solucao'] == status_selecionado]
 
 # --- TÉRCIO SUPERIOR: MÉTRICAS (KPIs) ---
-st.title("📊 Painel Gerencial de Atendimento - Service Desk (TRE-PB)")
+st.title("📊 Painel Gerencial de Atendimento - SZ Chat (TRE-PB)")
 st.markdown("Análise inteligente de conversas e conformidade de atendimento local (LGPD).")
 
 col1, col2, col3, col4 = st.columns(4)
