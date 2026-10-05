@@ -6,7 +6,7 @@ from gerar_relatorio import gerar_relatorio_html, duracao_para_segundos, formata
 
 # Configuração da página do Streamlit
 st.set_page_config(
-    page_title="Dashboard Service Desk - TRE-PB",
+    page_title="Dashboard SZ Chat - TRE-PB",
     page_icon="⚖️",
     layout="wide"
 )
@@ -31,7 +31,7 @@ if df is None or df.empty:
     st.stop()
 
 # --- BARRA LATERAL (FILTROS) ---
-st.sidebar.image("https://www.tre-pb.jus.br/++theme++portlet_tre_pb/img/logo-tre-pb.png", width=200)
+st.sidebar.image("https://www.tre-pb.jus.br/++theme++justica_eleitoral/imagens/logos/tre-pb.svg", width=200)
 st.sidebar.title("Filtros de Análise")
 
 # --- FILTRO POR DATA ---
