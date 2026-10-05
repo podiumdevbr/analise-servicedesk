@@ -15915,34 +15915,6 @@ Eleitor: Era apenas isso
 Eleitor: Não, não
 Eleitor: Mto obrigada
 Operador (Valéria): Disponha sempre. Tenha um ótimo dia."
-2026093001041,30/09/2026,13:35:10,Sylvio,Local de Votação / Seção Eleitoral,Não Resolvido,Neutro/Objetivo,"Eleitor teve dificuldades em comunicar-se devido à baixa qualidade da comunicação, não conseguindo ouvir as mensagens do operador. O atendimento terminou sem esclarecer a dúvida sobre a seção eleitoral do qual ele gostaria de votar.",00:10:02,True,True,6,0.0,"Eleitor: [MENSAGEM DE ÁUDIO]
-Eleitor: [MENSAGEM DE ÁUDIO]
-Eleitor: [MENSAGEM DE ÁUDIO]
-Eleitor: [MENSAGEM DE ÁUDIO]
-Eleitor: [MENSAGEM DE ÁUDIO]
-Eleitor: [MENSAGEM DE ÁUDIO]
-Eleitor: [MENSAGEM DE ÁUDIO]
-Eleitor: [MENSAGEM DE ÁUDIO]
-Eleitor: [MENSAGEM DE ÁUDIO]
-Eleitor: [MENSAGEM DE ÁUDIO]
-Operador (Sylvio): [MENSAGEM DE ÁUDIO]
-Eleitor: [MENSAGEM DE ÁUDIO]
-Eleitor: [IMAGEM ANEXADA]
-Eleitor: [MENSAGEM DE ÁUDIO]
-Eleitor: [MENSAGEM DE ÁUDIO]
-Eleitor: [MENSAGEM DE ÁUDIO]
-Eleitor: [MENSAGEM DE ÁUDIO]
-Eleitor: [MENSAGEM DE ÁUDIO]
-Operador (Valéria): o senhor pode digiitar
-Operador (Valéria): não consigo ouvir
-Eleitor: [MENSAGEM DE ÁUDIO]
-Eleitor: [MENSAGEM DE ÁUDIO]
-Operador (Valéria): não consigo ouvir
-Eleitor: [MENSAGEM DE ÁUDIO]
-Eleitor: [MENSAGEM DE ÁUDIO]
-Operador (Valéria): tem que digitar
-Eleitor: [MENSAGEM DE ÁUDIO]
-Operador (Valéria): vou terminar o atendimento"
 2026093001050,30/09/2026,13:35:24,Valéria,Multa / Quitação Eleitoral / Certidões,Resolvido,Respeitoso e Cortês,"O eleitor foi informado sobre a multa de R$ 3,14 e quando ela será paga. Foi confirmado que ele está regular e recebeu um atendimento respeitoso e cortês. O atendimento foi encerrado com um bom dia.",00:06:02,False,True,7,0.0,"Eleitor: 0
 Eleitor: 1
 Eleitor: 019.***.***-**
@@ -18890,14 +18862,6 @@ Operador (Jeanne): O problema era pra quem não tivesse o CPF como sendo a chave
 Operador (Jeanne): Bom trabalho no domingo.
 Operador (Jeanne): Tenha um ótimo dia.
 Eleitor: Muito obrigada, Jeanne!
-Eleitor: 5"
-2026100100978,01/10/2026,13:40:17,Cristiane,Teste/Desconsiderado,Teste/Desconsiderado,Neutro/Objetivo,"A conversa foi considerada um atendimento de teste interno, sem solução de problemas reais, e o atendimento foi neutro e objetivo.",00:09:14,False,True,2,1.0,"Eleitor: Oi
-Eleitor: 4
-Eleitor: #suporte
-Eleitor: 3
-Operador (Cristiane): oi
-Eleitor: O***Cris. Só um teste mesmo.
-Operador (Sylvio): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar. Tenha um ótimo dia!
 Eleitor: 5"
 2026100100980,01/10/2026,13:37:52,Alana,Treinamento / Convocação de Mesário,Resolvido,Respeitoso e Cortês,"O operador esclareceu sobre o prazo de pagamento do vale alimentação dos mesários, informando que seria pago no domingo. O atendimento foi respeitoso e cortês, sem necessidade de esclarecimento adicional.",01:32:35,False,True,5,3617.0,"Eleitor: Boa tarde
 Eleitor: 1
