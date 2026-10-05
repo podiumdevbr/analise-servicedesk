@@ -31,7 +31,8 @@ if df is None or df.empty:
     st.stop()
 
 # --- BARRA LATERAL (FILTROS) ---
-st.sidebar.image("https://www.tre-pb.jus.br/++theme++justica_eleitoral/imagens/logos/tre-pb.svg", width=200)
+st.sidebar.image("https://www.gov.br/planalto/pt-br/conheca-a-presidencia/biblioteca-da-pr/simbolos-nacionais/brasao-da-republica/brasaooficialcolorido.png", width=200)
+##st.sidebar.image("https://www.tre-pb.jus.br/++theme++justica_eleitoral/imagens/logos/tre-pb.svg", width=200)
 st.sidebar.title("Filtros de Análise")
 
 # --- FILTRO POR DATA ---
