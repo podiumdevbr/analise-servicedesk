@@ -2,10 +2,11 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import os
+from gerar_relatorio import gerar_relatorio_html
 
 # Configuração da página do Streamlit
 st.set_page_config(
-    page_title="Dashboard SZ Chat - TRE-PB",
+    page_title="Dashboard Service Desk - TRE-PB",
     page_icon="⚖️",
     layout="wide"
 )
@@ -31,7 +32,7 @@ if df is None or df.empty:
     st.stop()
 
 # --- BARRA LATERAL (FILTROS) ---
-st.sidebar.image("https://www.tre-pb.jus.br/++theme++portlet_tre_pb/img/logo-tre-pb.png", width=200) # Logo institucional
+st.sidebar.image("https://www.tre-pb.jus.br/++theme++portlet_tre_pb/img/logo-tre-pb.png", width=200)
 st.sidebar.title("Filtros de Análise")
 
 # --- FILTRO POR DATA ---
@@ -66,12 +67,14 @@ status_selecionado = st.sidebar.selectbox("Filtrar por Status", status_disponive
 # --- APLICANDO FILTROS ---
 df_filtrado = df.copy()
 
+periodo_str = "Período Completo"
 if intervalo_datas and len(intervalo_datas) == 2:
     data_inicio_sel, data_fim_sel = intervalo_datas
     df_filtrado = df_filtrado[
         (df_filtrado['Data_Inicio_DT'].dt.date >= data_inicio_sel) &
         (df_filtrado['Data_Inicio_DT'].dt.date <= data_fim_sel)
     ]
+    periodo_str = f"{data_inicio_sel.strftime('%d/%m/%Y')} até {data_fim_sel.strftime('%d/%m/%Y')}"
 
 if agente_selecionado != "Todos":
     df_filtrado = df_filtrado[df_filtrado['Agente'] == agente_selecionado]
@@ -80,8 +83,21 @@ if assunto_selecionado != "Todos":
 if status_selecionado != "Todos":
     df_filtrado = df_filtrado[df_filtrado['status_solucao'] == status_selecionado]
 
+# --- SEÇÃO DE GERAMENTO DE RELATÓRIO EXECUTIVO ---
+st.sidebar.markdown("---")
+st.sidebar.subheader("📄 Relatório Executivo")
+
+html_relatorio = gerar_relatorio_html(df_filtrado, periodo_str)
+
+st.sidebar.download_button(
+    label="📄 Baixar Relatório Executivo (HTML/PDF)",
+    data=html_relatorio,
+    file_name=f"relatorio_executivo_{pd.Timestamp.now().strftime('%Y%m%d_%H%M')}.html",
+    mime="text/html"
+)
+
 # --- TÉRCIO SUPERIOR: MÉTRICAS (KPIs) ---
-st.title("📊 Painel Gerencial de Atendimento - SZ Chat (TRE-PB)")
+st.title("📊 Painel Gerencial de Atendimento - Service Desk (TRE-PB)")
 st.markdown("Análise inteligente de conversas e conformidade de atendimento local (LGPD).")
 
 col1, col2, col3, col4 = st.columns(4)
@@ -148,6 +164,30 @@ if not df_filtrado.empty and 'Hora_Inicio' in df_filtrado.columns:
 
 st.markdown("---")
 
+# --- RESUMO EXECUTIVO NA TELA (EXPANSÍVEL) ---
+with st.expander("📋 Visualizar Resumo Executivo Gerencial"):
+    st.markdown(f"### Sintese dos Atendimentos ({periodo_str})")
+    
+    c_exp1, c_exp2 = st.columns(2)
+    with c_exp1:
+        st.markdown("**Principais Assuntos Demandados:**")
+        st.dataframe(
+            df_filtrado['assunto_principal'].value_counts().reset_index().rename(columns={'assunto_principal': 'Assunto', 'count': 'Qtd'}),
+            use_container_width=True
+        )
+    
+    with c_exp2:
+        st.markdown("**Desempenho por Atendente:**")
+        if 'Agente' in df_filtrado.columns:
+            ag_summary = df_filtrado.groupby('Agente').agg(
+                Total=('Protocolo', 'count'),
+                Resolvidos=('status_solucao', lambda x: (x == 'Resolvido').sum())
+            ).reset_index()
+            ag_summary['% Resolução'] = (ag_summary['Resolvidos'] / ag_summary['Total'] * 100).round(1)
+            st.dataframe(ag_summary, use_container_width=True)
+
+st.markdown("---")
+
 # --- TABELA DETALHADA DE PROTOCOLOS ---
 st.subheader("📋 Detalhamento dos Protocolos Analisados")
 
@@ -165,7 +205,6 @@ st.dataframe(
     use_container_width=True
 )
 
-# Botão para download direto do Excel consolidado pelo dashboard
 if os.path.exists("atendimentos_analisados.xlsx"):
     with open("atendimentos_analisados.xlsx", "rb") as file:
         st.download_button(
