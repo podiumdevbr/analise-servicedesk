@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import os
-from gerar_relatorio import gerar_relatorio_html
+from gerar_relatorio import gerar_relatorio_html, duracao_para_segundos, formatar_segundos_para_tempo
 
 # Configuração da página do Streamlit
 st.set_page_config(
@@ -19,7 +19,6 @@ def carregar_dados():
         return None
     df = pd.read_csv(ARQUIVO_DADOS, encoding='utf-8-sig')
     
-    # Converte Data_Inicio para datetime para permitir filtragem por período
     if 'Data_Inicio' in df.columns:
         df['Data_Inicio_DT'] = pd.to_datetime(df['Data_Inicio'], dayfirst=True, errors='coerce')
     
@@ -52,15 +51,13 @@ if not df_valido_datas.empty:
 else:
     intervalo_datas = None
 
-# Filtro por Agente
+# Filtros secundários
 agentes_disponiveis = ["Todos"] + sorted(df['Agente'].dropna().unique().tolist())
 agente_selecionado = st.sidebar.selectbox("Filtrar por Atendente", agentes_disponiveis)
 
-# Filtro por Assunto
 assuntos_disponiveis = ["Todos"] + sorted(df['assunto_principal'].dropna().unique().tolist())
 assunto_selecionado = st.sidebar.selectbox("Filtrar por Assunto", assuntos_disponiveis)
 
-# Filtro por Status da Solução
 status_disponiveis = ["Todos"] + sorted(df['status_solucao'].dropna().unique().tolist())
 status_selecionado = st.sidebar.selectbox("Filtrar por Status", status_disponiveis)
 
@@ -83,7 +80,7 @@ if assunto_selecionado != "Todos":
 if status_selecionado != "Todos":
     df_filtrado = df_filtrado[df_filtrado['status_solucao'] == status_selecionado]
 
-# --- SEÇÃO DE GERAMENTO DE RELATÓRIO EXECUTIVO ---
+# --- GERAR RELATÓRIO EXECUTIVO ---
 st.sidebar.markdown("---")
 st.sidebar.subheader("📄 Relatório Executivo")
 
@@ -96,20 +93,37 @@ st.sidebar.download_button(
     mime="text/html"
 )
 
-# --- TÉRCIO SUPERIOR: MÉTRICAS (KPIs) ---
+# --- TÉRCIO SUPERIOR: CÁLCULO DE MÉTRICAS COMPLETO ---
 st.title("📊 Painel Gerencial de Atendimento - Service Desk (TRE-PB)")
 st.markdown("Análise inteligente de conversas e conformidade de atendimento local (LGPD).")
-
-col1, col2, col3, col4 = st.columns(4)
 
 total_atendimentos = len(df_filtrado)
 resolvidos = len(df_filtrado[df_filtrado['status_solucao'] == 'Resolvido'])
 taxa_resolucao = (resolvidos / total_atendimentos * 100) if total_atendimentos > 0 else 0
 
-col1.metric("Total de Atendimentos", total_atendimentos)
-col2.metric("Taxa de Resolução", f"{taxa_resolucao:.1f}%")
-col3.metric("Atendimentos com Áudio", int(df_filtrado['Tem_Audio'].sum()))
-col4.metric("Sem Resposta Humana", int((~df_filtrado['Resposto_Por_Agente']).sum()))
+atendimentos_audio = int(df_filtrado['Tem_Audio'].sum()) if 'Tem_Audio' in df_filtrado.columns else 0
+pct_audio = (atendimentos_audio / total_atendimentos * 100) if total_atendimentos > 0 else 0
+
+sem_resposta = int((~df_filtrado['Resposto_Por_Agente']).sum()) if 'Resposto_Por_Agente' in df_filtrado.columns else 0
+
+# Cálculos de tempo
+df_filtrado['Duracao_Seg'] = df_filtrado['Duracao'].apply(duracao_para_segundos) if 'Duracao' in df_filtrado.columns else 0
+media_duracao_seg = df_filtrado['Duracao_Seg'].mean() if total_atendimentos > 0 else 0
+tma_formatado = formatar_segundos_para_tempo(media_duracao_seg)
+
+tempo_encerramento_medio_seg = df_filtrado['Tempo_Ate_Encerramento_Seg'].mean() if 'Tempo_Ate_Encerramento_Seg' in df_filtrado.columns and total_atendimentos > 0 else 0
+tempo_enc_formatado = formatar_segundos_para_tempo(tempo_encerramento_medio_seg)
+
+# Exibição dos KPIs em 2 Linhas
+kpi_col1, kpi_col2, kpi_col3 = st.columns(3)
+kpi_col1.metric("Total de Atendimentos", total_atendimentos)
+kpi_col2.metric("Taxa de Resolução", f"{taxa_resolucao:.1f}%", help="Percentual de solicitações classificadas como Resolvido")
+kpi_col3.metric("Duração Média (TMA)", tma_formatado, help="Tempo médio entre o aceite do atendente e o fim do chat")
+
+kpi_col4, kpi_col5, kpi_col6 = st.columns(3)
+kpi_col4.metric("Uso de Mensagem de Áudio", f"{pct_audio:.1f}%", f"{atendimentos_audio} chamadas com áudio")
+kpi_col5.metric("Sem Resposta Humana", sem_resposta, help="Chamadas encerradas na fila sem contato com atendente")
+kpi_col6.metric("Ociosidade de Encerramento", tempo_enc_formatado, help="Média de tempo entre a última fala e o fecho do chat")
 
 st.markdown("---")
 
@@ -144,13 +158,17 @@ with col_g2:
     else:
         st.info("Sem dados para exibir no período/filtros selecionados.")
 
-# --- HORÁRIOS DE PICO ---
-st.subheader("⏰ Horários de Maior e Menor Demanda (Início dos Atendimentos)")
+# --- HORÁRIOS DE PICO E MENOR DEMANDA ---
+st.subheader("⏰ Horários de Demanda (Início dos Atendimentos)")
 if not df_filtrado.empty and 'Hora_Inicio' in df_filtrado.columns:
     df_filtrado['Hora_Cheia'] = pd.to_datetime(df_filtrado['Hora_Inicio'], format='%H:%M:%S', errors='coerce').dt.hour
     picos_hora = df_filtrado['Hora_Cheia'].value_counts().sort_index().reset_index()
     picos_hora.columns = ['Hora', 'Quantidade']
     
+    if not picos_hora.empty:
+        h_pico = picos_hora.loc[picos_hora['Quantidade'].idxmax()]
+        st.info(f"💡 **Destaque:** Maior volume concentrado às **{int(h_pico['Hora']):02d}h** ({int(h_pico['Quantidade'])} chamadas).")
+
     fig_hora = px.bar(
         picos_hora,
         x='Hora',
@@ -165,23 +183,23 @@ if not df_filtrado.empty and 'Hora_Inicio' in df_filtrado.columns:
 st.markdown("---")
 
 # --- RESUMO EXECUTIVO NA TELA (EXPANSÍVEL) ---
-with st.expander("📋 Visualizar Resumo Executivo Gerencial"):
-    st.markdown(f"### Sintese dos Atendimentos ({periodo_str})")
+with st.expander("📋 Visualizar Relatório Executivo Resumido na Tela", expanded=True):
+    st.markdown(f"### Síntese Operacional ({periodo_str})")
     
     c_exp1, c_exp2 = st.columns(2)
     with c_exp1:
-        st.markdown("**Principais Assuntos Demandados:**")
-        st.dataframe(
-            df_filtrado['assunto_principal'].value_counts().reset_index().rename(columns={'assunto_principal': 'Assunto', 'count': 'Qtd'}),
-            use_container_width=True
-        )
+        st.markdown("**Status de Solução por Assunto Principal:**")
+        if 'assunto_principal' in df_filtrado.columns and 'status_solucao' in df_filtrado.columns:
+            tb_assuntos = pd.crosstab(df_filtrado['assunto_principal'], df_filtrado['status_solucao'], margins=True, margins_name="Total")
+            st.dataframe(tb_assuntos, use_container_width=True)
     
     with c_exp2:
         st.markdown("**Desempenho por Atendente:**")
         if 'Agente' in df_filtrado.columns:
             ag_summary = df_filtrado.groupby('Agente').agg(
                 Total=('Protocolo', 'count'),
-                Resolvidos=('status_solucao', lambda x: (x == 'Resolvido').sum())
+                Resolvidos=('status_solucao', lambda x: (x == 'Resolvido').sum()),
+                Com_Audio=('Tem_Audio', lambda x: x.sum() if 'Tem_Audio' in x else 0)
             ).reset_index()
             ag_summary['% Resolução'] = (ag_summary['Resolvidos'] / ag_summary['Total'] * 100).round(1)
             st.dataframe(ag_summary, use_container_width=True)
@@ -194,7 +212,7 @@ st.subheader("📋 Detalhamento dos Protocolos Analisados")
 cols_exibicao = [
     'Protocolo', 'Data_Inicio', 'Hora_Inicio', 'Agente', 
     'assunto_principal', 'status_solucao', 'qualidade_atendimento', 
-    'resumo_atendimento', 'Duracao'
+    'resumo_atendimento', 'Duracao', 'Tempo_Ate_Encerramento_Seg'
 ]
 
 if 'Historico_Limpo' in df_filtrado.columns:
