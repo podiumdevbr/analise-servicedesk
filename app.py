@@ -95,7 +95,7 @@ st.sidebar.download_button(
 )
 
 # --- TÉRCIO SUPERIOR: CÁLCULO DE MÉTRICAS COMPLETO ---
-st.title("📊 Painel Gerencial de Atendimento - Service Desk (TRE-PB)")
+st.title("📊 Painel Gerencial de Atendimento - SZ Chat (TRE-PB)")
 st.markdown("Análise inteligente de conversas e conformidade de atendimento local (LGPD).")
 
 total_atendimentos = len(df_filtrado)

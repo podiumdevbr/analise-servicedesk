@@ -1,12 +1,12 @@
-# 📊 Painel Gerencial de Atendimento - Service Desk (TRE-PB)
+# 📊 Painel Gerencial de Atendimento - SZ Chat (TRE-PB)
 
-Dashboard interativo desenvolvido em **Streamlit** para acompanhamento gerencial, análise sintética e auditoria dos atendimentos prestados via Service Desk no Tribunal Regional Eleitoral da Paraíba (TRE-PB).
+Dashboard interativo desenvolvido em **Streamlit** para acompanhamento gerencial, análise sintética e auditoria dos atendimentos prestados via SZ Chat no Tribunal Regional Eleitoral da Paraíba (TRE-PB).
 
 ---
 
 ## 🎯 Objetivo
 
-Visualizar os resultados consolidados do processamento semântico das conversas, garantindo conformidade com a **Lei Geral de Proteção de Dados (LGPD)** e oferecendo métricas operacionais para a gestão do Service Desk.
+Visualizar os resultados consolidados do processamento semântico das conversas, garantindo conformidade com a **Lei Geral de Proteção de Dados (LGPD)** e oferecendo métricas operacionais para a gestão do SZ Chat.
 
 ---
 
@@ -23,6 +23,7 @@ Visualizar os resultados consolidados do processamento semântico das conversas,
 ## 🛡️ Conformidade com a LGPD (Anonimização)
 
 Os dados exibidos na aplicação passaram por regras estritas de anonimização (PII) antes da geração do relatório final:
+
 - **CPFs:** Mapeados e substituídos no formato `123.***.***-**`.
 - **Títulos de Eleitor:** Substituídos por `**** **** 9012`.
 - **Telefones:** Mascarados no padrão `(83) 9****-7777`.
@@ -46,12 +47,14 @@ Os dados exibidos na aplicação passaram por regras estritas de anonimização 
 ## 💻 Como Executar o Dashboard Localmente
 
 ### 1. Clonar o repositório
+
 ```bash
 git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
 cd seu-repositorio
 ```
 
 ### 2. Criar e ativar um ambiente virtual (recomendado)
+
 ```bash
 # Windows
 python -m venv venv
@@ -63,19 +66,21 @@ source venv/bin/activate
 ```
 
 ### 3. Instalar as dependências
-```bash
+
+````bash
 pip install -r requirements.txt
 
 ### 4. Executar o aplicativo Streamlit
 ```bash
 streamlit run app.py
-```
+````
 
 Acesse o painel no navegador através do endereço: `http://localhost:8501`.
 
 ---
 
 ## 💻 Tecnologias Utilizadas
+
 - Python 3.10+
 - Streamlit: Interface gráfica interativa.
 - Pandas: Manipulação e filtragem dos dados.
@@ -86,6 +91,7 @@ Acesse o painel no navegador através do endereço: `http://localhost:8501`.
 ## 🔒 Proteção de Dados e Conformidade (LGPD)
 
 Em atendimento à **Lei Geral de Proteção de Dados (Lei nº 13.709/2018)**:
+
 - Todo o processamento de IA é realizado de forma **100% offline e local**, sem envio de dados para APIs de terceiros na nuvem.
 - Os dados sensíveis contidos no histórico das conversas passam por regras de mascaramento antes da geração da base final:
   - **CPF:** `123.***.***-**`
@@ -95,4 +101,4 @@ Em atendimento à **Lei Geral de Proteção de Dados (Lei nº 13.709/2018)**:
 
 ---
 
-*Desenvolvido para auditoria interna, acompanhamento de qualidade e conformidade com a LGPD no Service Desk do TRE-PB.*
+_Desenvolvido para auditoria interna, acompanhamento de qualidade e conformidade com a LGPD no SZ Chat do TRE-PB._
