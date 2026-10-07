@@ -1,234 +1,211 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import os
-from gerar_relatorio import gerar_relatorio_html, duracao_para_segundos, formatar_segundos_para_tempo
+import plotly.graph_objects as go
+from gerar_relatorio import gerar_relatorio_html, reavaliar_status_solucao
 
-# Configuração da página do Streamlit
+# 1. Configuração Inicial da Página
 st.set_page_config(
-    page_title="Dashboard SZ Chat - TRE-PB",
+    page_title="Dashboard de Atendimentos SAE - CRE/TRE-PB",
     page_icon="⚖️",
-    layout="wide"
+    layout="wide",
+    initial_sidebar_state="expanded"
 )
 
-ARQUIVO_DADOS = "atendimentos_analisados.csv"
+st.title("⚖️ Análise de Atendimentos — SAE / Corregedoria Regional Eleitoral")
+st.caption("Plataforma SZ Chat | Período Oficial de Análise: 24/09/2026 a 06/10/2026")
 
+# 2. Carregamento dos Dados com Cache e Recalibragem de Solução
 @st.cache_data
 def carregar_dados():
-    if not os.path.exists(ARQUIVO_DADOS):
-        return None
-    df = pd.read_csv(ARQUIVO_DADOS, encoding='utf-8-sig')
-    
-    if 'Data_Inicio' in df.columns:
-        df['Data_Inicio_DT'] = pd.to_datetime(df['Data_Inicio'], dayfirst=True, errors='coerce')
-    
-    return df
+    try:
+        df = pd.read_csv('atendimentos_analisados.csv', encoding='utf-8-sig')
+        # Aplica a regra ajustada de resolutividade (considera orientação prestada como resolvido)
+        df['status_solucao_efetivo'] = df.apply(reavaliar_status_solucao, axis=1)
+        return df
+    except Exception as e:
+        st.error(f"Erro ao carregar 'atendimentos_analisados.csv': {e}")
+        return pd.DataFrame()
 
 df = carregar_dados()
 
-if df is None or df.empty:
-    st.error(f"Arquivo '{ARQUIVO_DADOS}' não encontrado ou vazio. Execute o pipeline_completo.py primeiro!")
+if df.empty:
+    st.warning("Nenhum dado encontrado no arquivo local para exibição.")
     st.stop()
 
-# --- BARRA LATERAL (FILTROS) ---
-st.sidebar.image("https://www.gov.br/planalto/pt-br/conheca-a-presidencia/biblioteca-da-pr/simbolos-nacionais/brasao-da-republica/brasaooficialcolorido.png", width=200)
-##st.sidebar.image("https://www.tre-pb.jus.br/++theme++justica_eleitoral/imagens/logos/tre-pb.svg", width=200)
-st.sidebar.title("Filtros de Análise")
+# 3. Barra Lateral (Sidebar) com Filtros Avançados
+st.sidebar.header("🔍 Filtros de Análise")
 
-# --- FILTRO POR DATA ---
-df_valido_datas = df.dropna(subset=['Data_Inicio_DT'])
+# Filtro por Agente / Atendente
+lista_agentes = sorted(df['Agente'].dropna().unique().tolist()) if 'Agente' in df.columns else []
+agentes_selecionados = st.sidebar.multiselect("Atendente / Operador:", lista_agentes, default=lista_agentes)
 
-if not df_valido_datas.empty:
-    min_data = df_valido_datas['Data_Inicio_DT'].min().date()
-    max_data = df_valido_datas['Data_Inicio_DT'].max().date()
+# Filtro por Assunto Principal
+lista_assuntos = sorted(df['assunto_principal'].dropna().unique().tolist()) if 'assunto_principal' in df.columns else []
+assuntos_selecionados = st.sidebar.multiselect("Assunto Principal:", lista_assuntos, default=lista_assuntos)
 
-    intervalo_datas = st.sidebar.date_input(
-        "Filtrar por Período",
-        value=(min_data, max_data),
-        min_value=min_data,
-        max_value=max_data,
-        format="DD/MM/YYYY"
-    )
-else:
-    intervalo_datas = None
+# Filtro por Status de Solução Efetivo
+lista_status = sorted(df['status_solucao_efetivo'].dropna().unique().tolist()) if 'status_solucao_efetivo' in df.columns else []
+status_selecionados = st.sidebar.multiselect("Status de Solução:", lista_status, default=lista_status)
 
-# Filtros secundários
-agentes_disponiveis = ["Todos"] + sorted(df['Agente'].dropna().unique().tolist())
-agente_selecionado = st.sidebar.selectbox("Filtrar por Atendente", agentes_disponiveis)
+# Filtro por Áudio
+opcao_audio = st.sidebar.radio("Atendimentos com Áudio:", ["Todos", "Apenas com Áudio", "Apenas sem Áudio"])
 
-assuntos_disponiveis = ["Todos"] + sorted(df['assunto_principal'].dropna().unique().tolist())
-assunto_selecionado = st.sidebar.selectbox("Filtrar por Assunto", assuntos_disponiveis)
+# Filtro por Resposta do Agente
+opcao_resposta = st.sidebar.radio("Resposta do Atendente:", ["Todos", "Respostos por Agente", "Sem Resposta Humana"])
 
-status_disponiveis = ["Todos"] + sorted(df['status_solucao'].dropna().unique().tolist())
-status_selecionado = st.sidebar.selectbox("Filtrar por Status", status_disponiveis)
-
-# --- APLICANDO FILTROS ---
+# Aplicação dos Filtros ao DataFrame
 df_filtrado = df.copy()
 
-periodo_str = "Período Completo"
-if intervalo_datas and len(intervalo_datas) == 2:
-    data_inicio_sel, data_fim_sel = intervalo_datas
-    df_filtrado = df_filtrado[
-        (df_filtrado['Data_Inicio_DT'].dt.date >= data_inicio_sel) &
-        (df_filtrado['Data_Inicio_DT'].dt.date <= data_fim_sel)
-    ]
-    periodo_str = f"{data_inicio_sel.strftime('%d/%m/%Y')} até {data_fim_sel.strftime('%d/%m/%Y')}"
+if agentes_selecionados:
+    df_filtrado = df_filtrado[df_filtrado['Agente'].isin(agentes_selecionados)]
 
-if agente_selecionado != "Todos":
-    df_filtrado = df_filtrado[df_filtrado['Agente'] == agente_selecionado]
-if assunto_selecionado != "Todos":
-    df_filtrado = df_filtrado[df_filtrado['assunto_principal'] == assunto_selecionado]
-if status_selecionado != "Todos":
-    df_filtrado = df_filtrado[df_filtrado['status_solucao'] == status_selecionado]
+if assuntos_selecionados:
+    df_filtrado = df_filtrado[df_filtrado['assunto_principal'].isin(assuntos_selecionados)]
 
-# --- GERAR RELATÓRIO EXECUTIVO ---
-st.sidebar.markdown("---")
-st.sidebar.subheader("📄 Relatório Executivo")
+if status_selecionados:
+    df_filtrado = df_filtrado[df_filtrado['status_solucao_efetivo'].isin(status_selecionados)]
 
-html_relatorio = gerar_relatorio_html(df_filtrado, periodo_str)
+if opcao_audio == "Apenas com Áudio":
+    df_filtrado = df_filtrado[df_filtrado['Tem_Audio'] == True]
+elif opcao_audio == "Apenas sem Áudio":
+    df_filtrado = df_filtrado[df_filtrado['Tem_Audio'] == False]
 
-st.sidebar.download_button(
-    label="📄 Baixar Relatório Executivo (HTML/PDF)",
-    data=html_relatorio,
-    file_name=f"relatorio_executivo_{pd.Timestamp.now().strftime('%Y%m%d_%H%M')}.html",
-    mime="text/html"
-)
+if opcao_resposta == "Respostos por Agente":
+    df_filtrado = df_filtrado[df_filtrado['Resposto_Por_Agente'] == True]
+elif opcao_resposta == "Sem Resposta Humana":
+    df_filtrado = df_filtrado[df_filtrado['Resposto_Por_Agente'] == False]
 
-# --- TÉRCIO SUPERIOR: CÁLCULO DE MÉTRICAS COMPLETO ---
-st.title("📊 Painel Gerencial de Atendimento - SZ Chat (TRE-PB)")
-st.markdown("Análise inteligente de conversas e conformidade de atendimento local (LGPD).")
-
+# 4. Cartões Superior de Indicadores (KPIs)
 total_atendimentos = len(df_filtrado)
-resolvidos = len(df_filtrado[df_filtrado['status_solucao'] == 'Resolvido'])
+resolvidos = len(df_filtrado[df_filtrado['status_solucao_efetivo'] == 'Resolvido'])
 taxa_resolucao = (resolvidos / total_atendimentos * 100) if total_atendimentos > 0 else 0
-
-atendimentos_audio = int(df_filtrado['Tem_Audio'].sum()) if 'Tem_Audio' in df_filtrado.columns else 0
-pct_audio = (atendimentos_audio / total_atendimentos * 100) if total_atendimentos > 0 else 0
-
+com_audio = int(df_filtrado['Tem_Audio'].sum()) if 'Tem_Audio' in df_filtrado.columns else 0
 sem_resposta = int((~df_filtrado['Resposto_Por_Agente']).sum()) if 'Resposto_Por_Agente' in df_filtrado.columns else 0
 
-# Cálculos de tempo
-df_filtrado['Duracao_Seg'] = df_filtrado['Duracao'].apply(duracao_para_segundos) if 'Duracao' in df_filtrado.columns else 0
-media_duracao_seg = df_filtrado['Duracao_Seg'].mean() if total_atendimentos > 0 else 0
-tma_formatado = formatar_segundos_para_tempo(media_duracao_seg)
-
-tempo_encerramento_medio_seg = df_filtrado['Tempo_Ate_Encerramento_Seg'].mean() if 'Tempo_Ate_Encerramento_Seg' in df_filtrado.columns and total_atendimentos > 0 else 0
-tempo_enc_formatado = formatar_segundos_para_tempo(tempo_encerramento_medio_seg)
-
-# Exibição dos KPIs em 2 Linhas
-kpi_col1, kpi_col2, kpi_col3 = st.columns(3)
-kpi_col1.metric("Total de Atendimentos", total_atendimentos)
-kpi_col2.metric("Taxa de Resolução", f"{taxa_resolucao:.1f}%", help="Percentual de solicitações classificadas como Resolvido")
-kpi_col3.metric("Duração Média (TMA)", tma_formatado, help="Tempo médio entre o aceite do atendente e o fim do chat")
-
-kpi_col4, kpi_col5, kpi_col6 = st.columns(3)
-kpi_col4.metric("Uso de Mensagem de Áudio", f"{pct_audio:.1f}%", f"{atendimentos_audio} chamadas com áudio")
-kpi_col5.metric("Sem Resposta Humana", sem_resposta, help="Chamadas encerradas na fila sem contato com atendente")
-kpi_col6.metric("Ociosidade de Encerramento", tempo_enc_formatado, help="Média de tempo entre a última fala e o fecho do chat")
+col1, col2, col3, col4 = st.columns(4)
+col1.metric("Total de Atendimentos", total_atendimentos)
+col2.metric("Taxa de Resolução Efetiva", f"{taxa_resolucao:.1f}%")
+col3.metric("Atendimentos c/ Áudio", com_audio)
+col4.metric("Sem Resposta Humana", sem_resposta)
 
 st.markdown("---")
 
-# --- SEÇÃO DE GRÁFICOS ---
-col_g1, col_g2 = st.columns(2)
+# 5. Organização em Abas (Tabs) para Navegação
+aba_visao_geral, aba_equipe, aba_horarios, aba_relatorio, aba_dados = st.tabs([
+    "📊 Visão Geral & Demandas", 
+    "👥 Produtividade da Equipe", 
+    "⏰ Distribuição Horária", 
+    "📄 Relatório Executivo Oficial",
+    "📋 Consulta de Atendimentos"
+])
 
-with col_g1:
-    st.subheader("📌 Distribuição por Assunto Principal")
-    if not df_filtrado.empty:
-        fig_assunto = px.pie(
-            df_filtrado, 
-            names='assunto_principal', 
-            hole=0.4,
-            color_discrete_sequence=px.colors.sequential.Blues_r
-        )
-        st.plotly_chart(fig_assunto, use_container_width=True)
-    else:
-        st.info("Sem dados para exibir no período/filtros selecionados.")
-
-with col_g2:
-    st.subheader("⚖️ Qualidade do Atendimento (Cordialidade)")
-    if not df_filtrado.empty:
-        fig_qualidade = px.bar(
-            df_filtrado['qualidade_atendimento'].value_counts().reset_index(),
-            x='qualidade_atendimento',
-            y='count',
-            labels={'qualidade_atendimento': 'Avaliação', 'count': 'Quantidade'},
-            color='qualidade_atendimento',
-            color_discrete_sequence=px.colors.sequential.Teal_r
-        )
-        st.plotly_chart(fig_qualidade, use_container_width=True)
-    else:
-        st.info("Sem dados para exibir no período/filtros selecionados.")
-
-# --- HORÁRIOS DE PICO E MENOR DEMANDA ---
-st.subheader("⏰ Horários de Demanda (Início dos Atendimentos)")
-if not df_filtrado.empty and 'Hora_Inicio' in df_filtrado.columns:
-    df_filtrado['Hora_Cheia'] = pd.to_datetime(df_filtrado['Hora_Inicio'], format='%H:%M:%S', errors='coerce').dt.hour
-    picos_hora = df_filtrado['Hora_Cheia'].value_counts().sort_index().reset_index()
-    picos_hora.columns = ['Hora', 'Quantidade']
+# --- ABA 1: VISÃO GERAL ---
+with aba_visao_geral:
+    st.subheader("Análise Geral de Assuntos e Soluções")
+    c1, c2 = st.columns(2)
     
-    if not picos_hora.empty:
-        h_pico = picos_hora.loc[picos_hora['Quantidade'].idxmax()]
-        st.info(f"💡 **Destaque:** Maior volume concentrado às **{int(h_pico['Hora']):02d}h** ({int(h_pico['Quantidade'])} chamadas).")
+    with c1:
+        if 'assunto_principal' in df_filtrado.columns:
+            df_assunto = df_filtrado['assunto_principal'].value_counts().reset_index()
+            df_assunto.columns = ['Assunto', 'Quantidade']
+            fig_assunto = px.bar(
+                df_assunto, 
+                x='Quantidade', 
+                y='Assunto', 
+                orientation='h',
+                title="Volume de Demandas por Assunto Principal",
+                color='Quantidade',
+                color_continuous_scale='Blues'
+            )
+            fig_assunto.update_layout(yaxis={'categoryorder': 'total ascending'}, showlegend=False)
+            st.plotly_chart(fig_assunto, use_container_width=True)
+            
+    with c2:
+        if 'assunto_principal' in df_filtrado.columns:
+            df_status = df_filtrado.groupby(['assunto_principal', 'status_solucao_efetivo']).size().unstack(fill_value=0)
+            fig_status = px.bar(
+                df_status, 
+                barmode='stack',
+                title="Proporção de Resolução por Categoria",
+                color_discrete_map={'Resolvido': '#2e7d32', 'Não Resolvido': '#c62828', 'Teste/Desconsiderado': '#757575'}
+            )
+            st.plotly_chart(fig_status, use_container_width=True)
 
-    fig_hora = px.bar(
-        picos_hora,
-        x='Hora',
-        y='Quantidade',
-        labels={'Hora': 'Hora do Dia (00h - 23h)', 'Quantidade': 'Total de Chamadas'},
-        text_auto=True,
-        color_discrete_sequence=['#1f77b4']
+# --- ABA 2: PRODUTIVIDADE DA EQUIPE ---
+with aba_equipe:
+    st.subheader("Desempenho Individual dos Atendentes")
+    if 'Agente' in df_filtrado.columns:
+        df_agente = df_filtrado.groupby('Agente').agg(
+            Total=('Protocolo', 'count'),
+            Resolvidos=('status_solucao_efetivo', lambda x: (x == 'Resolvido').sum()),
+            Com_Audio=('Tem_Audio', lambda x: x.sum() if 'Tem_Audio' in x else 0)
+        ).reset_index()
+        df_agente['Taxa_Resolucao'] = (df_agente['Resolvidos'] / df_agente['Total'] * 100).round(1)
+        df_agente = df_agente.sort_values(by='Total', ascending=False)
+        
+        st.dataframe(df_agente, use_container_width=True)
+        
+        fig_agente = px.bar(
+            df_agente, 
+            x='Agente', 
+            y=['Resolvidos', 'Total'], 
+            barmode='group',
+            title="Total de Atendimentos vs Solucionados por Atendente",
+            labels={'value': 'Quantidade', 'variable': 'Métrica'}
+        )
+        st.plotly_chart(fig_agente, use_container_width=True)
+
+# --- ABA 3: DISTRIBUIÇÃO HORÁRIA ---
+with aba_horarios:
+    st.subheader("Análise Temporal de Chamadas")
+    if 'Hora_Inicio' in df_filtrado.columns:
+        df_filtrado['Hora_Cheia'] = pd.to_datetime(df_filtrado['Hora_Inicio'], format='%H:%M:%S', errors='coerce').dt.hour
+        picos = df_filtrado['Hora_Cheia'].value_counts().sort_index().reset_index()
+        picos.columns = ['Hora', 'Quantidade']
+        
+        fig_picos = px.line(
+            picos, 
+            x='Hora', 
+            y='Quantidade', 
+            markers=True, 
+            title="Volume de Atendimentos por Horário do Dia",
+            line_shape="spline"
+        )
+        fig_picos.update_xaxes(dtick=1)
+        st.plotly_chart(fig_picos, use_container_width=True)
+
+# --- ABA 4: RELATÓRIO EXECUTIVO OFICIAL ---
+with aba_relatorio:
+    st.subheader("Geração de Relatório Executivo Oficial em HTML/PDF")
+    st.info("Este relatório reúne a introdução oficial, os dados consolidados e a metodologia de resolutividade pronta para apresentação à Corregedoria.")
+    
+    html_relatorio = gerar_relatorio_html(df_filtrado, periodo_str="24/09/2026 a 06/10/2026")
+    
+    st.download_button(
+        label="📥 Baixar Relatório Executivo Completo (HTML / PDF)",
+        data=html_relatorio,
+        file_name="Relatorio_Executivo_SAE_CRE_TREPB.html",
+        mime="text/html"
     )
-    fig_hora.update_layout(xaxis=dict(tickmode='linear', dtick=1))
-    st.plotly_chart(fig_hora, use_container_width=True)
-
-st.markdown("---")
-
-# --- RESUMO EXECUTIVO NA TELA (EXPANSÍVEL) ---
-with st.expander("📋 Visualizar Relatório Executivo Resumido na Tela", expanded=True):
-    st.markdown(f"### Síntese Operacional ({periodo_str})")
     
-    c_exp1, c_exp2 = st.columns(2)
-    with c_exp1:
-        st.markdown("**Status de Solução por Assunto Principal:**")
-        if 'assunto_principal' in df_filtrado.columns and 'status_solucao' in df_filtrado.columns:
-            tb_assuntos = pd.crosstab(df_filtrado['assunto_principal'], df_filtrado['status_solucao'], margins=True, margins_name="Total")
-            st.dataframe(tb_assuntos, use_container_width=True)
+    st.markdown("---")
+    st.components.v1.html(html_relatorio, height=800, scrolling=True)
+
+# --- ABA 5: CONSULTA DE DADOS DETALHADA ---
+with aba_dados:
+    st.subheader("Base de Dados de Atendimentos Analisados")
     
-    with c_exp2:
-        st.markdown("**Desempenho por Atendente:**")
-        if 'Agente' in df_filtrado.columns:
-            ag_summary = df_filtrado.groupby('Agente').agg(
-                Total=('Protocolo', 'count'),
-                Resolvidos=('status_solucao', lambda x: (x == 'Resolvido').sum()),
-                Com_Audio=('Tem_Audio', lambda x: x.sum() if 'Tem_Audio' in x else 0)
-            ).reset_index()
-            ag_summary['% Resolução'] = (ag_summary['Resolvidos'] / ag_summary['Total'] * 100).round(1)
-            st.dataframe(ag_summary, use_container_width=True)
-
-st.markdown("---")
-
-# --- TABELA DETALHADA DE PROTOCOLOS ---
-st.subheader("📋 Detalhamento dos Protocolos Analisados")
-
-cols_exibicao = [
-    'Protocolo', 'Data_Inicio', 'Hora_Inicio', 'Agente', 
-    'assunto_principal', 'status_solucao', 'qualidade_atendimento', 
-    'resumo_atendimento', 'Duracao', 'Tempo_Ate_Encerramento_Seg'
-]
-
-if 'Historico_Limpo' in df_filtrado.columns:
-    cols_exibicao.append('Historico_Limpo')
-
-st.dataframe(
-    df_filtrado[cols_exibicao],
-    use_container_width=True
-)
-
-if os.path.exists("atendimentos_analisados.xlsx"):
-    with open("atendimentos_analisados.xlsx", "rb") as file:
-        st.download_button(
-            label="📥 Baixar Planilha Consolidada (Excel)",
-            data=file,
-            file_name="atendimentos_analisados.xlsx",
-            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-        )
+    busca_protocolo = st.text_input("🔎 Pesquisar por Protocolo ou Palavra-chave no Resumo:")
+    df_exibicao = df_filtrado.copy()
+    
+    if busca_protocolo:
+        df_exibicao = df_exibicao[
+            df_exibicao['Protocolo'].astype(str).str.contains(busca_protocolo, case=False, na=False) |
+            df_exibicao['resumo_atendimento'].astype(str).str.contains(busca_protocolo, case=False, na=False)
+        ]
+        
+    colunas_exibir = ['Protocolo', 'Data', 'Hora_Inicio', 'Agente', 'assunto_principal', 'status_solucao_efetivo', 'Tem_Audio', 'resumo_atendimento']
+    colunas_presentes = [c for c in colunas_exibir if c in df_exibicao.columns]
+    
+    st.dataframe(df_exibicao[colunas_presentes], use_container_width=True)

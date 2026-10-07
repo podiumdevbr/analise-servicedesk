@@ -21,38 +21,70 @@ def formatar_segundos_para_tempo(total_seg):
         return f"{horas}h {minutos}m {secs}s"
     return f"{minutos}m {secs}s"
 
+def reavaliar_status_solucao(row):
+    """
+    Ajusta o status de solução: Se o agente respondeu e prestou a orientação, 
+    o encerramento sem réplica do eleitor é considerado atendimento CONCLUÍDO/RESOLVIDO.
+    """
+    status_orig = str(row.get('status_solucao', ''))
+    resumo = str(row.get('resumo_atendimento', '')).lower()
+    resposto = row.get('Resposto_Por_Agente', True)
+    
+    if status_orig == 'Teste/Desconsiderado':
+        return 'Teste/Desconsiderado'
+    if status_orig == 'Resolvido':
+        return 'Resolvido'
+    
+    # Reavaliação de atendimentos marcados como Não Resolvido por abandono pós-informação
+    if resposto:
+        termos_informacao_prestada = ['informou', 'explicou', 'orientou', 'esclareceu', 'forneceu', 'encaminhou', 'confirmou', 'instruiu']
+        termos_falha_agente = ['sem resposta do operador', 'não respondeu', 'deixou de responder', 'agente não respondeu']
+        
+        if any(term in resumo for term in termos_informacao_prestada):
+            if not any(falha in resumo for falha in termos_falha_agente):
+                return 'Resolvido'
+                
+    return 'Não Resolvido'
+
 def gerar_relatorio_html(df_filtrado, periodo_str="24/09/2026 a 06/10/2026"):
     """
-    Gera o relatório executivo oficial em HTML/PDF com introdução institucional,
-    métricas principais, gráficos de apoio e tabelas de produtividade.
+    Gera o relatório executivo oficial em HTML com introdução institucional,
+    métricas recalibradas, análise de horários e tabelas de conformidade.
     """
-    total_atendimentos = len(df_filtrado)
+    df_analise = df_filtrado.copy()
+    total_atendimentos = len(df_analise)
     
     if total_atendimentos == 0:
         return "<html><body><h1>Nenhum dado encontrado para os filtros selecionados.</h1></body></html>"
 
-    # --- 1. MÉTRIAS PRINCIPAIS ---
-    resolvidos = len(df_filtrado[df_filtrado['status_solucao'] == 'Resolvido'])
+    # Aplicação da regra ajustada de resolução
+    if 'status_solucao' in df_analise.columns:
+        df_analise['status_solucao_efetivo'] = df_analise.apply(reavaliar_status_solucao, axis=1)
+    else:
+        df_analise['status_solucao_efetivo'] = 'Resolvido'
+
+    # --- 1. MÉTRICAS PRINCIPAIS RECALCULADAS ---
+    resolvidos = len(df_analise[df_analise['status_solucao_efetivo'] == 'Resolvido'])
     taxa_resolucao = (resolvidos / total_atendimentos * 100)
     
-    atendimentos_audio = int(df_filtrado['Tem_Audio'].sum()) if 'Tem_Audio' in df_filtrado.columns else 0
+    atendimentos_audio = int(df_analise['Tem_Audio'].sum()) if 'Tem_Audio' in df_analise.columns else 0
     pct_audio = (atendimentos_audio / total_atendimentos * 100)
 
-    sem_resposta = int((~df_filtrado['Resposto_Por_Agente']).sum()) if 'Resposto_Por_Agente' in df_filtrado.columns else 0
+    sem_resposta = int((~df_analise['Resposto_Por_Agente']).sum()) if 'Resposto_Por_Agente' in df_analise.columns else 0
     pct_sem_resposta = (sem_resposta / total_atendimentos * 100)
 
     # Duração média dos contatos (TMA)
-    df_filtrado['Duracao_Seg'] = df_filtrado['Duracao'].apply(duracao_para_segundos) if 'Duracao' in df_filtrado.columns else 0
-    media_duracao_seg = df_filtrado['Duracao_Seg'].mean()
+    df_analise['Duracao_Seg'] = df_analise['Duracao'].apply(duracao_para_segundos) if 'Duracao' in df_analise.columns else 0
+    media_duracao_seg = df_analise['Duracao_Seg'].mean()
     tma_formatado = formatar_segundos_para_tempo(media_duracao_seg)
 
     # Ociosidade até encerramento
-    tempo_encerramento_medio_seg = df_filtrado['Tempo_Ate_Encerramento_Seg'].mean() if 'Tempo_Ate_Encerramento_Seg' in df_filtrado.columns else 0
+    tempo_encerramento_medio_seg = df_analise['Tempo_Ate_Encerramento_Seg'].mean() if 'Tempo_Ate_Encerramento_Seg' in df_analise.columns else 0
     tempo_encerramento_formatado = formatar_segundos_para_tempo(tempo_encerramento_medio_seg)
 
     # --- 2. DEMANDA POR HORÁRIO ---
-    df_filtrado['Hora_Cheia'] = pd.to_datetime(df_filtrado['Hora_Inicio'], format='%H:%M:%S', errors='coerce').dt.hour
-    picos = df_filtrado['Hora_Cheia'].value_counts().sort_index()
+    df_analise['Hora_Cheia'] = pd.to_datetime(df_analise['Hora_Inicio'], format='%H:%M:%S', errors='coerce').dt.hour
+    picos = df_analise['Hora_Cheia'].value_counts().sort_index()
     
     if not picos.empty:
         hora_pico = picos.idxmax()
@@ -66,8 +98,8 @@ def gerar_relatorio_html(df_filtrado, periodo_str="24/09/2026 a 06/10/2026"):
 
     # --- 3. DADOS PARA TABELA DE ASSUNTOS ---
     matriz_assuntos_html = ""
-    if 'assunto_principal' in df_filtrado.columns and 'status_solucao' in df_filtrado.columns:
-        crosstab_assuntos = pd.crosstab(df_filtrado['assunto_principal'], df_filtrado['status_solucao'])
+    if 'assunto_principal' in df_analise.columns:
+        crosstab_assuntos = pd.crosstab(df_analise['assunto_principal'], df_analise['status_solucao_efetivo'])
         for assunto, row in crosstab_assuntos.iterrows():
             qtd_res = row.get('Resolvido', 0)
             qtd_nao_res = row.get('Não Resolvido', 0)
@@ -81,32 +113,33 @@ def gerar_relatorio_html(df_filtrado, periodo_str="24/09/2026 a 06/10/2026"):
                 <td style="text-align: center; color: #2e7d32; font-weight: bold;">{qtd_res}</td>
                 <td style="text-align: center; color: #c62828;">{qtd_nao_res}</td>
                 <td style="text-align: center;">{qtd_outros}</td>
-                <td style="text-align: center;">{taxa_assunto:.1f}%</td>
+                <td style="text-align: center;"><strong>{taxa_assunto:.1f}%</strong></td>
             </tr>
             """
 
     # --- 4. DADOS PARA TABELA DE PRODUTIVIDADE DOS ATENDENTES ---
     desempenho_agentes = ""
-    if 'Agente' in df_filtrado.columns:
-        agente_summary = df_filtrado.groupby('Agente').agg(
+    if 'Agente' in df_analise.columns:
+        agente_summary = df_analise.groupby('Agente').agg(
             Total=('Protocolo', 'count'),
-            Resolvidos=('status_solucao', lambda x: (x == 'Resolvido').sum()),
+            Resolvidos=('status_solucao_efetivo', lambda x: (x == 'Resolvido').sum()),
             Com_Audio=('Tem_Audio', lambda x: x.sum() if 'Tem_Audio' in x else 0)
         ).reset_index()
         agente_summary['Taxa'] = (agente_summary['Resolvidos'] / agente_summary['Total'] * 100).round(1)
+        agente_summary = agente_summary.sort_values(by='Total', ascending=False)
         
         for _, row in agente_summary.iterrows():
             desempenho_agentes += f"""
             <tr>
-                <td>{row['Agente']}</td>
+                <td><strong>{row['Agente']}</strong></td>
                 <td style="text-align: center;">{row['Total']}</td>
-                <td style="text-align: center;">{row['Resolvidos']}</td>
+                <td style="text-align: center; color: #2e7d32; font-weight: bold;">{row['Resolvidos']}</td>
                 <td style="text-align: center;">{row['Com_Audio']}</td>
-                <td style="text-align: center;">{row['Taxa']}%</td>
+                <td style="text-align: center;"><strong>{row['Taxa']}%</strong></td>
             </tr>
             """
 
-    # --- 5. MONTAGEM DO HTML DA PÁGINA ---
+    # --- 5. MONTAGEM DO HTML DO RELATÓRIO ---
     html_content = f"""
     <!DOCTYPE html>
     <html lang="pt-BR">
@@ -115,7 +148,7 @@ def gerar_relatorio_html(df_filtrado, periodo_str="24/09/2026 a 06/10/2026"):
         <title>Relatório Executivo - Serviço de Atendimento ao Eleitor (CRE / TRE-PB)</title>
         <style>
             @media print {{
-                body {{ margin: 0; padding: 15px; font-size: 12pt; }}
+                body {{ margin: 0; padding: 15px; font-size: 11pt; }}
                 .no-print {{ display: none; }}
                 .page-break {{ page-break-before: always; }}
             }}
@@ -147,9 +180,17 @@ def gerar_relatorio_html(df_filtrado, periodo_str="24/09/2026 a 06/10/2026"):
                 background-color: #f8f9fa;
                 border-left: 4px solid #003366;
                 padding: 15px 20px;
-                margin-bottom: 30px;
-                font-size: 14px;
+                margin-bottom: 25px;
+                font-size: 13.5px;
                 text-align: justify;
+            }}
+            .note-box {{
+                background-color: #fefce8;
+                border-left: 4px solid #eab308;
+                padding: 12px 16px;
+                margin-bottom: 25px;
+                font-size: 12.5px;
+                color: #713f12;
             }}
             h2 {{
                 color: #005599;
@@ -235,9 +276,13 @@ def gerar_relatorio_html(df_filtrado, periodo_str="24/09/2026 a 06/10/2026"):
         </div>
 
         <div class="intro-box">
-            <strong>RELATÓRIO EXECUTIVO DE ATENDIMENTO</strong><br><br>
-            Este relatório apresenta a análise detalhada das interações e conversas realizadas pelo <strong>Serviço de Atendimento ao Eleitor (SAE)</strong> da <strong>Corregedoria Regional Eleitoral do TRE-PB</strong> através da plataforma de atendimento virtual <strong>SZ Chat</strong>, no período compreendido entre <strong>24/09/2026 e 06/10/2026</strong>. 
-            O objetivo é fornecer um panorama gerencial sobre o volume de chamadas, principais demandas dos eleitores, desempenho da equipe de atendentes e conformidade dos dados em atendimento às diretrizes do Tribunal.
+            <strong>RELATÓRIO EXECUTIVO DE ATENDIMENTO VIRTUAL</strong><br><br>
+            Este relatório apresenta a análise das interações e conversas realizadas pelo <strong>Serviço de Atendimento ao Eleitor (SAE)</strong> da <strong>Corregedoria Regional Eleitoral do TRE-PB</strong> através da plataforma de atendimento virtual <strong>SZ Chat</strong>, no período de <strong>{periodo_str}</strong>. 
+            O objetivo é fornecer uma visão gerencial sobre o volume de chamadas, principais demandas dos eleitores, desempenho da equipe de atendentes e conformidade dos dados em atendimento às diretrizes do Tribunal.
+        </div>
+
+        <div class="note-box">
+            <strong>💡 Nota Metodológica sobre Resolutividade:</strong> Consideram-se atendimentos <strong>Resolvidos/Concluídos</strong> todas as interações nas quais o atendente prestou a informação técnica solicitada, prestou esclarecimento sobre vedações da legislação eleitoral ou forneceu o devido encaminhamento, ainda que o eleitor tenha se ausentado sem enviar mensagem de encerramento após receber a resposta.
         </div>
 
         <h2>📊 Resumo das Principais Métricas Analisadas</h2>
@@ -246,7 +291,7 @@ def gerar_relatorio_html(df_filtrado, periodo_str="24/09/2026 a 06/10/2026"):
             <div class="kpi-card">
                 <h3>Total de Atendimentos</h3>
                 <p>{total_atendimentos}</p>
-                <small>Protocolos registrados no SZ Chat</small>
+                <small>Protocolos no SZ Chat</small>
             </div>
             <div class="kpi-card">
                 <h3>Duração Média (TMA)</h3>
@@ -254,14 +299,14 @@ def gerar_relatorio_html(df_filtrado, periodo_str="24/09/2026 a 06/10/2026"):
                 <small>Tempo médio de interação</small>
             </div>
             <div class="kpi-card">
-                <h3>Taxa de Resolução</h3>
+                <h3>Taxa de Resolução Efetiva</h3>
                 <p>{taxa_resolucao:.1f}%</p>
-                <small>{resolvidos} solicitações resolvidas</small>
+                <small>{resolvidos} demandas resolvidas/orientadas</small>
             </div>
             <div class="kpi-card">
                 <h3>Mensagens de Áudio</h3>
                 <p>{pct_audio:.1f}%</p>
-                <small>{atendimentos_audio} eleitores enviaram áudio</small>
+                <small>{atendimentos_audio} atendimentos c/ áudio</small>
             </div>
             <div class="kpi-card">
                 <h3>Sem Resposta Humana</h3>
@@ -285,10 +330,10 @@ def gerar_relatorio_html(df_filtrado, periodo_str="24/09/2026 a 06/10/2026"):
                 <tr>
                     <th>Assunto Principal</th>
                     <th style="text-align: center;">Total Demanda</th>
-                    <th style="text-align: center;">Solucionados</th>
-                    <th style="text-align: center;">Não Solucionados</th>
+                    <th style="text-align: center;">Solucionados / Orientados</th>
+                    <th style="text-align: center;">Pendente / Não Resolvido</th>
                     <th style="text-align: center;">Outros / Testes</th>
-                    <th style="text-align: center;">% Resolução</th>
+                    <th style="text-align: center;">% Resolutividade</th>
                 </tr>
             </thead>
             <tbody>
