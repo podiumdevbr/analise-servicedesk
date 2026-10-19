@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import os
-# IMPORTAÇÃO: Incluída a função reavaliar_status_solucao
 from gerar_relatorio import gerar_relatorio_html, duracao_para_segundos, formatar_segundos_para_tempo, reavaliar_status_solucao
 
 # Configuração da página do Streamlit
@@ -23,7 +22,7 @@ def carregar_dados():
     if 'Data_Inicio' in df.columns:
         df['Data_Inicio_DT'] = pd.to_datetime(df['Data_Inicio'], dayfirst=True, errors='coerce')
     
-    # AJUSTE 1: Aplica a recalibragem da resolutividade (orientação prestada = Resolvido)
+    # Aplica a recalibragem da resolutividade
     df['status_solucao'] = df.apply(reavaliar_status_solucao, axis=1)
     
     return df
@@ -36,8 +35,14 @@ if df is None or df.empty:
 
 # --- BARRA LATERAL (FILTROS) ---
 st.sidebar.image("https://www.gov.br/planalto/pt-br/conheca-a-presidencia/biblioteca-da-pr/simbolos-nacionais/brasao-da-republica/brasaooficialcolorido.png", width=200)
-##st.sidebar.image("https://www.tre-pb.jus.br/++theme++justica_eleitoral/imagens/logos/tre-pb.svg", width=200)
 st.sidebar.title("Filtros de Análise")
+
+# --- FILTRO POR TURNO ELEITORAL ---
+if 'Turno' in df.columns:
+    turnos_disponiveis = ["Todos", "1º Turno", "2º Turno"]
+    turno_selecionado = st.sidebar.selectbox("Filtrar por Turno", turnos_disponiveis)
+else:
+    turno_selecionado = "Todos"
 
 # --- FILTRO POR DATA ---
 df_valido_datas = df.dropna(subset=['Data_Inicio_DT'])
@@ -68,6 +73,11 @@ status_selecionado = st.sidebar.selectbox("Filtrar por Status", status_disponive
 
 # --- APLICANDO FILTROS ---
 df_filtrado = df.copy()
+
+# Aplica filtro de Turno
+if 'Turno' in df_filtrado.columns and turno_selecionado != "Todos":
+    num_turno = 1 if "1º" in turno_selecionado else 2
+    df_filtrado = df_filtrado[df_filtrado['Turno'].astype(str).str.contains(str(num_turno))]
 
 periodo_str = "Período Completo"
 if intervalo_datas and len(intervalo_datas) == 2:
@@ -215,7 +225,7 @@ st.markdown("---")
 st.subheader("📋 Detalhamento dos Protocolos Analisados")
 
 cols_exibicao = [
-    'Protocolo', 'Data_Inicio', 'Hora_Inicio', 'Agente', 
+    'Protocolo', 'Turno', 'Data_Inicio', 'Hora_Inicio', 'Agente', 
     'assunto_principal', 'status_solucao', 'qualidade_atendimento', 
     'resumo_atendimento', 'Duracao', 'Tempo_Ate_Encerramento_Seg'
 ]
@@ -223,7 +233,6 @@ cols_exibicao = [
 if 'Historico_Limpo' in df_filtrado.columns:
     cols_exibicao.append('Historico_Limpo')
 
-# Filtrando colunas existentes para evitar KeyError
 cols_presentes = [c for c in cols_exibicao if c in df_filtrado.columns]
 
 st.dataframe(
