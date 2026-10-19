@@ -13,3 +13,6 @@ jobs:
       - name: Fazer requisição HTTP para a URL do Streamlit
         run: |
           curl -sI "https://servicedesktrepb.streamlit.app" | head -n 1
+      - name: Ping 1500 Dashboard
+        run: |
+          curl -sI "https://dashboard1500.streamlit.app" | head -n 1
