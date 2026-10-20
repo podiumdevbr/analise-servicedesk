@@ -23,8 +23,9 @@ def formatar_segundos_para_tempo(total_seg):
 
 def reavaliar_status_solucao(row):
     """
-    Ajusta o status de solução: Se o agente respondeu e prestou a orientação, 
-    o encerramento sem réplica do eleitor é considerado atendimento CONCLUÍDO/RESOLVIDO.
+    Classifica como Resolvido/Concluído qualquer atendimento em que o atendente 
+    prestou a informação técnica ou orientação normativa, mesmo que o eleitor 
+    tenha apenas digitado dígitos do menu (ex: '5', '1') ou se ausentado em seguida.
     """
     status_orig = str(row.get('status_solucao', ''))
     resumo = str(row.get('resumo_atendimento', '')).lower()
@@ -35,10 +36,20 @@ def reavaliar_status_solucao(row):
     if status_orig == 'Resolvido':
         return 'Resolvido'
     
-    # Reavaliação de atendimentos marcados como Não Resolvido por abandono pós-informação
     if resposto:
-        termos_informacao_prestada = ['informou', 'explicou', 'orientou', 'esclareceu', 'forneceu', 'encaminhou', 'confirmou', 'instruiu']
-        termos_falha_agente = ['sem resposta do operador', 'não respondeu', 'deixou de responder', 'agente não respondeu']
+        # Padrões abrangentes de prestação de informação (voz ativa e passiva)
+        termos_informacao_prestada = [
+            'informou', 'informado', 'explicou', 'explicado', 
+            'orientou', 'orientado', 'esclareceu', 'esclarecido', 
+            'forneceu', 'fornecido', 'encaminhou', 'encaminhado', 
+            'confirmou', 'confirmado', 'instruiu', 'instruído',
+            'auxiliou', 'auxiliado', 'resposta', 'respondido'
+        ]
+        termos_falha_agente = [
+            'sem resposta do operador', 'não respondeu', 
+            'deixou de responder', 'agente não respondeu',
+            'encerrado sem atendimento humano'
+        ]
         
         if any(term in resumo for term in termos_informacao_prestada):
             if not any(falha in resumo for falha in termos_falha_agente):
@@ -57,7 +68,7 @@ def gerar_relatorio_html(df_filtrado, periodo_str="24/09/2026 a 06/10/2026"):
     if total_atendimentos == 0:
         return "<html><body><h1>Nenhum dado encontrado para os filtros selecionados.</h1></body></html>"
 
-    # Aplicação da regra ajustada de resolução
+    # Aplicação da regra ajustada de resolutividade
     if 'status_solucao' in df_analise.columns:
         df_analise['status_solucao_efetivo'] = df_analise.apply(reavaliar_status_solucao, axis=1)
     else:
@@ -65,17 +76,17 @@ def gerar_relatorio_html(df_filtrado, periodo_str="24/09/2026 a 06/10/2026"):
 
     # --- 1. MÉTRICAS PRINCIPAIS RECALCULADAS ---
     resolvidos = len(df_analise[df_analise['status_solucao_efetivo'] == 'Resolvido'])
-    taxa_resolucao = (resolvidos / total_atendimentos * 100)
+    taxa_resolucao = (resolvidos / total_atendimentos * 100) if total_atendimentos > 0 else 0
     
     atendimentos_audio = int(df_analise['Tem_Audio'].sum()) if 'Tem_Audio' in df_analise.columns else 0
-    pct_audio = (atendimentos_audio / total_atendimentos * 100)
+    pct_audio = (atendimentos_audio / total_atendimentos * 100) if total_atendimentos > 0 else 0
 
     sem_resposta = int((~df_analise['Resposto_Por_Agente']).sum()) if 'Resposto_Por_Agente' in df_analise.columns else 0
-    pct_sem_resposta = (sem_resposta / total_atendimentos * 100)
+    pct_sem_resposta = (sem_resposta / total_atendimentos * 100) if total_atendimentos > 0 else 0
 
     # Duração média dos contatos (TMA)
     df_analise['Duracao_Seg'] = df_analise['Duracao'].apply(duracao_para_segundos) if 'Duracao' in df_analise.columns else 0
-    media_duracao_seg = df_analise['Duracao_Seg'].mean()
+    media_duracao_seg = df_analise['Duracao_Seg'].mean() if total_atendimentos > 0 else 0
     tma_formatado = formatar_segundos_para_tempo(media_duracao_seg)
 
     # Ociosidade até encerramento
@@ -83,18 +94,21 @@ def gerar_relatorio_html(df_filtrado, periodo_str="24/09/2026 a 06/10/2026"):
     tempo_encerramento_formatado = formatar_segundos_para_tempo(tempo_encerramento_medio_seg)
 
     # --- 2. DEMANDA POR HORÁRIO ---
-    df_analise['Hora_Cheia'] = pd.to_datetime(df_analise['Hora_Inicio'], format='%H:%M:%S', errors='coerce').dt.hour
-    picos = df_analise['Hora_Cheia'].value_counts().sort_index()
-    
-    if not picos.empty:
-        hora_pico = picos.idxmax()
-        qtd_pico = picos.max()
-        hora_valida_picos = picos[picos > 0]
-        hora_vale = hora_valida_picos.idxmin() if not hora_valida_picos.empty else picos.idxmin()
-        qtd_vale = hora_valida_picos.min() if not hora_valida_picos.empty else picos.min()
-        texto_horarios = f"O pico de atendimento ocorreu às <strong>{hora_pico:02d}h</strong> (com {qtd_pico} chamadas), enquanto a menor demanda concentrou-se às <strong>{hora_vale:02d}h</strong> ({qtd_vale} chamadas)."
+    if 'Hora_Inicio' in df_analise.columns:
+        df_analise['Hora_Cheia'] = pd.to_datetime(df_analise['Hora_Inicio'], format='%H:%M:%S', errors='coerce').dt.hour
+        picos = df_analise['Hora_Cheia'].value_counts().sort_index()
+        
+        if not picos.empty:
+            hora_pico = picos.idxmax()
+            qtd_pico = picos.max()
+            hora_valida_picos = picos[picos > 0]
+            hora_vale = hora_valida_picos.idxmin() if not hora_valida_picos.empty else picos.idxmin()
+            qtd_vale = hora_valida_picos.min() if not hora_valida_picos.empty else picos.min()
+            texto_horarios = f"O pico de atendimento ocorreu às <strong>{hora_pico:02d}h</strong> (com {qtd_pico} chamadas), enquanto a menor demanda concentrou-se às <strong>{hora_vale:02d}h</strong> ({qtd_vale} chamadas)."
+        else:
+            texto_horarios = "Dados insuficientes para análise temporal por hora."
     else:
-        texto_horarios = "Dados insuficientes para análise temporal por hora."
+        texto_horarios = "Informação de horário não disponível."
 
     # --- 3. DADOS PARA TABELA DE ASSUNTOS ---
     matriz_assuntos_html = ""
