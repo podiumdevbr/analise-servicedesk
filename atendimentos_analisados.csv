@@ -1,16 +1,4 @@
 ﻿Protocolo,Turno,Data_Inicio,Hora_Inicio,Agente,assunto_principal,status_solucao,qualidade_atendimento,resumo_atendimento,Duracao,Tem_Audio,Resposto_Por_Agente,Qtd_Msgs_Agente,Tempo_Ate_Encerramento_Seg,Historico_Limpo
-2026092400186,1,24/09/2026,09:01:39,Márcia,Teste/Desconsiderado,Teste/Desconsiderado,Neutro/Objetivo,"A conversa foi um atendimento de teste interno entre Márcia (operador) e um eleitor, sem solução de problemas específicos. O atendimento foi neutro e objetivo.",00:06:05,False,True,2,852.0,"Eleitor: oi
-Eleitor: 007.***.***-**
-Eleitor: 1
-Eleitor: 007.***.***-**
-Eleitor: 5
-Eleitor: 0
-Eleitor: 7
-Eleitor: 8
-Operador (Márcia): Bom dia, tudo bem?
-Eleitor: Bom dia, Márcia. Pode desconsiderar. Eu estava montando o fluxo do Whatsapp com Anderson e fizemos uns testes. 🙂
-Operador (Márcia): Tudo certo
-Eleitor: 5"
 2026092400198,1,24/09/2026,09:05:48,Márcia,Treinamento / Convocação de Mesário,Resolvido,Respeitoso e Cortês,A eleitora solicitou informações sobre o treinamento presencial para presidente de MRV. O operador confirmou sua convocação para 2 mesários e explicou que ela precisava fazer o curso online e comparecer nas eleições. A eleitora agradeceu e encerrou o atendimento satisfeita.,00:13:53,False,True,10,98.0,"Eleitor: Bom dia
 Eleitor: 1
 Eleitor: 085.***.***-**
@@ -655,7 +643,7 @@ Operador (Roberto): Não, o seu título encontra-se cancelado por faltas sucessi
 Eleitor: Ok obrigado
 Operador (Roberto): Nós é que agradecemos o seu contato. Tenha um bom dia.
 Eleitor: 5"
-2026092400323,1,24/09/2026,11:01:07,Roberto,Situação Eleitoral / Título Cancelado ou Regular,Não Resolvido,Neutro/Objetivo,"O atendimento tratou sobre a regularização do título do eleitor, mas não conseguiu resolver a questão de puxar a segunda via do título do seu esposo. O atendimento foi neutro e objetivo, sem mostrar insatisfação ou respeito excessivo. O eleitor encerrou o atendimento sem solicitar mais assistência.",00:07:11,False,True,12,0.0,"Eleitor: Oii
+2026092400323,1,24/09/2026,11:01:07,Roberto,Situação Eleitoral / Título Cancelado ou Regular,Resolvido,Neutro/Objetivo,"O atendimento tratou sobre a regularização do título do eleitor, mas não conseguiu resolver a questão de puxar a segunda via do título do seu esposo. O atendimento foi neutro e objetivo, sem mostrar insatisfação ou respeito excessivo. O eleitor encerrou o atendimento sem solicitar mais assistência.",00:07:11,False,True,12,0.0,"Eleitor: Oii
 Eleitor: 1
 Eleitor: 633.***.***-**
 Eleitor: 8
@@ -684,7 +672,7 @@ Operador (Roberto): Posso ajudar em algo mais?
 Eleitor: Não
 Eleitor: Obrigado
 Eleitor: 1"
-2026092400327,1,24/09/2026,11:06:00,Roberto,Local de Votação / Seção Eleitoral,Não Resolvido,Neutro/Objetivo,"O operador explicou que o TRE não tem responsabilidade pela gratuidade no transporte público para eleitores, mas encaminhou informações sobre o assunto. O atendimento foi neutro, sem resolução completa do problema do eleitor.",00:20:18,True,True,8,13.0,"Eleitor: Eu dei essa nota porque vocês não coloca a rota dos ônibus que vai ser utilizada para ir para J****Pessoa para votar entre municipais né intermunicipais simplesmente a gente tá no vácuo o tre não responde e vocês dão uma resposta vazia então eu dou o número 1
+2026092400327,1,24/09/2026,11:06:00,Roberto,Local de Votação / Seção Eleitoral,Resolvido,Neutro/Objetivo,"O operador explicou que o TRE não tem responsabilidade pela gratuidade no transporte público para eleitores, mas encaminhou informações sobre o assunto. O atendimento foi neutro, a resolução completa independe do TRE.",00:20:18,True,True,8,13.0,"Eleitor: Eu dei essa nota porque vocês não coloca a rota dos ônibus que vai ser utilizada para ir para J****Pessoa para votar entre municipais né intermunicipais simplesmente a gente tá no vácuo o tre não responde e vocês dão uma resposta vazia então eu dou o número 1
 Eleitor: 1
 Eleitor: 069.***.***-**
 Eleitor: 8
@@ -2567,16 +2555,6 @@ Operador (João): Sim. Uma pessoa de sua confiança.
 Eleitor: Certo, obrigado
 Operador (João): Auxilio em algo mais?
 Operador (João): Como ficamos sem interação, vou encerrar o atendimento por aqui. Se precisar de algo, é só mandar um ""olá""!"
-2026092500202,1,25/09/2026,10:22:28,João,Teste/Desconsiderado,Teste/Desconsiderado,Neutro/Objetivo,"O atendimento foi de natureza de teste interno, sem resolução de problemas reais. O eleitor estava testando a disponibilidade de atendimento em libras e confirmou que só será ativado no dia da eleição.",00:02:11,False,True,2,245.0,"Eleitor: oi
-Eleitor: 1
-Eleitor: **** **** 1210
-Eleitor: 8
-Eleitor: Fidelis, estava testando p ver se apareceria a opção de atendimento em libras
-Eleitor: Mas, creio, só será ativado no dia da eleição
-Operador (João): Tranquilo, amigo
-Eleitor: Bom trabalho aí p vc!
-Operador (João): Igualmente
-Eleitor: 5"
 2026092500206,1,25/09/2026,10:24:33,André,Voto em Trânsito,Não Resolvido,Neutro/Objetivo,"O operador informou que não é possível votar em trânsito devido ao prazo encerrado. Ele sugeriu que o eleitor justifique sua ausência e informou sobre um débito de R$ 3,51. Não foi esclarecido como efetivar o pagamento do débito.",00:24:22,False,True,7,0.0,"Eleitor: Bom dia
 Eleitor: 1
 Eleitor: 009.***.***-**
@@ -6145,7 +6123,7 @@ Eleitor: Tem alguma ajudar de transporte?
 Operador (Vanessa): <b>Vanessa:</b> é automático sim, o pagamento, se estiver tudo em ordem com o seu pix vinculado ao cpf
 Operador (Vanessa): <b>Vanessa:</b> não tem ajuda transporte
 Eleitor: Entendido."
-2026092700168,1,28/09/2026,07:27:21,João,Outros Assuntos,Teste/Desconsiderado,Neutro/Objetivo,"O atendimento foi encerrado devido à falta de interação, sem esclarecer a dúvida sobre o vale alimentação do eleitor.",00:00:00,False,True,1,0.0,"Eleitor: 1
+2026092700168,1,28/09/2026,07:27:21,João,Outros Assuntos,Sem interação,Neutro/Objetivo,"O atendimento foi encerrado devido à falta de interação, sem esclarecer a dúvida sobre o vale alimentação do eleitor.",00:00:00,False,True,1,0.0,"Eleitor: 1
 Eleitor: 1
 Eleitor: 062.***.***-**
 Eleitor: 8
@@ -10752,7 +10730,7 @@ Eleitor: 312.***.***-**
 Operador (João): LOCAL DE VOTAÇÃO Zona 061 Local de votação 1252 - EMEF FERNANDO CUNHA LIMA End. local de votação RUA DRA ELISA BEZERRA, S/N, TAMBAY Bairro TAMBAY Seção 0261
 Operador (João): Algo mais em que possa ajudar?
 Eleitor: Não, muito obrigada"
-2026092900395,1,29/09/2026,10:57:04,Silvania,Documentação / Identificação,Teste/Desconsiderado,Neutro/Objetivo,O atendimento foi considerado um teste interno sem solução para a questão do eleitor sobre a chave Pix. O operador não respondeu adequadamente.,00:00:00,True,True,1,0.0,"Eleitor: Oi
+2026092900395,1,29/09/2026,10:57:04,Silvania,Documentação / Identificação,Resolvido,Neutro/Objetivo,O mesário informou a chave Pix. O operador confirmou o recebimento.,00:00:00,True,True,1,0.0,"Eleitor: Oi
 Eleitor: 1
 Eleitor: 055.***.***-**
 Eleitor: 8
@@ -11288,7 +11266,7 @@ Operador (André): Disponha sempre. Tenha um ótimo dia.
 Eleitor: 10
 Eleitor: o5
 Eleitor: 5"
-2026092900565,1,29/09/2026,12:07:05,João,Treinamento / Convocação de Mesário,Teste/Desconsiderado,Neutro/Objetivo,"O eleitor informou que concluiu o treinamento e recebeu uma mensagem para finalizar. O operador confirmou que o certificado foi emitido e sugeriu desconsiderar a mensagem. O atendimento foi neutro e objetivo, sem esclarecer dúvidas específicas sobre o treinamento ou a mensagem.",00:16:42,False,True,3,0.0,"Eleitor: Bom dia! Já conclui o treinamento e está chegando msg que não conclui.
+2026092900565,1,29/09/2026,12:07:05,João,Treinamento / Convocação de Mesário,Resolvido,Neutro/Objetivo,O eleitor informou que concluiu o treinamento e recebeu uma mensagem para finalizar. O operador confirmou que o certificado foi emitido e sugeriu desconsiderar a mensagem. O atendimento foi neutro e objetivo.,00:16:42,False,True,3,0.0,"Eleitor: Bom dia! Já conclui o treinamento e está chegando msg que não conclui.
 Eleitor: 4
 Eleitor: 1
 Eleitor: 040.***.***-**
@@ -13316,7 +13294,7 @@ Operador (Roberto): Algumas outras informações.
 Eleitor: Não, obrigada.
 Operador (Roberto): Grato pelo seu contato.
 Eleitor: 5"
-2026092901147,1,29/09/2026,17:26:37,André,Multa / Quitação Eleitoral / Certidões,Teste/Desconsiderado,Neutro/Objetivo,"O atendimento tratou de informações sobre o vale alimentação para funcionários das eleições, fornecendo o horário e o valor. O atendimento foi neutro e objetivo, sem esclarecer dúvidas específicas sobre votação ou situação eleitoral.",00:16:24,False,True,3,0.0,"Eleitor: Oie
+2026092901147,1,29/09/2026,17:26:37,André,Multa / Quitação Eleitoral / Certidões,Resolvido,Neutro/Objetivo,"O atendimento tratou de informações sobre o vale alimentação para mesários das eleições, fornecendo o horário e o valor. O atendimento foi neutro e objetivo.",00:16:24,False,True,3,0.0,"Eleitor: Oie
 Eleitor: 4
 Eleitor: 1
 Eleitor: 1
@@ -14836,7 +14814,7 @@ Eleitor: Obrigado
 Eleitor: Vou manter contato
 Operador (Roberto): Agradecemos o seu contato.
 Eleitor: 5"
-2026093000672,1,30/09/2026,10:33:34,Sem Atendente,Documentação / Identificação,Teste/Desconsiderado,Neutro/Objetivo,"O atendimento foi considerado um teste interno, pois o diálogo foi muito breve e não contou com uma resposta detalhada. O eleitor não demonstrou insatisfação, apenas cumprimentou o operador.",00:08:56,False,False,0,14.0,"Eleitor: Olá
+2026093000672,1,30/09/2026,10:33:34,Roberto,Documentação / Identificação,Não Resolvido,Neutro/Objetivo,"O atendimento foi encerrado pelo operador. O eleitor não demonstrou insatisfação, apenas cumprimentou o operador.",00:08:56,False,False,0,14.0,"Eleitor: Olá
 Eleitor: 1
 Eleitor: 034.***.***-**
 Eleitor: 8
@@ -18954,12 +18932,6 @@ Operador (Jeanne): O problema era pra quem não tivesse o CPF como sendo a chave
 Operador (Jeanne): Bom trabalho no domingo.
 Operador (Jeanne): Tenha um ótimo dia.
 Eleitor: Muito obrigada, Jeanne!
-Eleitor: 5"
-2026100100978,1,01/10/2026,13:33:08,Sem Atendente,Teste/Desconsiderado,Teste/Desconsiderado,Neutro/Objetivo,"O atendimento foi de natureza de teste interno, sem solução para uma dúvida específica. O operador confirmou que era um atendimento de teste.",00:07:24,False,False,0,539.0,"Eleitor: Oi
-Eleitor: 4
-Eleitor: #suporte
-Eleitor: 3
-Eleitor: O***Cris. Só um teste mesmo.
 Eleitor: 5"
 2026100100980,1,01/10/2026,13:37:52,Alana,Treinamento / Convocação de Mesário,Resolvido,Respeitoso e Cortês,"O operador esclareceu sobre o prazo de pagamento do vale alimentação dos mesários, informando que seria no domingo. O eleitor agradeceu e encerrou a conversa satisfeito.",00:32:18,False,True,5,0.0,"Eleitor: Boa tarde
 Eleitor: 1
@@ -24139,7 +24111,7 @@ Eleitor: Ok. 👍
 Operador (Elci): Algo mais em que possa ajudar?
 Eleitor: N***Obrigado
 Operador (Elci): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar. Tenha um ótimo dia!"
-2026100300552,1,03/10/2026,10:24:39,Elci,Outros Assuntos,Teste/Desconsiderado,Neutro/Objetivo,"O atendimento foi considerado um teste interno, pois o operador não conseguiu esclarecer a dúvida do eleitor sobre o número incorreto. O atendimento foi neutro e objetivo, focando na explicação do erro de contato.",00:10:28,False,True,3,0.0,"Eleitor: 👍
+2026100300552,1,03/10/2026,10:24:39,Elci,Outros Assuntos,Resolvido,Respeitoso e Cortês,O contato informou que as mensagens estavam sendo encamihadas para seu número por engano.,00:10:28,False,True,3,0.0,"Eleitor: 👍
 Eleitor: Bom dia! Aqui é da F*****Atacado.
 Eleitor: Esse contato foi enviado por engano, não somos do TRE-PB.
 Eleitor: Este número pertence à F*****Atacado e não ao TRE.
@@ -27555,22 +27527,6 @@ Operador (Jeanne): Vou te passar o contato do cartório eleitoral pra você entr
 Eleitor: Passa por favor
 Operador (Jeanne): 3512-1673 / 3512-1573
 Operador (Jeanne): Um ótimo dia para você.
-Eleitor: 5"
-2026100400462,1,04/10/2026,07:11:22,André,Outros Assuntos,Teste/Desconsiderado,Neutro/Objetivo,"O atendimento foi considerado neutro e objetivo, sem resolução de problemas específicos. O operador confirmou que todos os atendimentos estavam funcionando bem, sem reclamações de lentidão. O atendimento foi classificado como teste interno.",00:04:13,False,True,5,22.0,"Eleitor: oi
-Eleitor: 1
-Eleitor: 788.***.***-**
-Eleitor: 8
-Eleitor: OI, André. Aqui é Vinícius, da STIC. Estou só testando o serviço pq notamos uma lentidão há pouco
-Operador (André): Comentei aqui que seria um teste mesmo rsrs
-Eleitor: o pessoal aí conseguiu logar para atender?
-Operador (André): Sim, todos estão atendendo
-Eleitor: blza então. Do lado do eleitor, pelo whatsapp, não notei lentidão
-Eleitor: Qualquer problema vcs nos reportam
-Eleitor: Bom trabalho!
-Operador (André): Nos atendimentos que fiz, ninguém reclamou de lentidão no acesso ou resposta.
-Operador (André): Bom trabalho.
-Eleitor: Ótimo. Valeu
-Operador (André): Disponha sempre. Tenha um ótimo dia.
 Eleitor: 5"
 2026100400463,1,04/10/2026,07:15:13,Jeanne,Justificativa Eleitoral,Resolvido,Respeitoso e Cortês,A operadora informou os contatos para o cartório eleitoral e orientou sobre o procedimento para formalização da justificativa de ausência do eleitor. O atendimento foi respeitoso e objetivo.,00:02:33,False,True,5,0.0,"Eleitor: [IMAGEM ANEXADA] | Bom dia! Fui convocada para atuar como mesária nas Eleições 2026, porém estou impossibilitada de comparecer em razão de problema de saúde. Fui atendida nesta data e estou encaminhando o atestado médico em anexo para comprovação. Solicito orientação quanto ao procedimento para formalização da justificativa de ausência.
 Eleitor: 1
@@ -35040,7 +34996,7 @@ Eleitor: ok
 Operador (Silvania): <b>S********Barreto:</b> posso ajudar em algo mais?
 Eleitor: não obrigado
 Operador (Silvania): <b>S********Barreto:</b> Por nada!1"
-2026100500580,1,05/10/2026,10:38:57,Silvania,Documentação / Identificação,Teste/Desconsiderado,Neutro/Objetivo,"A chamada foi realizada por um atendente do TRE-PB, que apenas agradeceu a ligação sem fornecer informações ou resolver qualquer dúvida do eleitor. O atendimento foi neutro e objetivo.",00:00:00,False,True,1,0.0,"Eleitor: Iniciar
+2026100500580,1,05/10/2026,10:38:57,Silvania,Documentação / Identificação,Não Resolvido,Neutro/Objetivo,O operador encerrou a chamada sem fornecer informações ou resolver qualquer dúvida do eleitor. O atendimento foi neutro e objetivo.,00:00:00,False,True,1,0.0,"Eleitor: Iniciar
 Eleitor: Serviços ao eleitor
 Eleitor: 076.***.***-**
 Eleitor: Falar com um atendente
@@ -41353,7 +41309,7 @@ Eleitor: Entendo
 Operador (André): Disponha sempre.
 Eleitor: O juiz eleitoral deveria ter uma lei que desse direito ao colaborador que trabalha nas eleições com tanta responsabilidade decidir os dias que quer tirar suas folgas, eu acho muito injusto a maneira que as empresas impõem ao trabalhador tirar as folgas da maneira dela.
 Eleitor: 5"
-2026102000917,2,20/10/2026,19:27:51,André,Multa / Quitação Eleitoral / Certidões,Não Resolvido,Neutro/Objetivo,"O eleitor solicitou informações sobre pagamento de multa eleitoral, mas o operador encerrou o atendimento sem fornecer detalhes. O atendimento foi neutro e objetivo, sem demonstrar insatisfação.",00:00:00,False,True,1,0.0,"Eleitor: Pode sim
+2026102000917,2,20/10/2026,19:27:51,André,Multa / Quitação Eleitoral / Certidões,Resolvido,Neutro/Objetivo,"O eleitor continuou contato antereior que haviua sido encerrado por falta de interação. solicitou informações sobre pagamento de multa eleitoral, mas o operador encerrou o atendimento sem fornecer detalhes por novamente não manter interação. O atendimento foi neutro e objetivo, sem demonstrar insatisfação.",00:00:00,False,True,1,0.0,"Eleitor: Pode sim
 Eleitor: Preciso muito pagar
 Eleitor: 1
 Eleitor: 090.***.***-**
