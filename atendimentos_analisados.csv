@@ -39854,3 +39854,1522 @@ Eleitor: Ss
 Eleitor: Irei amanhã mesmo la
 Eleitor: Obrigada!
 Eleitor: 5"
+2026102000106,2,20/10/2026,08:10:09,Alana,Voto em Trânsito,Não Resolvido,Neutro/Objetivo,"O atendimento foi encerrado sem esclarecer a dúvida do eleitor sobre votar em trânsito, que ainda estava em aberto. O atendente não demonstrou respeito ou cortesia, apenas encerrou a conversa sem fornecer uma solução.",00:15:58,False,True,2,0.0,"Eleitor: Iniciar
+Eleitor: Serviços ao eleitor
+Eleitor: 026.***.***-**
+Eleitor: Falar com um atendente
+Eleitor: Bom dia
+Eleitor: Tenho como votar em trânsito, ?
+Eleitor: S******Piauí
+Eleitor: Não vou chegar a tempo para votar
+Operador (Alana): <b>Alana:</b> Erisandro, você ainda está aí?
+Operador (Alana): <b>Alana:</b> Como não tivemos retorno, entendo que sua dúvida foi solucionada. Vou encerrar a conversa por agora, mas sinta-se à vontade para retornar quando quiser."
+2026102000118,2,20/10/2026,08:07:26,Alana,Documentação / Identificação,Resolvido,Respeitoso e Cortês,"O operador Alana atendeu a dúvida do eleitor sobre atualização de dados no aplicativo e-Título, corrigiu a data de nascimento e confirmou o sucesso da atualização, encerrando o atendimento de forma respeitosa.",00:47:50,False,True,8,50.0,"Eleitor: Bom dia!
+Eleitor: 1
+Eleitor: 110.***.***-**
+Eleitor: 7
+Eleitor: 8
+Eleitor: Não consigo atualiza é título!
+Operador (Alana): Não entendi se você está falando do aplicativo e-Tìtulo ou do seu título
+Eleitor: Aplicativo é-titulo
+Operador (Alana): Ok. O que acontece quando você tenta atualizar?
+Eleitor: Dados inválido
+Operador (Alana): Pode ser por conta de divergência em nosso cadastro. Informa, por favor, os dados que você está digitando? Me diz como está digitando o seu nome, os nomes de sua mãe, de seu pai e sua data de nascimento?
+Eleitor: Nome JOSÉ ANTÔNIO DA SILVA MÃE MARIA DA CONCEIÇÃO SILVA PAI ANTÔNIO SATURNINO DA SILVA DATA NASCIMENTO 08/09/1953
+Operador (Alana): vou conferir, só um momento
+Operador (Alana): Coloca a data de nascimento como 09/09/1953
+Operador (Alana): E me diz se deu certo?
+Eleitor: Ok
+Eleitor: 09/09/1953
+Operador (Alana): Deu certo?
+Operador (Alana): Por falta de comunicação, estou encerrando este contato. Agradecemos sua compreensão e estaremos à disposição quando precisar.
+Eleitor: 5"
+2026102000120,2,20/10/2026,08:10:34,Alana,Outros Assuntos,Não Resolvido,Neutro/Objetivo,"O atendimento foi encerrado devido à falta de comunicação, sem esclarecer a dúvida do eleitor. O atendimento foi neutro e objetivo.",00:15:30,False,True,2,0.0,"Eleitor: Iniciar
+Eleitor: Serviços ao eleitor
+Eleitor: 718.***.***-**
+Eleitor: Outros serviços
+Eleitor: Outros serviços
+Eleitor: Voltar ao menu anterior
+Eleitor: Falar com um atendente
+Operador (Alana): <b>Alana:</b> Guilherme, você ainda está aí?
+Operador (Alana): <b>Alana:</b> Por falta de comunicação, estou encerrando este contato. Agradecemos sua compreensão e estaremos à disposição quando precisar."
+2026102000121,2,20/10/2026,08:13:19,Alana,Documentação / Identificação,Resolvido,Respeitoso e Cortês,"O eleitor solicitou ajuda para imprimir seu título de eleitor. O operador forneceu um link para imprimir e solicitou os dados necessários. Após fornecer os dados, o operador enviou o arquivo para impressão. O atendimento foi respeitoso e o eleitor agradeceu.",00:30:31,False,True,11,38.0,"Eleitor: Bom dia
+Eleitor: 1
+Eleitor: 103.***.***-**
+Eleitor: 8
+Operador (Alana): REginaldo, você ainda está aí?
+Eleitor: Sim
+Operador (Alana): Pode falar
+Eleitor: Sim
+Eleitor: T*********Patrícia
+Eleitor: 103.***.***-**
+Operador (Alana): O que você gostaria de saber sobre o título?
+Eleitor: Impressão
+Eleitor: ☝🏻
+Operador (Alana): https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/ Nesse link você consegue imprimir
+Operador (Alana): [IMAGEM ANEXADA]
+Eleitor: Não abre
+Eleitor: Manda assim
+Operador (Alana): Me envia os dados ou a foto do documento, por favor?
+Operador (Alana): que tento por aqui
+Eleitor: 103.***.***-**
+Operador (Alana): preciso do nome completo, nome dos pais e da data de nascimento
+Eleitor: P**************Lacerda
+Eleitor: M******************Lacerda
+Eleitor: Agamenon de caldas Lacerda
+Eleitor: 15/03/1985
+Operador (Alana): Arquivo | (https://tre-pb.sz.chat/config/storage/view/6ad752a66b4a5b6abe0f6643)
+Eleitor: Ok obrigado
+Operador (Alana): Algo mais?
+Eleitor: Não
+Operador (Alana): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar. Tenha um ótimo dia!
+Eleitor: 5"
+2026102000133,2,20/10/2026,08:10:43,Alana,Outros Assuntos,Não Resolvido,Neutro/Objetivo,"A consulta foi encerrada devido à falta de comunicação, sem esclarecer a dúvida do eleitor sobre a seção eleitoral. O atendimento foi neutro e objetivo.",00:27:54,False,True,2,0.0,"Eleitor: Bom dia
+Eleitor: 1
+Eleitor: 109.***.***-**
+Eleitor: 1
+Eleitor: 0
+Eleitor: 8
+Operador (Alana): ANa CLáudia, você ainda está aí?
+Operador (Alana): Por falta de comunicação, estou encerrando este contato. Agradecemos sua compreensão e estaremos à disposição quando precisar."
+2026102000134,2,20/10/2026,08:06:20,Alana,Voto em Trânsito,Resolvido,Respeitoso e Cortês,O eleitor solicitou orientações sobre como justificar sua ausência devido a voto em trânsito. O operador explicou que pode ser feito pelo aplicativo e-título ou presencialmente em qualquer local de votação. O atendimento foi respeitoso e eficaz.,00:08:52,False,True,7,51.0,"Eleitor: Bom dia.
+Eleitor: 1
+Eleitor: 102.***.***-**
+Eleitor: 3
+Eleitor: 0
+Eleitor: 8
+Eleitor: O***Alana. Tudo bem?
+Operador (Alana): Tudo bem!
+Eleitor: Eu voto em S***********Garrotes PB mas como estava em J****Pessoa fiz meu voto em trânsito para lá. Eu consegui votar no primeiro turno. Mas por questões pessoais estou em S***********Garrotes e não poderei ir à J****Pessoa para votar no segundo turno. Queria orientações de como justificar minha ausência.
+Operador (Alana): Você usa o aplicativo e-título?
+Eleitor: Sim
+Operador (Alana): Então basta entrar no seu aplicativo no domingo, após às 7h e lá tem a opção de Justificar o voto
+Operador (Alana): Ou você pode ir presencialmente em qualquer local de votação
+Operador (Alana): Você irá justificar normalmente, pois estará fora do seu local de votação, que temporariamente seria JP
+Eleitor: Entendi. Tudo certo então. Muito obrigado Alana 🫱🏻‍🫲🏼
+Operador (Alana): DIsponha! Algo mais?
+Eleitor: Só isso mesmo.
+Operador (Alana): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar. Tenha um ótimo dia!
+Eleitor: 5"
+2026102000151,2,20/10/2026,08:15:32,Alana,Local de Votação / Seção Eleitoral,Resolvido,Respeitoso e Cortês,"O operador confirmou que as seções não haviam mudado entre os turnos de eleições, esclarecendo a dúvida do eleitor. O atendimento foi respeitoso e cortês, sem problemas ou insatisfações do lado do eleitor.",00:19:40,False,True,9,0.0,"Eleitor: Bom dia
+Eleitor: 1
+Eleitor: 107.***.***-**
+Eleitor: 8
+Eleitor: O***Alana, ontem dialoguei com vcs buscando informações sobre as mudanças de seções na Paraíba e me passaram que seria apenas 3 municípios porém ontem vi algumas matérias que ocorreram mudanças tb na grande J****Pessoa, procede?
+Operador (Alana): Não procede
+Operador (Alana): [IMAGEM ANEXADA]
+Eleitor: https://www.instagram.com/p/DepGwIckSwO/?vrfl=ZXhxNXJ3ZXYxd2Nr
+Operador (Alana): Obrigada por enviar o link Irei confirmar se houve mudança em JP
+Eleitor: Gostaria de confirmar devido a divulgação que fazemos na rádio local também
+Eleitor: As pessoas ligam pra saber
+Operador (Alana): Tamyres, os locais da 77 e da 64 são os mesmos em que os eleitores foram no 1º turno. Não houve mudança entre o primeiro e o segundo turno em JOão Pessoa.
+Operador (Alana): A notícia está desatualizada
+Eleitor: Pronto, agradeço a confirmação.
+Operador (Alana): Te respondi?
+Eleitor: Sim
+Operador (Alana): Mais alguma questão?
+Eleitor: Por enquanto não, qualquer informação nova venho aqui
+Operador (Alana): Sim, sim! DIsponha sempre!
+Operador (Alana): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar. Tenha um ótimo dia!
+Eleitor: https://globoplay.globo.com/v/15102134/
+Eleitor: Bom dia"
+2026102000188,2,20/10/2026,08:29:50,Márcia,Treinamento / Convocação de Mesário,Resolvido,Respeitoso e Cortês,"O operador explicou como o eleitor poderia acessar a declaração de folga do trabalho, fornecendo um link no sistema. O atendimento foi respeitoso e cortês, sem problemas de qualidade.",00:08:33,False,True,10,37.0,"Eleitor: Bom dia
+Eleitor: 1
+Eleitor: 038.***.***-**
+Eleitor: 8
+Operador (Márcia): bom dia, como posso ajudar?
+Eleitor: Eu trabalhei de mesário no primeiro turno
+Eleitor: E não nos enviaram a declaração de folga do trabalho
+Eleitor: Como faço pra ter acesso a ela
+Operador (Márcia): A Declaração está disponível no sistema
+Operador (Márcia): vou mandar o link
+Operador (Márcia): https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/
+Operador (Márcia): Se você quiser , envio por aqui
+Eleitor: No segundo turno teremos as mesmas folgas ?
+Operador (Márcia): Sim, a mesma quantidade de folgas
+Eleitor: Pode ser
+Operador (Márcia): Arquivo | (https://tre-pb.sz.chat/config/storage/view/6ad7521e68bb60a5c4045f31)
+Operador (Márcia): Quando precisar é só usar o link para ter acesso a declaração, no segundo turno, deverá está disponível a partir do dia 28/10
+Operador (Márcia): Algo mais em que possa ajudar?
+Eleitor: Obrigado
+Eleitor: Bom dia
+Operador (Márcia): Disponha sempre. Tenha um ótimo dia.
+Eleitor: 5"
+2026102000191,2,20/10/2026,08:36:11,Márcia,Justificativa Eleitoral,Resolvido,Respeitoso e Cortês,"O operador esclareceu que a justificativa para o segundo turno não seria válida devido à data incorreta e informou que a justificativa para as eleições de 2022 ainda estava registrada. O atendimento foi respeitoso e eficaz, resolvendo a dúvida do eleitor sobre a situação da justificativa para o segundo turno.",00:07:48,False,True,9,612.0,"Eleitor: Oi
+Eleitor: 1
+Eleitor: 062.***.***-**
+Eleitor: 8
+Operador (Márcia): bom dia, como posso ajudar?
+Eleitor: Bom dia, Marcia! Tudo bem?
+Eleitor: Eu estou com uma dúvida: No dia 05/10, segunda-feira após as eleições, eu estava tentando pegar um comprovante de votação no aplicativo, e sem querer mexi na parte de justificativa de ausência
+Eleitor: Com isso, consta no aplicativo como se eu estivesse justificando a ausência para as eleições do próximo dia 25/10. Ocorre que a data da justificativa consta como dia 30/10
+Eleitor: Há algum problema em relação a isso?
+Operador (Márcia): Se o Senhor votou no dia da eleição, nã tem problema, o sistema não aceitará a justificativa.
+Eleitor: Arquivo | (https://tre-pb.sz.chat/config/storage/view/6ad752f89510a181df032a11)
+Operador (Márcia): vou verificar no sistema a situação no seu cadastro eleitoral
+Eleitor: A justificativa subentende-se que seja para o 2° turno.
+Operador (Márcia): O senhor justificou?
+Eleitor: Ok. Agradecido
+Operador (Márcia): não, a justificativa para o segundo turno, poderá ser feita a partir da data do segundo turno
+Eleitor: O 1° turno votei normalmente.
+Eleitor: O problema é apenas essa justificativa.
+Operador (Márcia): Não consta justificativa para as eleições 2026, há uma registrada para as Eleições 2022, 2º turno
+Operador (Márcia): Como o Senhor votou, a justificativa não prevalecerá
+Eleitor: Entendi. Em 2022 eu realmente justifiquei o 2° turno
+Eleitor: Ótimo. Agora eu entendi
+Operador (Márcia): Agora, caso não possa votar no 2 turno, precisará justificar
+Eleitor: Muito obrigado pela atenção
+Operador (Márcia): Disponha sempre. Tenha um ótimo dia.
+Eleitor: 5"
+2026102000210,2,20/10/2026,08:53:10,André,Treinamento / Convocação de Mesário,Resolvido,Respeitoso e Cortês,O eleitor solicitou informações sobre o dia para pegar a bolsa de mesário. O operador informou que as bolsas já estão disponíveis e forneceu os números de telefone para mais informações. O atendimento foi respeitoso e cortês.,00:12:43,False,True,2,81.0,"Eleitor: Bom dia
+Eleitor: Qual o dia
+Eleitor: 1
+Eleitor: 646.***.***-**
+Eleitor: 6
+Eleitor: 0
+Eleitor: 8
+Eleitor: Qual o dia para pegar a bolsa, sou presidente de mesa
+Operador (André): Sonia, segundo informação do chefe de cartório da 57ª Zona, as bolsas já estão disponíveis. Qualquer dúvida, ligue 3228-3807 / 3512-1557.
+Eleitor: ok
+Operador (André): Disponha sempre. Tenha um ótimo dia.
+Eleitor: 5"
+2026102000216,2,20/10/2026,09:04:14,Silvania,Local de Votação / Seção Eleitoral,Não Resolvido,Neutro/Objetivo,"O operador informou o local de votação do eleitor e do seu irmão, explicando que não é possível mudar de seção devido ao cadastro fechado. Ele orientou sobre a prioridade para pessoas com mais de 60 anos e explicou que a mãe do eleitor não teria prioridade por estar acompanhando. O atendimento foi objetivo, sem respostas adicionais ou sugestões de solução.",00:28:20,False,True,20,158.0,"Eleitor: Olá
+Eleitor: 1
+Eleitor: 690.***.***-**
+Eleitor: 1
+Eleitor: 0
+Eleitor: 8
+Eleitor: Bom dia
+Eleitor: Gostaria de saber se poderei votar na seção da minha mãe que tem 88 anos?
+Operador (Silvania): Só um instante
+Operador (Silvania): 4.3 - LOCAL DE VOTAÇÃO Zona 076 Local de votação 1457 - ESCOLA MUNICIPAL ANITA TRIGUEIRO DO VALLE End. local de votação RUA EMLIO ARAUJO CHAVES, N 118 Bairro ALTIPLANO CABO BRANCO Seção 0206
+Operador (Silvania): Este é o seu local de votação
+Eleitor: Sim eu sei, mas o local da minha mãe é em Tambauzinho.
+Operador (Silvania): Se a sua mãe está em outro local ou seção, não podemos mudar agora pq o cadastro está fechado.
+Operador (Silvania): Só reabre em Novembro dia 03
+Eleitor: Então terei que votar no meu local e ela no dela?
+Operador (Silvania): Examente.
+Operador (Silvania): # Exatamente
+Operador (Silvania): não tem como mudar agora..
+Eleitor: Certo. Então terei prioridade porq estarei com ela ne?
+Operador (Silvania): Quando o cadastro reabrir em novembro, vc pode fazer a mudança
+Eleitor: Daí posso solicitar para a minha seção?
+Eleitor: E como farei?
+Operador (Silvania): https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/
+Operador (Silvania): Você pode pedir pelo link
+Eleitor: Ótimo. Obrigada
+Operador (Silvania): Ou diretamente no cartório..
+Operador (Silvania): Não sei se vc consegue ficar na mesma seção, o que muda é o local de votação
+Operador (Silvania): Quanto a prioridade :
+Operador (Silvania): PREFERÊNCIA PARA VOTAR Têm preferência para votar, obedecida a ordem de chegada na fila da seção eleitoral: • candidatas e candidatos; • J***************Eleitorais e seus auxiliares de serviço; • servidoras e servidores da J*******Eleitoral; • promotoras e promotores eleitorais e seus auxiliares de serviço; • militares, policiais e demais agentes de segurança pública, inclusive bombeiros e agentes de trânsito em serviço no dia da eleição; • pessoas com idade igual ou superior a 60 anos, pessoas com deficiência, com transtorno do espectro autista, com mobilidade reduzida, com criança de colo, pessoas enfermas, obesas, gestantes, lactantes e seus respectivos acompanhantes; • pessoas doadoras de sangue. As pessoas com mais de 80 anos têm prioridade sobre as demais, independentemente do momento da chegada à seção.
+Operador (Silvania): O idoso é que tem preferência no seu local de votação..
+Eleitor: Eu sei, mas vou explicar na hora que estou com ela e não teria como deixá-la, pois só somos nós duas.
+Operador (Silvania): A prioridade é da sua mãe no local de votação dela. Infelizmente, ela acompanhando não tem prioridade.
+Operador (Silvania): Eu entendi..Converse lá com o pessoal, se não fizerem questão...que dê tudo certo.
+Operador (Silvania): Posso ajudar em algo mais?
+Eleitor: Não, muito obrigada
+Operador (Silvania): Por nada! Que dê tudo certo. B****Eleições.
+Eleitor: 5"
+2026102000217,2,20/10/2026,09:05:05,André,Multa / Quitação Eleitoral / Certidões,Resolvido,Respeitoso e Cortês,"O operador confirmou as multas de R$ 14,04 e 3,51 por turno, explicou o valor total e gerou o PIX para regularização do título do eleitor. O atendimento foi respeitoso e eficaz.",00:13:13,False,True,10,0.0,"Eleitor: Olá
+Eleitor: Bom dia!
+Eleitor: 1
+Eleitor: 703.***.***-**
+Eleitor: 4
+Eleitor: 3
+Eleitor: 8
+Eleitor: 0
+Eleitor: 8
+Eleitor: Olá meu título está cancelado desde 2025, não votei nos últimos pleitos, queria saber sobre as multas
+Operador (André): Cada turno de votação gera uma multa de R$ 3,51.
+Eleitor: Você pode confirmar pra mim o valor exato dos turnos?
+Eleitor: O valor x
+Operador (André): O total devido?
+Eleitor: Sim
+Eleitor: Pra eu regularizar meu titulo
+Eleitor: Quero saber o valor exato das multas
+Operador (André): R$ 14,04
+Operador (André): Mas ainda vai ter o 2º turno
+Operador (André): E você pode regularizar a partir do dia 3 de novembro
+Operador (André): Algo mais em que possa ajudar?
+Eleitor: Se cada turno é 3,51 ainda tenho um. No caso 14,04 mais 3,51 é isso?
+Operador (André): Isso
+Eleitor: Ok
+Operador (André): Se quiser, já posso gerar o pix dos anteriores.
+Eleitor: Gera
+Operador (André): 00****-**0212****-**14br.gov.bcb.pix2568apipix.tesouro.gov.br/v2/3SRZaezpkghv5BPKv828qVUq2CAoTKTc2xxlOYxw2vp52****-**53039865802BR5916TESOURO NACIONAL6008BRASILIA62070503***63042103
+Operador (André): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar. Tenha um ótimo dia!
+Eleitor: 5"
+2026102000235,2,20/10/2026,09:11:56,André,Local de Votação / Seção Eleitoral,Resolvido,Respeitoso e Cortês,"O operador forneceu os números de contato do cartório eleitoral e encerrou o atendimento, satisfazendo o eleitor.",00:02:37,False,True,3,23.0,"Eleitor: Oi
+Eleitor: 4
+Eleitor: 1
+Eleitor: 1
+Eleitor: 085.***.***-**
+Eleitor: 8
+Eleitor: Gostaria do contato do meu cartório
+Eleitor: Eleitoral
+Operador (André): Bom dia
+Operador (André): 3228-3807 / 3512-1557
+Operador (André): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar. Tenha um ótimo dia!
+Eleitor: 5"
+2026102000244,2,20/10/2026,09:23:54,Silvania,Situação Eleitoral / Título Cancelado ou Regular,Resolvido,Respeitoso e Cortês,"A eleitora conseguiu acessar o e-Título após corrigir o nome do pai. O operador informou que o cadastro estava fechado e só poderia ser reaberto em novembro, orientando sobre como atualizar os dados pessoais no site do TSE. O atendimento foi respeitoso e eficaz.",00:13:24,False,True,14,0.0,"Eleitor: Olá, bom dia! Sou eleitora de C*******Grande e estou tentando acessar o e-Título, mas aparece uma mensagem informando que não foi possível validar meus dados biográficos. Já conferi todas as informações e o erro continua. Gostaria de saber como posso verificar meu cadastro eleitoral e corrigir essa situação. Poderiam me ajudar, por favor?
+Eleitor: 4
+Eleitor: 1
+Eleitor: 1
+Eleitor: 029.***.***-**
+Eleitor: 7
+Eleitor: 8
+Eleitor: Sou eleitora de lagoa seca Pb e estou tentando acessar o e-Título, mas aparece uma mensagem informando que não foi possível validar meus dados biográficos. Já conferi todas as informações e o erro continua. Gostaria de saber como posso verificar meu cadastro eleitoral e corrigir essa situação. Poderiam me ajudar, por favor?
+Operador (Silvania): Posso sim
+Operador (Silvania): um instante
+Eleitor: Ok
+Operador (Silvania): Gracileia, informa o nome da tua mãe
+Eleitor: MARIA DAS GRAÇAS FLOR DA SILVA
+Operador (Silvania): do teu pai
+Eleitor: SEVERINO FRANCISCO DA SILVA
+Operador (Silvania): SEVERINO FEANCISCO DA SILVA
+Operador (Silvania): O nome do teu pai consta FEANCISCO
+Eleitor: O nome dele colocaram errado por isso não estava conseguindo entrar no aplicativo do e-título Você poderia concertar o nome dele ?
+Operador (Silvania): tenta entrar com o nome que te informei, ok?
+Eleitor: Pronto ta certo
+Operador (Silvania): O cadastro está fechado . Só reabre no dia 03 de Novembro
+Operador (Silvania): Vc pode corrigir pelo site...
+Eleitor: Ok
+Operador (Silvania): https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/
+Operador (Silvania): Na parte ELEITORA/ELEITOR você clica atualizar dados pessoais
+Operador (Silvania): Só em novembro , ok?
+Operador (Silvania): Posso ajudar em algo mais?
+Eleitor: Só isso mesmo
+Eleitor: Muito obrigada !
+Operador (Silvania): Por nada!!
+Eleitor: 5"
+2026102000253,2,20/10/2026,09:39:26,Márcia,Local de Votação / Seção Eleitoral,Não Resolvido,Neutro/Objetivo,"O eleitor estava procurando informações sobre o número de dias de folga para pessoas que trabalharam no segundo turno das eleições. O operador forneceu informações gerais sobre o tema, mas não esclareceu sobre o número específico solicitado pelo eleitor. O atendimento foi neutro e objetivo.",00:27:09,False,True,5,685.0,"Eleitor: Bom-dia gostaria de saber quanto dias de folga tem para as pessoas que trabalharam e ainda vão trabalhar no segundo turno das eleições
+Eleitor: 4
+Eleitor: Erro na digitação.
+Eleitor: 1
+Eleitor: CPF 951.***.***-**
+Eleitor: 8
+Operador (Márcia): Bom dia, como posso ajudar?
+Eleitor: Márcia bom dia .Gostaria de saber quantos dias de folga tem as pessoas que trabalharam e ainda vão trabalhar no segundo turno das eleições?
+Operador (Márcia): Em regra, pelo dia de trabalho no dia das eleições 2 dias de folga
+Operador (Márcia): se tiver participado do treinamento, 2 dias folga também
+Operador (Márcia): Algo mais em que possa ajudar?
+Eleitor: O***Márcia tudo bem obrigada
+Operador (Márcia): Disponha sempre. Tenha um ótimo dia.
+Eleitor: 5"
+2026102000267,2,20/10/2026,09:52:21,André,Multa / Quitação Eleitoral / Certidões,Resolvido,Respeitoso e Cortês,"O operador confirmou e explicou a situação da multa de votação não realizada, gerou um PIX para pagamento e confirmou que a multa foi quitada. O atendimento foi respeitoso e cortês.",00:04:01,False,True,8,15.0,"Eleitor: Bom dia
+Eleitor: 1
+Eleitor: 695.***.***-**
+Eleitor: 1
+Eleitor: 0
+Eleitor: 8
+Eleitor: Bom dia , essa multa que está aparecendo para minha mãe é referente ela não ter ido votar no primeiro turno, você pode verificar pra mim?
+Operador (André): Sim, é isso mesmo
+Eleitor: Qual é o valor?
+Operador (André): R$ 3,51
+Eleitor: Tem como pagar por aqui?
+Operador (André): Essa multa não impede de votar, mas ela não está quite.
+Operador (André): Posso gerar o pix
+Operador (André): 00****-**0212****-**14br.gov.bcb.pix2568apipix.tesouro.gov.br/v2/hUIILSIobVk1slqFJBkNRzjDdQbuxRSCYZGKslL3RXe52****-**53039865802BR5916TESOURO NACIONAL6008BRASILIA62070503***630416C0
+Eleitor: Pronto, gera esse pix para eu pagar agora
+Eleitor: [IMAGEM ANEXADA]
+Operador (André): Ok, está quite.
+Operador (André): Pode consultar novamente quando finalizar o atendimento.
+Operador (André): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar. Tenha um ótimo dia!
+Eleitor: Show, grato pelo atendimento
+Eleitor: 5"
+2026102000274,2,20/10/2026,09:58:03,André,Situação Eleitoral / Título Cancelado ou Regular,Resolvido,Respeitoso e Cortês,O operador informou que a dispensa para os dois turnos foi realizada e encerrou o atendimento de forma respeitosa e cortês.,00:20:19,True,True,3,0.0,"Eleitor: [MENSAGEM DE ÁUDIO]
+Eleitor: 1
+Eleitor: 082.996.734.61
+Eleitor: 8
+Eleitor: [MENSAGEM DE ÁUDIO]
+Operador (André): Já foi dispensada para os 2 turnos.
+Eleitor: [MENSAGEM DE ÁUDIO]
+Operador (André): Isso.
+Operador (André): Disponha sempre. Tenha um ótimo dia.
+Eleitor: 5"
+2026102000276,2,20/10/2026,09:56:42,André,Treinamento / Convocação de Mesário,Resolvido,Respeitoso e Cortês,"O atendimento respondeu adequadamente às dúvidas do eleitor sobre a convocação de mesário e encaminhou o caso para o cartório, garantindo que o processo fosse concluído. O atendimento foi respeitoso e cortês durante todo o atendimento.",00:19:16,False,True,8,0.0,"Eleitor: Bom dia
+Eleitor: 1
+Eleitor: CPF 917.***.***-**
+Eleitor: 8
+Eleitor: Protocolo 20****-**00858
+Eleitor: Fui atendido ontem a tarde
+Eleitor: Esse foi o assunto
+Operador (André): Giovanni, infelizmente não temos acesso ao atendimento anterior. Se possível, copia aas mensagens e cola aqui ou faz o print
+Eleitor: Vcs me informaram que iria transferir o assunto pra o cartório
+Eleitor: Fui convocado pra trabalhar como mesário e não recebi a declaração que comprovou que trabalhei no primeiro turno, apareceu um nome Lucas e acredito que foi ele que recebeu o Pix de alimentação pois eu não recebi ou seja, trabalhei com um nome de Lucas
+Eleitor: Não recebi nenhuma carta de substituição de mesário e só fui saber qdo estava no término da votação
+Operador (André): Mas o seu atendimento anterior, depois que foi transferido, foi encerrado? Lembro desse caso ontm.
+Operador (André): POrque a Zona pode demorar o atendimento, pois estão na preparação das eleições
+Eleitor: Sim vcs falaram que iria transferir pra o cartório
+Eleitor: 64
+Operador (André): Exato, dá pra fazer um print da tela após a transferência, por gentileza?
+Eleitor: [IMAGEM ANEXADA]
+Operador (André): Após a mensagem que enviei, apenas para eu verificar se houve encerramento indevido
+Eleitor: [IMAGEM ANEXADA]
+Operador (André): Giovanni, o pessoal da 64ª respondeu hoje mais cedo, certo? Por favor, entre em contato com o telefone ou e-mail informado na mensagem.
+Operador (André): Se houver qualquer dificuldade, favor retornar o contato.
+Operador (André): Disponha sempre. Tenha um ótimo dia."
+2026102000291,2,20/10/2026,10:10:36,Valéria,Voto em Trânsito,Não Resolvido,Neutro/Objetivo,"O eleitor solicitou informações sobre transporte gratuito para votar em Aroeiras, mas não foi possível encontrar alternativas. O operador sugeriu que ele se informasse nas empresas de ônibus e orientou a preencher o formulário de transporte especial. O atendimento foi objetivo e respeitoso, mas não resolveu a questão principal do eleitor.",00:41:06,False,True,7,0.0,"Eleitor: Oi bom dia
+Eleitor: 1
+Eleitor: 053.***.***-**
+Eleitor: 8
+Eleitor: &quot;O***Valéria tudo bem, moro em J****Pessoa, mas meu título de eleitor é de Aroe iras, na Paraíba. Gostaria de saber se terei direito ao transporte intermunicip al gratuito para votar no segundo turno, no domingo, dia 25 de outubro de 2026. Preciso fazer o traj eto de J****Pessoa até C*******Grande, e depois de C*******Grande até Aroe iras. Também preciso retornar a J****Pessoa na segunda-feira, dia 26 de outubro, chegando até o meio-dia. Gostaria de confirmar se as passagens serão gratuitas em todos esses trechos, tanto na ida quanto na volta. Também gostaria de saber como faço para conseguir as passagens, quais documentos preciso apresentar e se é necessário fazer algum cadastro ou reserva antecipada. Agrade ço pela atenção e aguardo orientações
+Operador (Valéria): a cidade de aroeiras não foi abrangida pelo projeto
+Eleitor: Entendi, Valéria. Agradeço pela informação. Gostaria de saber se existe alguma outra alternativa de transporte gratuito para eleitores que precisam se deslocar de J****Pessoa até Aroeiras para votar no segundo turno, no dia 25 de outubro. Mesmo que Aroeiras não esteja incluída nesse projeto, existe algum outro programa ou orientação do TRE-PB para esse caso? Agradeço desde já.&quot; Mande essa mensagem e me diz o que ela responder. Vamos tentar descobrir se existe outra possibilidade para você fazer essa viagem.
+Operador (Valéria): não conheço
+Operador (Valéria): pode se informar pelas empresas de õnibus
+Eleitor: E de João pessoa para até campina grande?
+Eleitor: Ao menos
+Eleitor: Só que minha zona é em Aroeiras
+Operador (Valéria): vou colocar um link aqui pra vc tentar até C*******Grande
+Eleitor: Tá
+Operador (Valéria): https://apps.tre-pb.jus.br/soupcd/transporte-especial
+Operador (Valéria): Algo mais em que possa ajudar?
+Eleitor: A minha esposa tbm precisa
+Eleitor: Como faço?
+Eleitor: A zona dela tbm é em Aroeiras
+Eleitor: Esse mesmo link pode servir pra preencher com os dados dela também?
+Eleitor: [IMAGEM ANEXADA]
+Operador (Valéria): preenche o link para ela também"
+2026102000319,2,20/10/2026,10:29:58,Silvania,Local de Votação / Seção Eleitoral,Resolvido,Respeitoso e Cortês,"O operador esclareceu a função do eleitor, orientou sobre a cor da roupa e sugeriu entrar em contato com o cartório para receber o crachá. O atendimento foi respeitoso e eficaz.",00:26:40,False,True,8,14.0,"Eleitor: Bom dia
+Eleitor: 1
+Eleitor: 150.***.***-**
+Eleitor: 8
+Eleitor: O***Silvania, então eu recebi a mensagem de convocação mas estou com algumas dúvidas! A primeira é se fui convocada como mesaria ou secretária! E a segundo seria em relação a cor da roupa que posso usar. E a última dúvidas seria sobre o crachá de identificação aonde eu pego ele
+Operador (Silvania): Certo. Só um instante..
+Operador (Silvania): Arquivo | (https://tre-pb.sz.chat/config/storage/view/6ad76ce006f64072e2047cd0)
+Operador (Silvania): Sua função é Secretário!
+Eleitor: Certo
+Operador (Silvania): Geralmente a recomendação é ir com roupas de cores neutras( preto, bege, branco, cinza, etc.) Evitar roupas das cores de partidos, para evitar problemas para vocês. Às vezes tem eleitores que só quer um motivo para tumultuar, ok? Para evitar estresse..
+Eleitor: Ok
+Operador (Silvania): Quanto ao crachá, geralmente vai na bolsa do presidente da mesa. Por via das dúvidas, eu sugiro entrar em contato com o cartório para eles mandarem.
+Operador (Silvania): Mas não se preocupe, com o crachá a sua carta de convocação é o seu passaporte. 😉
+Eleitor: Tá certo, muito obrigada
+Operador (Silvania): Posso ajudar?
+Operador (Silvania): Por nada!
+Eleitor: Não tenho o contato deles
+Eleitor: Pode
+Eleitor: Olá
+Eleitor: 5"
+2026102000371,2,20/10/2026,10:47:23,André,Justificativa Eleitoral,Resolvido,Respeitoso e Cortês,O eleitor solicitou esclarecer a necessidade de justificar a ausência de voto por causa de uma cirurgia. O operador explicou que o voto é facultativo a partir dos 70 anos e que a ausência não impede a regularidade do registro eleitoral. O atendimento foi respeitoso e cortês.,00:32:29,False,True,3,97.0,"Eleitor: Bom dia
+Eleitor: 1
+Eleitor: 131.***.***-**
+Eleitor: 3
+Eleitor: 0
+Eleitor: 8
+Eleitor: Eu tenho 75 anos e não votei por conta de uma cirurgia para colocar uma prótese no quadril. Preciso justificar a minha ausência?
+Operador (André): Bom dia. O voto é facultativo a partir dos 70 anos e, portanto, não precisa justificar a ausência, como disse.
+Eleitor: Tenho uma empresa e sou credenciado da CEF onde faço perícia. Trabalho também como perito para o TRT. Também vou precisar renovar o meu passaporte. Existe algum impedimento legal no meu trabalho devido ao não comparecimento para votar?
+Operador (André): Não há, pois o exercício do voto é facultativo. Sua situação está regular e quite.
+Operador (André): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar. Tenha um ótimo dia!
+Eleitor: 5"
+2026102000381,2,20/10/2026,10:43:41,André,Situação Eleitoral / Título Cancelado ou Regular,Resolvido,Respeitoso e Cortês,O eleitor teve sua dúvida sobre o motivo do suspenso do seu título resolvida pelo operador. O atendimento foi respeitoso e cortês.,00:37:12,False,True,3,0.0,"Eleitor: Bom dia
+Eleitor: 1
+Eleitor: 064.***.***-**
+Eleitor: 8
+Eleitor: Eu gostaria de saber porque o meu título está suspenso
+Operador (André): Você respondeu algum processo?
+Eleitor: Respondo sim !
+Operador (André): Esse é o motivo, Pedro
+Operador (André): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar. Tenha um ótimo dia!"
+2026102000406,2,20/10/2026,11:01:19,André,Situação Eleitoral / Título Cancelado ou Regular,Resolvido,Respeitoso e Cortês,"Eleitor questionou sobre um eleitor que completou 16 anos entre dois turnos de eleições. O operador explicou que não pode votar no turno em que completou 16 anos, apenas na próxima eleição. Atendimento respeitoso e cortês.",00:05:32,False,True,2,109.0,"Eleitor: Aguardando resposta
+Eleitor: 1
+Eleitor: 158.***.***-**
+Eleitor: 8
+Eleitor: Bom dia
+Eleitor: Uma pergunta
+Eleitor: Um eleitor que já tem título eleitoral, mas que não tinha 16 anos no 1 turno mas completou 16 no 2 turno, ele pode votar normalmente?
+Eleitor: Ou só na próxima eleição?
+Operador (André): Não consegue votar, apenas na próxima eleição.
+Eleitor: Obrigado
+Operador (André): Disponha sempre. Tenha um ótimo dia.
+Eleitor: 5"
+2026102000407,2,20/10/2026,10:57:08,Alana,Justificativa Eleitoral,Não Resolvido,Neutro/Objetivo,"O operador informou as opções para obter declarações de dias trabalhados, mas não respondeu diretamente à solicitação específica do eleitor. O atendimento foi objetivo, mas não resolveu a questão do eleitor.",00:23:33,False,True,4,0.0,"Eleitor: Não estou conseguindo ter acesso às declarações
+Eleitor: 1
+Eleitor: 110.***.***-**
+Eleitor: 7
+Eleitor: 8
+Eleitor: Estou precisando das minhas declarações
+Operador (Alana): de mesária?
+Operador (Alana): mesário*
+Operador (Alana): As declarações de dias trabalhados referentes às eleições em que você trabalhou, podem ser conseguidas por essas opções: 1 - No aplicativo Mesários 2 - No e-Título 3 - Na página do A***************Eleitoral do TSE https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/?id=179****-**6378 Caso não consiga emitir a declaração, entre em contato com o seu C********Eleitoral.
+Operador (Alana): Por falta de comunicação, estou encerrando este contato. Agradecemos sua compreensão e estaremos à disposição quando precisar."
+2026102000417,2,20/10/2026,10:57:02,Alana,Multa / Quitação Eleitoral / Certidões,Resolvido,Respeitoso e Cortês,"O operador ajudou o eleitor a resolver uma pendência de multa, corrigindo os dados divergentes no cadastro eleitoral e orientando sobre como solicitar a atualização cadastral online. O atendimento foi respeitoso e eficaz.",00:22:39,False,True,8,0.0,"Eleitor: Oi
+Eleitor: 1
+Eleitor: 047.***.***-**
+Eleitor: 8
+Eleitor: Estou tentando resolver uma pendência para minha esposa. Ela tem uma multa pendente para quitar e nao conseguimos acessar o etitulo pois da dados divergentes no cadastro. Como podemos resolver isso o mais rapido possivel? Tem como ser por aqui?
+Eleitor: Estamos sem condições de irmos ao local pessoalmente
+Operador (Alana): Tem como ser por aqui. Pode ser por conta de divergência em nosso cadastro. Informa, por favor, os dados que você está digitando? Me diz como está digitando o seu nome, os nomes de sua mãe, de seu pai e sua data de nascimento?
+Eleitor: Nome:T****************************Nasc: 19/08/1983 Nome do pai: S************************************Nome da mãe: T*********************Cornélio da Silva
+Operador (Alana): SANDOVAL ALBERTO CAVALVANTI FAGUNDES
+Operador (Alana): coloca o nome do pai exatamente assim
+Operador (Alana): e me diz se deu certo, tá?
+Eleitor: Ok, ja ja te dou retorno
+Eleitor: Deu certo
+Eleitor: Obrigado
+Operador (Alana): Que bom!
+Operador (Alana): Então, infelizmente no nosso cadastro seus dados estão assim. A partir de 03 de novembro você pode solicitar a correção. Não precisa ir presencialmente até uma zona. Pelo site https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/?id=179****-**8239 você consegue solicitar a atualização cadastral. Posso ajudar com mais alguma coisa?
+Eleitor: Tudo certo
+Eleitor: Obrigado
+Eleitor: Somente isso
+Eleitor: Obrigado e tenha um bom dia
+Operador (Alana): Disponha sempre!
+Operador (Alana): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar. Tenha um ótimo dia!"
+2026102000420,2,20/10/2026,11:00:49,André,Documentação / Identificação,Resolvido,Respeitoso e Cortês,"O eleitor solicitou a segunda via do título eleitoral e enviou uma foto do documento. O operador enviou o arquivo solicitado e encerrou o atendimento, demonstrando respeito e cortesia.",00:33:54,False,True,3,14.0,"Eleitor: Bom dia!
+Eleitor: 1
+Eleitor: **** **** 1287
+Eleitor: 8
+Eleitor: Eu quero o espelho do título
+Operador (André): A segunda via? Manda a foto do seu documento de identidade
+Eleitor: [IMAGEM ANEXADA]
+Operador (André): Arquivo | (https://tre-pb.sz.chat/config/storage/view/6ad774ccaeb98713bf0c8a9f)
+Operador (André): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar. Tenha um ótimo dia!
+Eleitor: Bom dia!
+Eleitor: 5"
+2026102000421,2,20/10/2026,11:06:43,André,Situação Eleitoral / Título Cancelado ou Regular,Resolvido,Respeitoso e Cortês,Eleitor confirmou que foi convocada para o segundo turno e recebeu esclarecimento sobre a convocação. Atendimento foi respeitoso e cortês.,00:13:56,False,True,2,0.0,"Eleitor: Bom dia
+Eleitor: 1
+Eleitor: 727.***.***-**
+Eleitor: 8
+Eleitor: Eu fui convidada no primeiro turno, vai ter segundo turno para presidente, automaticamente estou convocada?
+Operador (André): Sim, é para os 2 turnos a convocação.
+Eleitor: Ok. Como não recebi nenhum comunicado, quis conferir. Obrigada
+Operador (André): Disponha sempre. Tenha um ótimo dia."
+2026102000422,2,20/10/2026,11:00:28,Roberto,Justificativa Eleitoral,Não Resolvido,Neutro/Objetivo,"O eleitor solicitou informações sobre como justificar ausência referente a uma convocação para o segundo turno. O operador informou que a justificativa deveria ser feita diretamente com a Zona Eleitoral, mas não forneceu detalhes sobre como fazer isso. O atendimento foi objetivo, mas não esclareceu completamente a dúvida do eleitor.",00:07:17,False,True,7,0.0,"Eleitor: bom dia, queria saber como que faz pra justificar ausência?
+Eleitor: 4
+Eleitor: 1
+Eleitor: 1
+Eleitor: 147.***.***-**
+Eleitor: 8
+Operador (Roberto): Bom dia, em que podemos ajudar?
+Eleitor: [IMAGEM ANEXADA] | bom dia, essa carta de convocação acabou de ser entregue pra mim, no dia de hoje
+Eleitor: no caso, isso valia pra o primeiro turno também??
+Operador (Roberto): Como a senhora a está recebendo hoje, acreditamos destinar-se exclusivamente para os trabalhos no segundo turno. De toda forma, aconselhamos contatar a 28ª Z****Eleitoral (Patos-PB).
+Operador (Roberto): PATOS Av. R***Branco, 455, Brasília CEP: 58.700-370 Telefones: 3512-1628 E-mail: zon28@tre-pb.jus.br
+Eleitor: entendi, mas caso eu nao possa? como faço pra justificar?
+Operador (Roberto): É uma questão para a senhora falar diretamente com a Z****Eleitoral sob a chefia de C*****************Substituto KELLY CRISTINA BARROS DA CRUZ
+Eleitor: como faço pra falar com ela?
+Operador (Roberto): Em um dos dados acima enviados.
+Operador (Roberto): PATOS Av. R***Branco, 455, Brasília CEP: 58.700-370 Telefones: 3512-1628 E-mail: zon28@tre-pb.jus.br
+Eleitor: ok, obrigada
+Operador (Roberto): Se não há mais dúvidas vou encerrar o atendimento, mas se precisar, continuamos à disposição por este mesmo canal de atendimento. O TRE-PB agradece seu contato."
+2026102000428,2,20/10/2026,11:07:25,André,Situação Eleitoral / Título Cancelado ou Regular,Resolvido,Respeitoso e Cortês,O eleitor teve seu título cancelado por ausência a 3 eleições seguidas. O operador informou que pode ser regularizado online a partir de 3 de novembro e forneceu o link para regularização. O atendimento foi respeitoso e eficaz.,00:12:44,False,True,9,0.0,"Eleitor: Oi
+Eleitor: 1
+Eleitor: 614.***.***-**
+Eleitor: 8
+Eleitor: Eu to tentando entrar no e título e diz que eleitor não encontrado
+Eleitor: E pq eu moro fora e estou no Brasil
+Operador (André): Conforme informação acima, o título está cancelado.
+Operador (André): Não consegue acessar o e-título, portanto.
+Eleitor: Eita e agora
+Eleitor: E pq ten que fazer a biometria né
+Eleitor: Posso de pois da eleição
+Eleitor: ?
+Operador (André): Na verdade, está cancelado por ausência a 3 eleições seguidas.
+Operador (André): Pode regularizar a partir de 3 de novembro
+Eleitor: E como faço agora
+Operador (André): O que?
+Eleitor: Eu consigo fazer on-line ?
+Eleitor: Porque eu vou embora do Brasil dia 01
+Operador (André): Sim, consegue regularizar on-line a partir de 3 de novembro
+Eleitor: Qual o site ?
+Operador (André): https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/
+Operador (André): O*****Eleitor - regularizar título cancelado
+Eleitor: Obrigada
+Operador (André): Disponha sempre. Tenha um ótimo dia."
+2026102000435,2,20/10/2026,11:18:24,Roberto,Voto em Trânsito,Não Resolvido,Neutro/Objetivo,"O eleitor questionou sobre votar em trânsito em outra cidade. O operador informou que não é possível sem um cadastro prévio, mas não conseguiu esclarecer a dúvida do eleitor. O atendimento foi neutro e objetivo.",00:03:00,False,True,6,19.0,"Eleitor: Bom dia! Gostaria de saber se há possibilidade de uma pessoa que vota em uma cidade do interior votar no segundo turno aqui em J****Pessoa, que é o local de residência?
+Eleitor: 1
+Eleitor: **** **** 1236
+Eleitor: 8
+Operador (Roberto): Bom dia, em que podemos ajudá-la?
+Eleitor: Bom dia
+Operador (Roberto): Bom dia!
+Eleitor: Bom dia! Gostaria de saber se há possibilidade de uma pessoa que vota em uma cidade do interior votar no segundo turno aqui em J****Pessoa, que é o local de residência?
+Eleitor: ?
+Operador (Roberto): Infelizmente não, ela somente poderá justificar o voto.
+Operador (Roberto): A votação em trânsito seria possível se tivesse havido um cadastramento para essa opção até agosto do ano em curso.
+Operador (Roberto): Algo mais que possamos ajudar?
+Eleitor: Não
+Eleitor: Obrigada
+Operador (Roberto): Se não há mais dúvidas vou encerrar o atendimento, mas se precisar, continuamos à disposição por este mesmo canal de atendimento. O TRE-PB agradece seu contato.
+Eleitor: 5"
+2026102000441,2,20/10/2026,11:15:19,André,Situação Eleitoral / Título Cancelado ou Regular,Resolvido,Respeitoso e Cortês,O operador esclareceu que o eleitor não poderia votar neste ano devido ao cancelamento do título e informou que poderia ser regularizado a partir de 3 de novembro. Também forneceu um link para regularização do título e orientou sobre como acessar o E-título. O atendimento foi respeitoso e objetivo.,00:04:11,False,True,4,0.0,"Eleitor: Bom dia
+Eleitor: 1
+Eleitor: 006.***.***-**
+Eleitor: 8
+Eleitor: O***André, tudo bem? Eu estou com meu titulo cancelado e nao sabia porque nao conseguia acessar o E-titulo
+Eleitor: Quando tento diz que as informações estao divergentes, e estou incluindo tudo corretamente
+Eleitor: Queria entender se consigo regularizar meu titulo pra votar e como fazer isso
+Operador (André): Se está cancelado, você não consegue votar esse ano e não consegue acessar o e-título.
+Operador (André): Consegue regularizar a partir de 3 de novembro.
+Eleitor: E como faço pra regularizar para as próximas eleiçoes?
+Eleitor: E o E-titulo eu nunca consegui acessar por conta das informacoes que diz ser divergente
+Eleitor: E nao tenho acesso pra saber como cadastraram o nome dos meus pais, porque meu nome e cpf digito corretamente
+Operador (André): https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/ O*****Eleitor - regularizar título cancelado
+Eleitor: Ok, obrigadaa
+Operador (André): Disponha sempre. Tenha um ótimo dia."
+2026102000446,2,20/10/2026,11:19:18,André,Justificativa Eleitoral,Resolvido,Respeitoso e Cortês,O eleitor solicitou a retirada de uma declaração eleitoral. O operador informou onde e como retirar a declaração e encerrou o atendimento com uma mensagem de boa tarde. O atendimento foi respeitoso e eficaz.,00:01:54,False,True,2,16.0,"Eleitor: Bom dia
+Eleitor: 1
+Eleitor: 055.***.***-**
+Eleitor: 8
+Eleitor: Bom dia, André trabalhei no 1 turno , aí tô precisando receber a minha declaração
+Eleitor: Tinha um número q eu recebia só q mando mensagem e eles não me responde
+Operador (André): Olá, você pode retirar a D***********************Eleitorais no link fornecido ou no aplicativo e-título. https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/
+Eleitor: Tá certo André muito obrigado
+Operador (André): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar. Tenha um ótimo dia!
+Eleitor: 5"
+2026102000450,2,20/10/2026,11:24:46,André,Treinamento / Convocação de Mesário,Resolvido,Respeitoso e Cortês,"O atendente explicou que o documento padrão do sistema pode ter causado a convocação para o primeiro turno, resolvendo a dúvida do eleitor. O atendimento foi respeitoso e cortês.",00:04:01,False,True,2,0.0,"Eleitor: Iniciar
+Eleitor: Serviços ao eleitor
+Eleitor: 120.***.***-**
+Eleitor: Falar com um atendente
+Eleitor: Bom dia, fui convocada hoje pelo whatsapp para ser mesária no segundo turno, mas na carta e no autoatendimento consta convocação para o primeiro turno, mas não recebi nada relacionado ao primeiro turno
+Eleitor: Não sei se é normal do sistema aparecer isso
+Operador (André): <b>A*****Gomes:</b> Isso, é um documento padrão
+Eleitor: Certo obrigada
+Operador (André): <b>A*****Gomes:</b> Disponha sempre. Tenha um ótimo dia."
+2026102000468,2,20/10/2026,11:34:40,Silvania,Local de Votação / Seção Eleitoral,Resolvido,Respeitoso e Cortês,"O operador informou a seção de votação e o local de votação para o eleitor, respeitando o diálogo e fornecendo as informações solicitadas.",00:01:56,False,True,3,35.0,"Eleitor: 368.***.***-**
+Eleitor: 1
+Eleitor: 368.***.***-**
+Eleitor: 1
+Eleitor: 0
+Eleitor: 1
+Eleitor: 0
+Eleitor: 8
+Eleitor: Gostaria de saber se.minha seção mudou e para onde
+Operador (Silvania): Certo. Só um instante.
+Eleitor: Zona 056 Seção 0074
+Operador (Silvania): 4.3 - LOCAL DE VOTAÇÃO Zona 056 Local de votação 1368 - AUTARQUIA DE ENSINO SUPERIOR DE GARANHUNS - AESGA End. local de votação AV.CARUARU,S/N Bairro (sigiloso) Seção 0074
+Eleitor: Título **** **** 0817
+Eleitor: Obrigada
+Operador (Silvania): Por nada!
+Eleitor: 5"
+2026102000474,2,20/10/2026,11:39:30,Silvania,Documentação / Identificação,Resolvido,Respeitoso e Cortês,O eleitor solicitou auxílio para obter uma foto do seu título de eleitor para uso em aposentadoria. O operador Silvania orientou sobre a necessidade de enviar uma foto do documento e fornecendo o link da imagem. O atendimento foi respeitoso e o eleitor agradeceu.,00:22:29,False,True,4,0.0,"Eleitor: Oi!
+Eleitor: 1
+Eleitor: **** **** 1287
+Eleitor: 8
+Eleitor: Estou precisando do espelho do meu título, para dar entrada na minha aposentadoria
+Operador (Silvania): Certo. Você envia foto com seu documento.
+Eleitor: [IMAGEM ANEXADA]
+Operador (Silvania): Arquivo | (https://tre-pb.sz.chat/config/storage/view/6ad77d943023958a4b040eb3)
+Operador (Silvania): Posso ajudar em algo mais?
+Eleitor: Muito obrigado
+Operador (Silvania): Por nada!!
+Eleitor: Nota 10"
+2026102000478,2,20/10/2026,11:46:15,Silvania,Local de Votação / Seção Eleitoral,Resolvido,Respeitoso e Cortês,Eleitor solicitou informações sobre se continuaria convocada para a mesma seção de votação. O operador confirmou que a mudança de local só ocorreria em três municípios específicos e informou o local de votação. O atendimento foi respeitoso e eficaz.,00:09:30,False,True,5,465.0,"Eleitor: Oiiie
+Eleitor: 4
+Eleitor: 2
+Eleitor: 1
+Eleitor: 064.***.***-**
+Eleitor: 6
+Eleitor: 0
+Eleitor: 8
+Eleitor: O****Silvania, tudo bem? Eu queria saber se continuo convocada para o mesmo local?
+Operador (Silvania): Bom dia, Ericka!
+Operador (Silvania): P********Eleitoral: 1219 - E********Gerais 2026 Pleito: 3221 - 25/10/2026 - 2º Turno UF PB Zona 076 Município 20516 - JOÃO PESSOA Local de votação 2062 - PIRÂMIDE SHOPPING End. local votação AV. ANTÔNIO LIRA, 300, TAMBAÚ. Seção 0459
+Operador (Silvania): Mudança de local só em 3 Municípios: S***Bento , U*********Vieiropólis
+Eleitor: Perfeitooo
+Eleitor: 👏🏼👏🏼👏🏼
+Operador (Silvania): Por nada!!
+Eleitor: Muito obrigado Silvania
+Operador (Silvania): Por nada!!
+Eleitor: 5"
+2026102000484,2,20/10/2026,11:54:50,Silvania,Voto em Trânsito,Não Resolvido,Neutro/Objetivo,"O eleitor perguntou sobre votar em trânsito em João Pessoa, mas o operador informou que o prazo havia expirado em agosto. O atendimento foi direto e objetivo sem fornecer uma solução para a dúvida do eleitor.",00:00:42,False,True,2,0.0,"Eleitor: Bom dia
+Eleitor: 1
+Eleitor: 419.***.***-**
+Eleitor: 1
+Eleitor: 0
+Eleitor: 8
+Eleitor: eu moro em S***Paulo, e estou passando uns dias em S*****Luzia - PB. Tem como eu votar para presidente aqui?
+Operador (Silvania): O voto em trânsito tinha prazo e foi até 20 de Agosto, Jéssica
+Eleitor: Obrigada
+Operador (Silvania): Por nada!!"
+2026102000498,2,20/10/2026,12:01:18,Silvania,Local de Votação / Seção Eleitoral,Não Resolvido,Neutro/Objetivo,O eleitor solicitou informações sobre como solicitar transporte para votar. O operador informou que é responsabilidade da empresa de transporte e que o eleitor deve procurar a empresa com antecedência. O atendimento foi direto e objetivo sem fornecer detalhes adicionais sobre a seção eleitoral.,00:02:12,False,True,4,0.0,"Eleitor: Bom dia eu gostaria de atendimento
+Eleitor: 1
+Eleitor: 074.***.***-**
+Eleitor: 8
+Eleitor: Eu gostaria de saber onde solicito transporte para que eu possa viajar e votar
+Operador (Silvania): Você vai ter que ir na rodoviária para reserva.
+Operador (Silvania): Tem que ir com antecedência , procura a empresa que faz a rota da sua cidade.
+Eleitor: Quais documentos serão necessários?
+Operador (Silvania): Tudo referente a transporte de eleitores é com a empresa de viação.
+Eleitor: Tá, obrigada
+Operador (Silvania): Por nada!!"
+2026102000502,2,20/10/2026,12:06:17,Alana,Documentação / Identificação,Resolvido,Respeitoso e Cortês,"O eleitor solicitou orientação sobre a apresentação de um laudo médico para ter direito à fila preferencial para eleitores com mobilidade reduzida. O operador informou que o laudo deve ser apresentado ao mesário e encerrou o atendimento, respeitando o eleitor.",00:18:24,False,True,4,124.0,"Eleitor: Olá
+Eleitor: 1
+Eleitor: 929.***.***-**
+Eleitor: 5
+Eleitor: 0
+Eleitor: 8
+Eleitor: Tenho mobilidade reduzida devido a uma cirurgia no pé (platina) e não consigo ficar em pé por muito tempo. Tenho um laudo médico que comprova isso, mas não tenho nenhuma carteirinha de PCD. Gostaria de saber se no dia da eleição eu posso apenas apresentar esse laudo médico diretamente para o mesário ou coordenador do local para ter direito à fila preferencial
+Operador (Alana): Olá, Wennya!
+Operador (Alana): Leve sim o seu laudo e apresente ao mesário
+Operador (Alana): Mais alguma dúvida?
+Eleitor: Certo,obrigada
+Operador (Alana): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar. Tenha um ótimo dia!
+Eleitor: 5"
+2026102000512,2,20/10/2026,12:15:30,Alana,Situação Eleitoral / Título Cancelado ou Regular,Resolvido,Respeitoso e Cortês,"O eleitor teve seu título cancelado após não ter votado na eleição anterior. O operador encontrou um pedido de alistamento em 2023 e gerou um PIX para pagar a multa pela falta. O eleitor conseguiu regularizar seu título e pagou a multa, recebendo um QR Code para o PIX. O atendimento foi respeitoso e eficaz.",00:44:36,True,True,38,0.0,"Eleitor: Boa tarde
+Eleitor: 2
+Eleitor: 8
+Eleitor: 1
+Eleitor: 106.***.***-**
+Eleitor: 8
+Eleitor: [MENSAGEM DE ÁUDIO]
+Eleitor: .
+Operador (Alana): Davi, de fato não tem título.
+Operador (Alana): Você disse que já votou?
+Eleitor: Mais eu tenho
+Eleitor: Sim
+Eleitor: Na eleição passada
+Eleitor: Minha sessão e lá no conjunto C******Soares
+Eleitor: São duas mais não lembro qual das duas
+Operador (Alana): Me diga seus dados para eu consultar sem ser pelo CPF, por favor
+Eleitor: Quais dados vc precisa
+Operador (Alana): Nome completo, nome da mãe e data de nascimento
+Eleitor: A************Guimarães de Souza
+Eleitor: P***Manoel aurelisson G*************Santos
+Eleitor: Mãe nazaluce de Souza lima
+Eleitor: 17/01/2000
+Eleitor: CPF 106.***.***-**
+Eleitor: RG 4784873
+Operador (Alana): Davi
+Operador (Alana): o que consigo localizar é um pedido de alistamento feito pela internet, em 2023. Mas esse pedido não foi concluído
+Operador (Alana): Localizei outro , desculpa
+Eleitor: Mais eu tenho título não sei pq não está achando
+Operador (Alana): encontrie
+Eleitor: A ainda bem 🙏🏼
+Operador (Alana): LOCAL DE VOTAÇÃO Zona 033 Local de votação 1260 - EMEF PROFESSORA JUSTINA EMILIA CRIZANTO (ESCOLA DO CONJUNTO) End. local de votação RUA MANOEL RUFINO DE SOUSA, 217 Bairro CONJUNTO CHAGAS SOARES Seção 0160
+Operador (Alana): Número do título: **** **** 1228
+Operador (Alana): Buscando pelo CPF, não localizei. Foi por isso
+Operador (Alana): Você pode ir votar normalmente, mesmo tendo faltado no primeiro turno
+Operador (Alana): Mas, se quiser, posso gerar um pix para pagar a multa pela falta, que é de 3,51
+Eleitor: [MENSAGEM DE ÁUDIO]
+Operador (Alana): Pode votar sim, mesmo sem pagar a multa
+Operador (Alana): Mas se quiser pagar, aqui está o código pix:
+Operador (Alana): 00****-**0212****-**14br.gov.bcb.pix2568apipix.tesouro.gov.br/v2/mIagLfkOJk7cSIEIILIdeSirCTaXdeGk6eG966RupFN52****-**53039865802BR5916TESOURO NACIONAL6008BRASILIA62070503***63042AEA
+Eleitor: Vou pagar agr
+Operador (Alana): se preferir o QR CODE, envio a seguir:
+Operador (Alana): [IMAGEM ANEXADA]
+Eleitor: [IMAGEM ANEXADA]
+Eleitor: Não consigo pelo etitulo
+Eleitor: Da divergência
+Eleitor: Preciso pra regularizar meu CNPJ tbm
+Operador (Alana): Podemos verificar essa divergência, só um momento
+Operador (Alana): Esse não cumprimento é a ausência ao 1º turno, possivelmente
+Eleitor: Ok agradeço
+Operador (Alana): Quando for entrar no e-Título, coloca teu nome assim, com S:
+Operador (Alana): ALISSON DAVI GUIMARAES DE SOUSA
+Operador (Alana): Nome da mãe: NAZALUCE DE SOUSA LIMA
+Operador (Alana): Quer tentar agora e ver se dá certo?
+Eleitor: Vou tentar AGR
+Eleitor: ALISSON DAVI GUIMARAES DE SOUSA
+Operador (Alana): FIco aguardando
+Operador (Alana): O pix deu certo?
+Eleitor: NAZALUCE DE SOUSA LIMA
+Eleitor: O pai não coloca ?
+Eleitor: Ainda n fiz
+Eleitor: Manoel aurelisson G*************Santos
+Operador (Alana): coloca sim, o pai mas está correto como voce tinha digitado aqui antes
+Operador (Alana): MANOEL AURELISSON GUIMARAES DOS SANTOS
+Eleitor: Não passou
+Eleitor: [IMAGEM ANEXADA]
+Operador (Alana): Não coloque seu CPF
+Operador (Alana): ele não está cadastrado pra gente
+Operador (Alana): use seu título eleitoral
+Operador (Alana): **** **** 1228
+Operador (Alana): tenta de novo
+Eleitor: Ok
+Eleitor: Deu certo viu
+Eleitor: O Pix aí da certo o qrcoud?
+Operador (Alana): Que bom que deu certo!
+Operador (Alana): dá certo sim
+Operador (Alana): Davi, mais alguma dúvida?
+Eleitor: Só isso msm muito obrigado pelo ótimo atendimento
+Operador (Alana): Disponha sempre!
+Operador (Alana): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar. Tenha um ótimo dia!
+Eleitor: [IMAGEM ANEXADA]
+Eleitor: 5"
+2026102000557,2,20/10/2026,13:01:04,André,Treinamento / Convocação de Mesário,Resolvido,Respeitoso e Cortês,"O operador esclareceu sobre o treinamento para a função de mesária voluntária, informando que se não houver treinamento presencial, o eleitor pode fazer o treinamento pelo aplicativo. O atendimento foi respeitoso e cortês.",00:13:05,False,True,3,0.0,"Eleitor: Eu poderia tirar só mais uma dúvida? Com relação ao treinamento, eu baixo o app e faço por lá?
+Eleitor: 1
+Eleitor: 094.***.***-**
+Eleitor: 8
+Eleitor: Oi, eu gostaria só de tirar uma dúvida, eu recebi a convocação oficial hoje para mesária voluntária no 2° turno. Gostaria de saber a respeito do treinamento? É só baixar o app do mesário e fazer o treinamento por lá?
+Operador (André): Para qual função?
+Eleitor: 1ª mesária
+Operador (André): Isso, se na sua convocação não foi informado nenhum treinamento presencial, você faz o treinamento pelo aplicativo.
+Eleitor: Obrigada pela atenção
+Operador (André): Disponha sempre. Tenha um ótimo dia."
+2026102000559,2,20/10/2026,12:33:54,Alana,Local de Votação / Seção Eleitoral,Resolvido,Respeitoso e Cortês,O operador esclareceu como funciona o transporte intermunicipal para votar em uma seção diferente da cidade onde mora. Ele orientou sobre a necessidade de levar o título e sugeriu entrar em contato com a empresa de ônibus ou o guichê para obter mais informações. O atendimento foi respeitoso e cortês.,00:10:16,False,True,8,0.0,"Eleitor: Boa tarde, quero saber como funciona esse transporte gratuito?
+Eleitor: 1
+Eleitor: 168.***.***-**
+Eleitor: 8
+Eleitor: Eu queria saber sobre esse transporte gratuito?
+Eleitor: Porque não tenho como ir votar, pois na cidade que voto não estão disponibilizando o transporte
+Operador (Alana): Você está numa cidade diferente da cidade em que vota?
+Eleitor: Isso
+Eleitor: Eu moro em Patos-Pb e voto em Olho d’água-Pb
+Eleitor: como funciona a passagem intermunicipal
+Operador (Alana): DEpende muito da empresa de ônibus
+Operador (Alana): Em geral, elas pedem para ir uns dois dias ou na véspera para reservar a passagem
+Operador (Alana): leve o título, se não tiver o aplicativo e-Tìtulo instalado, para comprovar onde vota
+Operador (Alana): Uma dica que posso dar é entrar em contato com a empresa por telefone
+Operador (Alana): ou indo até m guichê, para saber como irá funcionar
+Eleitor: Obrigada
+Operador (Alana): Mais alguma dúvida?
+Eleitor: Só isso mesmo, obrigada
+Operador (Alana): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar. Tenha um ótimo dia!
+Eleitor: Aqui em patos tem esse Guichê?"
+2026102000569,2,20/10/2026,13:00:16,André,Treinamento / Convocação de Mesário,Resolvido,Respeitoso e Cortês,"O operador esclareceu sobre a obrigação de folgas para mesários, baseado em leis e resoluções do TSE, e encerrou o atendimento com um bom dia. O eleitor agradeceu e encerrou satisfeito.",00:32:24,False,True,7,0.0,"Eleitor: Olá bom dia
+Eleitor: Me tira uma dúvida
+Eleitor: 01
+Eleitor: 106.***.***-**
+Eleitor: 8
+Eleitor: Ok
+Eleitor: Oi, sobre as folgas pelo TRE sou mesária É obrigatório tirar?
+Eleitor: Oi
+Operador (André): Olá
+Operador (André): Me explica melhor. Você não quer tirar as folgas?
+Eleitor: Gostaria, mas a empresa não quer me dá as folgas
+Eleitor: Só gostaria de saber é obrigatório pra explicar a situação a empresa
+Eleitor: São 4 dias junto com o segundo turno
+Operador (André): Sim, as folgas são um direito que a empresa deve observar. Cada dia a serviço à J*******Eleitoral, gera 2 dias de folga, inclusive se tiver feito treinamento.
+Operador (André): Está previsto no art. 98 da Lei 9.504/97.
+Operador (André): https://www.tse.jus.br/legislacao/compilada/res/2008/resolucao-no-22-747-de-27-de-marco-de-2008
+Operador (André): E na Resolução do TSE
+Eleitor: Obrigada
+Operador (André): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar. Tenha um ótimo dia!
+Eleitor: 5"
+2026102000576,2,20/10/2026,13:02:59,André,Justificativa Eleitoral,Resolvido,Respeitoso e Cortês,"Eleitor fez uma consulta sobre sua dispensa de trabalho para a eleição. O operador esclareceu que ela não precisa comparecer para o segundo turno devido à dispensa para ambos os turnos, o que foi resolvido e agradecida pela resposta. O atendimento foi respeitoso e cortês.",00:00:52,False,True,2,156.0,"Eleitor: Olá, boa tarde! Tudo bem?
+Eleitor: 1
+Eleitor: 040.***.***-**
+Eleitor: 8
+Eleitor: Oi, André! Tudo bem?
+Eleitor: Minha dúvida é a seguinte:
+Eleitor: Por questões de saúde não trabalhei no primeiro turno. Fui dispensada. No segundo turno, eu trabalho ou estou dispensada?
+Eleitor: Aí gostaria de saber se devo comparecer na sessão no dia da eleição para trabalhar.
+Operador (André): A dispensa é para os 2 turnos, Ana
+Eleitor: Ah, tá certo. Obrigada!!
+Operador (André): Disponha sempre. Tenha um ótimo dia.
+Eleitor: 1"
+2026102000584,2,20/10/2026,12:51:55,Alana,Treinamento / Convocação de Mesário,Resolvido,Respeitoso e Cortês,"O eleitor teve sua dúvida sobre o treinamento de mesário resolvida pelo operador. O atendimento foi respeitoso e cortês, sem necessidade de mais intervenção. O eleitor foi encaminhado para um bom dia.",00:06:13,False,True,3,52.0,"Eleitor: Boa tarde
+Eleitor: 4
+Eleitor: 1
+Eleitor: 059.***.***-**
+Eleitor: 8
+Eleitor: Alana mim tira uma dúvida
+Eleitor: Mensário tem que fazer o treinamento novamente pra o segundo turno?
+Operador (Alana): Se já fez o treinamento para o 1º turno, não precisa repetir
+Eleitor: Ok
+Eleitor: Muito obrigado pela informação e atenção
+Operador (Alana): Disponha sempre! Mais alguma coisa?
+Eleitor: Só era essa dúvida mesmo
+Operador (Alana): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar. Tenha um ótimo dia!
+Eleitor: 5"
+2026102000591,2,20/10/2026,12:54:55,Alana,Situação Eleitoral / Título Cancelado ou Regular,Resolvido,Respeitoso e Cortês,"O operador esclareceu que o eleitor não precisava ser colocado no livro de ata se não tiver biometria, apenas assinar o C**********Votação e ter o nome no caderno de votação. O atendimento foi respeitoso e cortês.",00:07:23,False,True,5,580.0,"Eleitor: Boa tarde!
+Eleitor: 4
+Eleitor: 1
+Eleitor: 1
+Eleitor: 874.***.***-**
+Eleitor: 8
+Eleitor: Sou 1 mensário e queria tirar uma dúvida a respeito do eleitor que não tem a biometria cadastrada.
+Eleitor: Temos que colocar o nome desse eleitor no livro de Ata?
+Eleitor: Sou 1 mensário e queria tirar uma dúvida a respeito do eleitor que não tem a biometria cadastrada.
+Eleitor: Temos que colocar o nome desse eleitor no livro de Ata?
+Operador (Alana): A eleitora ou o eleitor deve assinar o C**********Votação antes de seguir para a cabina e também ter o nome na ata
+Eleitor: Todos que não tiverem biometria tem que serem colocados em Ata e no caderno de votação?
+Operador (Alana): No caderno de votação, ele assina
+Operador (Alana): e na ata, se coloca o nome dele
+Operador (Alana): todos, sim
+Eleitor: Muito obrigada
+Operador (Alana): Disponha sempre. Tenha um ótimo dia!
+Eleitor: 5"
+2026102000613,2,20/10/2026,12:54:40,Márcia,Situação Eleitoral / Título Cancelado ou Regular,Não Resolvido,Neutro/Objetivo,"O operador informou sobre o processo de 2002 que suspenso o título do eleitor, mas não esclareceu sobre a regularização do título cancelado. O eleitor ficou confuso e não conseguiu entender completamente a situação, encerrou a conversa insatisfeito.",00:20:47,True,True,22,20.0,"Eleitor: Oi
+Eleitor: 4
+Eleitor: 1
+Eleitor: 1
+Eleitor: 106.***.***-**
+Eleitor: 8
+Operador (Márcia): Boa tarde, como posso ajudar?
+Eleitor: Pode mandar áudio ?
+Operador (Márcia): pode, só não posso responder em áudio
+Eleitor: Queria saber sobre a suspensão do meu título
+Operador (Márcia): vou verificar o sistema
+Eleitor: Ok vou mandar auido
+Operador (Márcia): O Senhor está com o título eleitoral suspenso por causa de um processo de 2002
+Eleitor: [MENSAGEM DE ÁUDIO]
+Eleitor: Mais explica qual processo
+Eleitor: Porque tinha um processo de pensão , mais acredito que já foi arquivado
+Operador (Márcia): Este processo foi por violência domestica em J****Pessoa, foi comunicado a condenação pela justiça comum, vou te passar o número doprocesso
+Operador (Márcia): PROC 0805093-85.2024.8.15.2002/VIOLDOMEST/JOÃO PESSOA/PB
+Eleitor: Ok
+Eleitor: No caso esse processo estar em andamento ainda
+Eleitor: Ou já foi arquivado
+Operador (Márcia): O Senhor votou em 2024, poruqe a comunicação de condenação ocorreu em janeiro de 2025
+Eleitor: No caso o processo tá em aberto
+Operador (Márcia): O Senhor tem procurar saber na Vara em que ocorreu a condenação, pois a regularização na J*******Eleitoral só ocorrerá quando eeles comunicarem
+Eleitor: Agora estranho 2002 vc disse ner
+Operador (Márcia): Se já tiver extinto na J*******Comum, eles precisam informar a J*******Eleitoral
+Operador (Márcia): O que est´cadastrado aqui é isso.
+Eleitor: Vou procurar saber sobre isso agora , porque 2002
+Operador (Márcia): O Senhor lembra se respondeu a algum processo?
+Eleitor: Muito obrigado Márcia , vou procurar saber sobre isso agora
+Eleitor: 2002 não
+Eleitor: Por isso agora fiquei curioso
+Eleitor: De 2002 pra cá e muito tempo e teve várias eleições
+Eleitor: Então se fosse seguir essa regra aí , eu deveria ter o título suspenso muito antes
+Operador (Márcia): 2024
+Operador (Márcia): Olhei o final do processo, mas, o ano é 2024
+Eleitor: O processo foi em 2024 ou 2002 ?
+Operador (Márcia): Eu que peço desculpas pela informação errada quanto ao ano, mas o número doprocesso é o que passei para você
+Eleitor: Porque se o processo e de 2002 são 22 anos até 2024
+Eleitor: Ah entendi o número do processo que e 2002
+Eleitor: Ne isso ?
+Operador (Márcia): Senhor, eu já expliquei acima e informei o processo
+Eleitor: O ano do processo foi 2024
+Operador (Márcia): isso
+Eleitor: Agora entendi Márcia
+Eleitor: No caso Márcia me tira uma dúvida se puder
+Eleitor: Se o processo tive sido arquivado
+Eleitor: Porém eles tem que comunicar a justiça eleitoral ner
+Eleitor: Caso contrário o título continua suspenso
+Operador (Márcia): Isso, você solicita a comunicação da extinção à J*******Eleitoral
+Operador (Márcia): Para este eleição, não será mais possível
+Eleitor: Tem algum site que eu informe ?
+Eleitor: No caso eles irão pedir o número do processo ner pra saber se foi finalizado
+Operador (Márcia): Não, a comunicação tem que ser da J*******Comum, ou o Senhor apresentando a documentação necessária, sentença de extinção, certidão de trânsito em julgado
+Eleitor: Certo entendi , no caso como estou com meu título cancelado, e preciso justificar a justiça eleitoral , ou como estar cancelado n precisa
+Operador (Márcia): Não precisa justificar, oseu título não está cancelado , ele está suspenso
+Eleitor: Me desculpa a troca de nomes , não entendo bem essas coisas , mais obrigado pela atenção e esclarecimento dos fatos
+Operador (Márcia): Por nada
+Eleitor: Vou procurar saber sobre e isso e regularizar a situação, Deus te abençoe grandemente
+Operador (Márcia): Disponha sempre. Tenha um ótimo dia.
+Eleitor: 5"
+2026102000618,2,20/10/2026,13:40:21,André,Multa / Quitação Eleitoral / Certidões,Resolvido,Respeitoso e Cortês,"O operador informou o valor da multa por falta de comparecimento no dia das eleições, conforme artigo do Código Eleitoral. O atendimento foi respeitoso e cortês.",01:30:05,False,True,2,0.0,"Eleitor: Boa tarde
+Eleitor: 1
+Eleitor: 127.***.***-**
+Eleitor: 6
+Eleitor: 0
+Eleitor: 8
+Eleitor: Ola boa tarde
+Eleitor: Eu fui convocado para ser segundo mesário nas eleições
+Eleitor: Ai queria saber se caso eu falte no dia das eleições, qual é o valor da multa por não comparecer no dia?
+Operador (André): Victor, o juiz analisa a situação, se você faltar, e pode aplicar uma multa de até R$ 1.621,00 (um salário mínimo) - artigo 124 do C******Eleitoral.
+Operador (André): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar. Tenha um ótimo dia!"
+2026102000620,2,20/10/2026,12:57:25,Márcia,Local de Votação / Seção Eleitoral,Resolvido,Respeitoso e Cortês,"O operador esclareceu informações sobre segurança e mudanças de locais de votação, satisfazendo o eleitor. O atendimento foi respeitoso e cortês.",00:07:56,False,True,4,854.0,"Eleitor: O direcionamento é votar antes do meio-dia. Não sabemos o motivo, mas Marçal tá implorando isso ao povo que vota no imbecil. Talvez danifiquem as urnas, ou vá ter alguma interferência, ou confusão, não sabemos. E****Gomes que deu o recado. Espalha isso com o povo de Lula. Principalmente os que gostam de votar depois do almoço pq a fila é menor. E que não desistam de votar por conta da espera. Essa foi a tática deles no 1o turno. Mendonça diminuiu mais de 1 mil urnas, principalmente no NE, pq ele sabe q aqui Lula ganha. Também antes de começar, teste as teclas. Se vc não conseguir votar pq ta colada ou qq outra coisa, peça substituição da urna. É direito seu. Se não substituir, pede anulação, pq se ta danificado, ali só tem voto pro outro lado. E o TSE tá mudando local de votação no 2o turno. Confere o teu. E vai repassando…
+Eleitor: Estão espalhando
+Eleitor: 1
+Eleitor: 690.***.***-**
+Eleitor: 8
+Operador (Márcia): Boa tarde, como posso ajudar?
+Eleitor: Olha tá saindo uma notícia grave ,sei que é pode não ser verdade,mas preciso que vcs vejam Posso encaminhar?
+Eleitor: Sou mesaria e fico preocupada
+Eleitor: O direcionamento é votar antes do meio-dia. Não sabemos o motivo, mas Marçal tá implorando isso ao povo que vota no imbecil. Talvez danifiquem as urnas, ou vá ter alguma interferência, ou confusão, não sabemos. E****Gomes que deu o recado. Espalha isso com o povo de Lula. Principalmente os que gostam de votar depois do almoço pq a fila é menor. E que não desistam de votar por conta da espera. Essa foi a tática deles no 1o turno. Mendonça diminuiu mais de 1 mil urnas, principalmente no NE, pq ele sabe q aqui Lula ganha. Também antes de começar, teste as teclas. Se vc não conseguir votar pq ta colada ou qq outra coisa, peça substituição da urna. É direito seu. Se não substituir, pede anulação, pq se ta danificado, ali só tem voto pro outro lado. E o TSE tá mudando local de votação no 2o turno. Confere o teu. E vai repassando…
+Operador (Márcia): Olhe, o que posso falar é que a J*******Eleitoral está tomando todas as medidas para segurança no dia do pleito, como aconteceu no primeiro turno.
+Eleitor: Tá certo
+Operador (Márcia): Quanto a informação sobre mudanças de locais de votação, já está sendo fornecido todas as informações pelos meios de comunicação legias
+Eleitor: Obrigada
+Operador (Márcia): Disponha sempre. Tenha um ótimo dia.
+Eleitor: 5"
+2026102000633,2,20/10/2026,13:08:10,Márcia,Justificativa Eleitoral,Resolvido,Respeitoso e Cortês,"O operador explicou como o eleitor poderia acessar a declaração de folga, informando que o link estava disponível a partir de 28/10 e indicando que ele deveria entrar em contato com a Z****Eleitoral para solicitar a declaração antes desse período. O atendimento foi respeitoso e eficaz.",00:06:44,False,True,6,62.0,"Eleitor: Boa tarde
+Eleitor: 1
+Eleitor: 061.***.***-**
+Eleitor: 8
+Operador (Márcia): Boa tarde, como posso ajudar?
+Eleitor: Boa tarde
+Eleitor: Gostaria de saber a declaração das folgas, deste domingo a outra já peguei
+Eleitor: Como posso ter acesso
+Eleitor: Após a eleição
+Eleitor: Pois, vocês não funcionam na segunda
+Eleitor: E irei precisar
+Operador (Márcia): Vou encaminhar o link
+Operador (Márcia): Funciona sim, mas , no sistema, só estará disponível a a partir do dia 28/10
+Operador (Márcia): Se precisar antes, tem que entrar em contato com a Z****Eleitoral de convocação
+Operador (Márcia): https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/
+Eleitor: Ok
+Eleitor: Obrigado
+Operador (Márcia): Disponha sempre. Tenha um ótimo dia.
+Eleitor: 5"
+2026102000643,2,20/10/2026,13:20:11,André,Multa / Quitação Eleitoral / Certidões,Resolvido,Respeitoso e Cortês,O eleitor solicitou emitir duas vias do título de eleitor. O operador solicitou a foto do RG do eleitor e do seu sobrinho. O operador informou o código PIX para pagamento da multa por não ter votado. O atendimento foi respeitoso e o eleitor recebeu a informação necessária para prosseguir.,01:50:33,False,True,5,0.0,"Eleitor: Olá
+Eleitor: 1
+Eleitor: 058.***.***-**
+Eleitor: 8
+Eleitor: O***André
+Eleitor: Emitir a 2 via do título q não estou conseguindo
+Operador (André): Manda a foto do seu RG, por favor
+Eleitor: E do meu sobrinho
+Eleitor: [IMAGEM ANEXADA]
+Eleitor: Pq queríamos pagar a multa por não ter votado
+Operador (André): 00****-**0212****-**14br.gov.bcb.pix2568apipix.tesouro.gov.br/v2/v5a3aEd8ACaXu9nqyoR5TpGzAs3vZOSKXtZJVDVWimH52****-**53039865802BR5916TESOURO NACIONAL6008BRASILIA62070503***6304C431
+Operador (André): Esse é o código pix da multa
+Eleitor: A multa por não ter votado ?
+Operador (André): Isso
+Operador (André): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar. Tenha um ótimo dia!"
+2026102000646,2,20/10/2026,13:23:07,Márcia,Multa / Quitação Eleitoral / Certidões,Resolvido,Respeitoso e Cortês,"O eleitor pagou a multa e solicitou a emissão de uma via do título. O atendimento foi respeitoso e eficiente, com algumas trocas de informações e desculpas devido a um erro de digitação. O problema foi resolvido com a emissão da via do título.",00:23:31,False,True,16,616.0,"Eleitor: Oi
+Eleitor: 1
+Eleitor: 058.***.***-**
+Eleitor: 8
+Operador (Márcia): Boa tarde, como posso ajudar?
+Eleitor: O***Márcia
+Eleitor: Quero pagar a multa por não ter votado e emitir a 2 via do título
+Operador (Márcia): Vou acessar o Sistema, para fornecer a segunda via do título, preciso que o Senhor encaminhe um documento com foto
+Operador (Márcia): 00****-**0212****-**14br.gov.bcb.pix2568apipix.tesouro.gov.br/v2/MTvlcCc2nFw8daAoMdCMGuSGK3qh3KxbQtcMEHvaupt52****-**53039865802BR5916TESOURO NACIONAL6008BRASILIA62070503***630442EA
+Operador (Márcia): Chave do pix
+Eleitor: Pra pagar a multa ?
+Operador (Márcia): Arquivo | (https://tre-pb.sz.chat/config/storage/view/6ad796ef8da0c5d7af0078bd)
+Eleitor: [IMAGEM ANEXADA]
+Operador (Márcia): Não,encaminahr a segunda via do título
+Operador (Márcia): Encaminhar
+Eleitor: [IMAGEM ANEXADA]
+Operador (Márcia): Arquivo | (https://tre-pb.sz.chat/config/storage/view/6ad797dd1593a2501900e2f2)
+Operador (Márcia): Algo mais em que possa ajudar?
+Eleitor: Queria pagar a multa por não ter votado
+Operador (Márcia): Está certo, precisa de algo mais?
+Eleitor: A multa já foi paga ?
+Operador (Márcia): O Senhor enviou o comprovante , foi efetuado o pagamento
+Operador (Márcia): Ludimila- ona 076 Local de votação 1996 - GINASIO DO COLEGIO MOTIVA ORIENTAL End. local de votação AV. JOÃO CIRILO DA SILVA, 1600 - ALTIPLANO CABO BRANCO JOÃO PESSOA/PB Bairro (sigiloso) Seção 0382
+Operador (Márcia): Preciso do número do cpf da sua mãe
+Operador (Márcia): Mandei errado, desculpa
+Operador (Márcia): informações de outra eleitoral
+Operador (Márcia): peço, desculpas
+Eleitor: Ok
+Eleitor: 5"
+2026102000664,2,20/10/2026,13:40:21,Márcia,Situação Eleitoral / Título Cancelado ou Regular,Resolvido,Respeitoso e Cortês,"O operador informou o novo local de votação e solicitou o número do CPF da mãe do eleitor para gerar a multa. O atendimento foi respeitoso e o problema foi resolvido, encerrando a conversa após a solicitação de pagamento das multas.",02:17:03,False,True,8,0.0,"Eleitor: Boa tarde
+Eleitor: 1
+Eleitor: 090.***.***-**
+Eleitor: 8
+Operador (Márcia): Boa tarde, como posso ajudar?
+Eleitor: Olá, boa tarde. Eu e minha mãe não conseguimos votar e nem justificar, pois ao chegarmos lá na F*************Américo vimos que estava fechado.
+Eleitor: Queria verificar se você pode gerar a multa e verificar nosso novo local de votação
+Operador (Márcia): Vou verificar no sistema
+Eleitor: Tá certo Márcia, obrigada!
+Operador (Márcia): Ludimila- ona 076 Local de votação 1996 - GINASIO DO COLEGIO MOTIVA ORIENTAL End. local de votação AV. JOÃO CIRILO DA SILVA, 1600 - ALTIPLANO CABO BRANCO JOÃO PESSOA/PB Bairro (sigiloso) Seção 0382
+Operador (Márcia): preciso do número do cpf da sua mãe
+Eleitor: 085.***.***-**
+Operador (Márcia): O*******Fernandes:Zona 076 Local de votação 1996 - GINASIO DO COLEGIO MOTIVA ORIENTAL End. local de votação AV. JOÃO CIRILO DA SILVA, 1600 - ALTIPLANO CABO BRANCO JOÃO PESSOA/PB Bairro (sigiloso) Seção 0382
+Operador (Márcia): Possa encaminhar o pagamento das multas
+Operador (Márcia): Algo mais em que possa ajudar?
+Operador (Márcia): Como não tivemos retorno, entendo que sua dúvida foi solucionada. Vou encerrar a conversa por agora, mas sinta-se à vontade para retornar quando quiser."
+2026102000668,2,20/10/2026,13:44:47,Márcia,Voto em Trânsito,Não Resolvido,Neutro/Objetivo,"O operador esclareceu que para votar em trânsito é necessário requerer até dia 20/08, caso não seja solicitado, pode ser justificado no dia da eleição. O atendimento foi objetivo e respeitoso, mas não esclareceu todas as dúvidas do eleitor sobre o processo de votação em trânsito.",00:04:31,False,True,4,6.0,"Eleitor: Boa tarde
+Eleitor: O que é necessário para votar em trânsito?
+Eleitor: 1
+Eleitor: 042.***.***-**
+Eleitor: 8
+Operador (Márcia): Boa tarde, como posso ajudar?
+Eleitor: Boa tarde, Márcia! Me chamo Fabiany
+Eleitor: Eu preciso saber como é que faz pra votar em trânsito
+Eleitor: O domicílio eleitoral dela é Londrina/PR
+Eleitor: Mas ela atualmente mora aqui em J****Pessoa
+Operador (Márcia): Para votar em trânsito, precisava ser requerido até dia 20/08, quem não solicitou, poderá justificar no dia da eleição
+Eleitor: Que pena
+Eleitor: Obrigada
+Operador (Márcia): Por nada
+Operador (Márcia): Disponha sempre. Tenha um ótimo dia.
+Eleitor: Pra você também
+Eleitor: 5"
+2026102000674,2,20/10/2026,13:54:23,Márcia,Multa / Quitação Eleitoral / Certidões,Resolvido,Respeitoso e Cortês,"O operador esclareceu detalhes sobre o pagamento do vale-alimentação para o eleitor, incluindo o valor e a forma de depósito, sem necessidade de mais informações adicionais. O atendimento foi respeitoso e eficiente.",00:08:07,True,True,10,60.0,"Eleitor: 033.***.***-**
+Eleitor: 1
+Eleitor: 033.***.***-**
+Eleitor: 8
+Operador (Márcia): Boa tarde, como posso ajudar?
+Eleitor: E a respeito do pagamento do lanche ❓
+Operador (Márcia): Pode falar?
+Eleitor: [MENSAGEM DE ÁUDIO]
+Eleitor: O valor do vale alimentação ❓
+Operador (Márcia): Será efetuado no dia das eleições, com depósito na sua conta
+Eleitor: 👍
+Eleitor: Quanto é ❓
+Eleitor: O valor ❓
+Operador (Márcia): Necessita que a Senhora tenha a chave pix com o seu cpf
+Operador (Márcia): O valor 65,00
+Eleitor: Eu tenho
+Operador (Márcia): Então, será creditado na conta que a Senhora tem a chave pix como sendo o cpf
+Eleitor: E pra mandar agora o CPF o número ❓
+Eleitor: Tem algum dia de folga no trabalho ❓
+Operador (Márcia): Não precisa , eles já tem pelo sistema
+Eleitor: Ok
+Eleitor: 👍
+Operador (Márcia): Sim, pelo dia de trabalho, ter´dois dias de folga
+Operador (Márcia): terá
+Eleitor: Tá bom
+Eleitor: Estarei lá
+Eleitor: obrigada
+Eleitor: No local para trabalhar 👍
+Eleitor: O*********Bom trabalho
+Operador (Márcia): Obrigada, bom trabalho também
+Eleitor: 5"
+2026102000692,2,20/10/2026,14:14:08,Elci,Documentação / Identificação,Resolvido,Respeitoso e Cortês,O eleitor solicitou a certidão de dados cadastrais e o operador informou que só pode ser fornecida para o próprio eleitor. O atendimento foi respeitoso e o eleitor agradeceu a ajuda.,00:10:09,False,True,7,0.0,"Eleitor: Boa tarde
+Eleitor: 1
+Eleitor: 082.***.***-**
+Eleitor: 8
+Eleitor: O***Élcio bia tarde
+Eleitor: Como obtenho a certidão de dados cadastrais?
+Operador (Elci): Como assim certidão de dados cadastrais? Que tipo de informação o senhor está precisando?
+Eleitor: Posso enviar foto de qual é?
+Operador (Elci): SIM
+Eleitor: [IMAGEM ANEXADA] | Essa aqui
+Operador (Elci): Arquivo | (https://tre-pb.sz.chat/config/storage/view/6ad7a2332fb2d1417207d9b8)
+Operador (Elci): Segue a certidão solicitada
+Operador (Elci): Algo mais em que possa ajudar?
+Eleitor: Posso solicitar de outro eleitor?
+Operador (Elci): Infelizmente só tenho como fornecer para o próprio eleitor
+Eleitor: Ok. Obrigado
+Operador (Elci): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar. Tenha um ótimo dia!"
+2026102000700,2,20/10/2026,14:20:12,Márcia,Justificativa Eleitoral,Resolvido,Respeitoso e Cortês,"O operador explicou que não pode fornecer dados pessoais de outra pessoa, sugerindo que a eleitora procure na Z****Eleitoral para obter a certidão. O atendimento foi respeitoso e cortês.",01:36:55,False,True,9,0.0,"Eleitor: Iniciar
+Eleitor: Oi
+Eleitor: Serviços ao eleitor
+Eleitor: 414.***.***-**
+Eleitor: Do meu esposo falecido
+Eleitor: 7
+Eleitor: Emitir certidões
+Eleitor: Voltar ao menu anterior
+Eleitor: Falar com um atendente
+Operador (Márcia): <b>M******Gomes:</b> Boa tarde, como posso ajudar?
+Eleitor: Meu esposo falecido
+Eleitor: To precisando da certidão que mostra nosso endereço
+Eleitor: A minha eu ja consegui
+Eleitor: [IMAGEM ANEXADA]
+Eleitor: Falta a dele
+Operador (Márcia): <b>M******Gomes:</b> Senhora, por este canal, não é permitido fornecer informação de outra pessoa. principalmente, dados pessoais.
+Operador (Márcia): <b>M******Gomes:</b> Se a Senhora tiver os documentos dele, poderá fazer no autoatendimento, vou encaminhar o link
+Operador (Márcia): <b>M******Gomes:</b> https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/?id=179****-**0403
+Operador (Márcia): <b>M******Gomes:</b> Por este link a Senhora consegue acessar os dados dele
+Operador (Márcia): <b>M******Gomes:</b> Algo mais em que possa ajudar?
+Eleitor: Mesmo casada no civil
+Eleitor: Eu nao consigo
+Operador (Márcia): <b>M******Gomes:</b> Senhora, como falei acima, por se tratar de dados pessoais não tenho como fornecer.
+Operador (Márcia): <b>M******Gomes:</b> A senhora pode requerer na Z****Eleitoral , e o Juiz pode autorizar
+Operador (Márcia): <b>M******Gomes:</b> Como não tivemos retorno, entendo que sua dúvida foi solucionada. Vou encerrar a conversa por agora, mas sinta-se à vontade para retornar quando quiser."
+2026102000720,2,20/10/2026,14:30:00,Márcia,Multa / Quitação Eleitoral / Certidões,Não Resolvido,Neutro/Objetivo,"O atendimento tentou encaminhar o eleitor para um link para solicitar a certidão de quitação, mas não conseguiu resolver a questão do endereço. O atendimento foi neutro e objetivo.",00:04:53,False,True,6,0.0,"Eleitor: Iniciar
+Eleitor: Serviços ao eleitor
+Eleitor: 251.***.***-**
+Eleitor: Outros serviços
+Eleitor: Emitir outras certidões
+Eleitor: Serviços ao eleitor
+Eleitor: 251.***.***-**
+Eleitor: Falar com um atendente
+Operador (Márcia): <b>M******Gomes:</b> Boa tarde, como posso ajudar?
+Eleitor: Queria fazer o pedido da certidão de dados cadastrais constando a ocupação, grau de instrução e estado civil
+Operador (Márcia): <b>M******Gomes:</b> para a Senhora?
+Operador (Márcia): <b>M******Gomes:</b> Preciso de um documento com foto
+Eleitor: Para a senhora L******************Araújo
+Operador (Márcia): <b>M******Gomes:</b> Vou encaminhar um link para a Senhora acessar
+Operador (Márcia): <b>M******Gomes:</b> https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/?id=179****-**8231
+Eleitor: Qual opção eu peço?
+Operador (Márcia): <b>M******Gomes:</b> Certidão de quitação, sai os dados cadastrais
+Eleitor: Já tentei mas não vem o endereço"
+2026102000724,2,20/10/2026,14:30:14,Márcia,Documentação / Identificação,Não Resolvido,Neutro/Objetivo,"O eleitor solicitou obter uma certidão de dados cadastrais. O operador informou que pode ser obtida por um link, mas não esclareceu como obter a certidão. O atendimento foi cortês, mas não respondeu adequadamente à dúvida do eleitor.",00:35:36,False,True,6,28.0,"Eleitor: Boa tarde
+Eleitor: 1
+Eleitor: 414.***.***-**
+Eleitor: 1
+Eleitor: 414.***.***-**
+Eleitor: 8
+Operador (Márcia): Boa tarde, como posso ajudar?
+Eleitor: Como obtenha a certidão de dados cadastrais
+Operador (Márcia): o Senhor pode obter por este linkhttps://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/?id=179****-**8231
+Eleitor: Vi que outra pessoa conseguiu aqui pelo WhatsApp
+Operador (Márcia): Preciso de um documento com foto e a pessoa Segurando o documento
+Eleitor: Oi
+Eleitor: Bom tarde
+Operador (Márcia): Pronto?
+Eleitor: Pode finalizar o atendimento pós ele não estar aqui
+Operador (Márcia): Está certo
+Operador (Márcia): Disponha sempre. Tenha um ótimo dia.
+Eleitor: 5"
+2026102000735,2,20/10/2026,14:49:22,Alana,Voto em Trânsito,Não Resolvido,Neutro/Objetivo,"O eleitor teve dificuldades para confirmar a solicitação de voto em trânsito e não obteve resposta satisfatória. O atendimento foi objetivo, mas não resolveu o problema do eleitor.",00:06:31,False,True,7,102.0,"Eleitor: Boa tarde
+Eleitor: 1
+Eleitor: 022.***.***-**
+Eleitor: 1
+Eleitor: 022.***.***-**
+Eleitor: 8
+Eleitor: Eu fiz a transferência do meu título para votar em trânsito em J****Pessoa , mas no meu etitulo continua o endereço de S***Paulo
+Eleitor: É assim mesmo?
+Eleitor: Ou deveria ter alterado o endereço?
+Eleitor: Eu escolhi para votar no shopping Manaira
+Operador (Alana): Magda, você votou aonde no 1º turno?
+Eleitor: E******Paulo
+Operador (Alana): Não há registro de solicitação para voto em trânsito no seu cadastro
+Operador (Alana): Você o comprovante da solivitação?
+Eleitor: Fiz a Solicitacao em agosto
+Eleitor: O comprovante é enviado de alguma maneira ?
+Operador (Alana): Se a solicitação foi concluída, a comprovação vai para o email cadastrado
+Operador (Alana): Mas no seu cadastro não há esse registro
+Eleitor: Está bem obrigada
+Operador (Alana): Disponha sempre! Mais alguma coisa?
+Eleitor: Não obrigada
+Operador (Alana): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar. Tenha um ótimo dia!
+Eleitor: 5"
+2026102000737,2,20/10/2026,14:38:50,Silvania,Justificativa Eleitoral,Resolvido,Respeitoso e Cortês,"O operador esclareceu a dúvida do eleitor sobre os dias de folga devido a treinamentos e participação em eleições, resolvendo sua dúvida de forma respeitosa e objetiva. O atendimento foi concluído com a finalização do atendimento e agradecimento do operador.",00:24:20,False,True,5,0.0,"Eleitor: Boa tarde
+Eleitor: 1
+Eleitor: 021.***.***-**
+Eleitor: 8
+Eleitor: Eu queria tira uma dúvida. De acordo com a minha DECLARAÇÃO E O CERTIFICADO, gostaria de saber qtos dias de folga eu tenho direito?
+Eleitor: No 1 turno?
+Operador (Silvania): só um instante ROSIENE
+Operador (Silvania): Rosiene os dias trabalhados, via de regra são e2dias. Dependendo do seu vínculo empregatício ( servidor publico, os dias podem chegar a 5 dias
+Eleitor: Ok é q. Na minha DECLARAÇÃO tem dois dias de treinamentos e mais 2 dias trabalhando no dia da eleição,
+Eleitor: Por essa minga dúvida
+Eleitor: Pq aí seria o total de 4 mas 1 dia do certificado
+Eleitor: Mas agora entendi
+Eleitor: Obrigada
+Operador (Silvania): Está certo. Por nada!!
+Operador (Silvania): Rosiene, Vc tem direito a dois dias por dia trabalhado ou participação em treinamento . EX. No 1ª turno - 2 dias; No 2º Turno - 2 dias, treinamento - 2 dias ( 2 +2 2)
+Operador (Silvania): Vou finalizar o teu atendimento. B****Eleições.
+Eleitor: Treinamento 2 + 2 =4
+Eleitor: ?"
+2026102000744,2,20/10/2026,14:39:55,Márcia,Multa / Quitação Eleitoral / Certidões,Resolvido,Respeitoso e Cortês,"O eleitor solicitou a obtenção de uma declaração de participação eleitoral. O operador encaminhou o link e o arquivo solicitado, respeitando o pedido do eleitor e encerrando o atendimento de forma cordial.",00:05:13,False,True,6,36.0,"Eleitor: Oi
+Eleitor: Boa tarde
+Eleitor: 4
+Eleitor: Como faço pra pegar a declaração que trabalhei na eleição
+Eleitor: 1
+Eleitor: 073.***.***-**
+Eleitor: 8
+Operador (Márcia): Boa tarde, em que posso ajudar?
+Eleitor: Como faço pra pegar a declaração que trabalhei na eleição
+Operador (Márcia): Vou encaminhar o link
+Operador (Márcia): https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/?id=179****-**8886
+Eleitor: Como faço pra pegar a declaração que trabalhei no eleição
+Operador (Márcia): posso encaminhar por aqui também, cao prefira
+Eleitor: Sim
+Eleitor: Agradeço
+Eleitor: Me enviar
+Operador (Márcia): Arquivo | (https://tre-pb.sz.chat/config/storage/view/6ad7a8856afdc5c47d038d7e)
+Eleitor: Obrigado
+Operador (Márcia): Disponha sempre. Tenha um ótimo dia.
+Eleitor: 5"
+2026102000749,2,20/10/2026,14:44:28,Silvania,Situação Eleitoral / Título Cancelado ou Regular,Não Resolvido,Neutro/Objetivo,Eleitor solicitou informações sobre o cadastro de título de eleitor. O operador informou que o cadastro estava fechado e sugeriu utilizar o site do TSE para realizar o cadastro. Eleitor agradeceu e encerrou a conversa.,00:05:49,False,True,7,32.0,"Eleitor: Ola
+Eleitor: 1
+Eleitor: 716.453.294.02
+Eleitor: Eu quero fazer o título
+Eleitor: 8
+Eleitor: Como faço o título de eleitor
+Eleitor: Ola
+Operador (Silvania): B***Tarde, Eliane. O cadastro no momento está fechado
+Operador (Silvania): Só a partir do dia 03 de Novembro
+Eleitor: Fale me informar quando volta
+Eleitor: Ok obrigada
+Eleitor: Tem que agendar é
+Operador (Silvania): Não precisa agendar. A Senhor pode também utilizar os serviços eleiorais pelo site
+Eleitor: Como
+Operador (Silvania): #senhora
+Operador (Silvania): https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/?id=179****-**1954
+Eleitor: Ok
+Operador (Silvania): na Parte ELEITORA/eLEITOR
+Eleitor: Obrigada
+Operador (Silvania): Por nada!!!
+Eleitor: 5"
+2026102000763,2,20/10/2026,14:51:54,Márcia,Local de Votação / Seção Eleitoral,Resolvido,Respeitoso e Cortês,"O operador informou os telefones e e-mail do cartório de Sousa-PB para que o eleitor pudesse entrar em contato para participar da logística das eleições. O atendimento foi respeitoso e o operador encerrou a conversa, considerando a dúvida resolvida.",01:05:04,False,True,7,35.0,"Eleitor: Boa tarde!
+Eleitor: 1
+Eleitor: 080.***.***-**
+Eleitor: Gostaria de saber como faço para prestar serviço a justiça eleitoral no dia anterior anterior as eleições.
+Eleitor: 8
+Operador (Márcia): Boa tarde, como posso ajudar?
+Eleitor: Gostaria de saber como faço para prestar serviço a justiça eleitoral no dia anterior anterior as eleições.
+Eleitor: Gostaria de saber como faço para prestar serviço a justiça eleitoral no dia anterior anterior as eleições.
+Operador (Márcia): Geralmente, o Senhor entra em contato com o cartório e informa que tem interesse em participar da logística das eleições
+Eleitor: Qual o contato do cartório de Sousa-PB?
+Operador (Márcia): Qual deles?
+Operador (Márcia): Zona 35- Telefones: 83 ****-**35 / 3512-1635 || 083 9****-**37 E-mail: zon35@tre-pb.jus.br
+Operador (Márcia): Zona 63- SOUSA R***********Nazareth, s/nº CEP: 58.804-718 Telefones: 83 ****-**63 / 99638-2292 || 83 ****-**00 (WhatsApp) E-mail: zon63@tre-pb.jus.br
+Operador (Márcia): Algo mais em que possa ajudar?
+Operador (Márcia): Como não tivemos retorno, entendo que sua dúvida foi solucionada. Vou encerrar a conversa por agora, mas sinta-se à vontade para retornar quando quiser."
+2026102000765,2,20/10/2026,15:18:37,Roberto,Multa / Quitação Eleitoral,Resolvido,Respeitoso e Cortês,O operador forneceu o link para o certificado de trabalho eleitoral e orientou sobre a solicitação de dispensa para outros mesários. O atendimento foi respeitoso e encerrou com agradecimento do TRE-PB.,00:06:18,False,True,5,0.0,"Eleitor: Boa tarde
+Eleitor: 1
+Eleitor: 085.***.***-**
+Eleitor: 8
+Operador (Roberto): Boa tarde, em que podemos ajudar?
+Eleitor: Onde consigo o certificado para tirar dispensa do trabalho do dia trabalhado na eleição ?
+Operador (Roberto): Arquivo | (https://tre-pb.sz.chat/config/storage/view/6ad7b0d58288ea6bb20a8e85)
+Operador (Roberto): Segue a sua declaração pelos trabalhos eleitorais. Algo mais que possamos ajudar?
+Eleitor: E os demais mesários ? Tem q solicitar por aqui tbm ?
+Operador (Roberto): Podem fazê-lo por aqui ou diretamente com o C********Eleitoral da 36ª Zona (B*********Santos-PB).
+Eleitor: Certo
+Eleitor: Obrigada
+Operador (Roberto): Se não há mais dúvidas vou encerrar o atendimento, mas se precisar, continuamos à disposição por este mesmo canal de atendimento. O TRE-PB agradece seu contato."
+2026102000776,2,20/10/2026,15:05:46,Roberto,Justificativa Eleitoral,Resolvido,Respeitoso e Cortês,O eleitor solicitou informações sobre folgas durante a eleição. O operador informou sobre o treinamento online e confirmou que não havia folga por conta disso. O atendimento foi respeitoso e o eleitor ficou satisfeito com a informação fornecida.,00:09:28,False,True,8,25.0,"Eleitor: 1
+Eleitor: 1
+Eleitor: 012.***.***-**
+Eleitor: 8
+Operador (Roberto): Boa tarde, em que podemos ajudar?
+Eleitor: Boa tarde
+Eleitor: Necessito o ofício para tirar folga da eleição
+Eleitor: Fui 1° mesária
+Operador (Roberto): O pagamento do auxílio alimentação será feito pelo PIX-CPF.
+Eleitor: As folgas quando trabalhamos na eleição
+Operador (Roberto): Arquivo | (https://tre-pb.sz.chat/config/storage/view/6ad7ade508906e40e6008ea0)
+Operador (Roberto): Segue a declaração pelos trabalhos eleitorais.
+Operador (Roberto): Algo mais que possamos ajudar?
+Operador (Roberto): Algo mais em que possa ajudar?
+Eleitor: No caso fiz o treinamento online e não ganho folga por ele?
+Operador (Roberto): Consta da declaração, dois dias pelo treino.
+Eleitor: Entendi
+Eleitor: Muitíssimo obrigado
+Operador (Roberto): Nós é que agradecemos o seu contato. Tenha um ótimo restante de dia.
+Eleitor: 5"
+2026102000778,2,20/10/2026,15:14:12,Alana,Local de Votação / Seção Eleitoral,Não Resolvido,Neutro/Objetivo,"O eleitor solicitou mudar de seção de votação devido a viagem, mas foi informado que não é possível mudar o local de votação no momento. Foi sugerida a justificativa como única solução. O atendimento foi neutro e objetivo, sem resolução completa do problema.",00:07:44,False,True,5,0.0,"Eleitor: Boa tarde
+Eleitor: 1
+Eleitor: 022.***.***-**
+Eleitor: 8
+Eleitor: Vou estar viajando na semana da votação e não tem como votar no meu local de votação, existe alguma possibilidade de vota fora do domingo do domicílio de votação ?
+Eleitor: Quis dizer fora do domicílio de votação
+Eleitor: ?
+Operador (Alana): Não, infelizmente não é possível mudar o local de votação no momento
+Operador (Alana): para pedir isso, o prazo se encerrou em agosto
+Eleitor: Então a única solução é a justificação né isso ?
+Operador (Alana): sim... sinto muito
+Eleitor: Obrigado pela atenção
+Eleitor: Deus abençoe
+Eleitor: Bom trabalho na paz do senhor Jesus
+Operador (Alana): Disponha sempre!
+Operador (Alana): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar. Tenha um ótimo dia!"
+2026102000779,2,20/10/2026,15:10:04,Roberto,Situação Eleitoral / Título Cancelado ou Regular,Resolvido,Respeitoso e Cortês,O eleitor solicitou a certidão de cadastro eleitoral. O operador forneceu o arquivo solicitado e encerrou o atendimento respeitosamente.,00:00:46,False,True,3,723.0,"Eleitor: Oi
+Eleitor: 1
+Eleitor: 436.***.***-**
+Eleitor: 8
+Eleitor: Como posso obter a certidão de cadastro eleitoral
+Operador (Roberto): Arquivo | (https://tre-pb.sz.chat/config/storage/view/6ad7ae7c3577a20d72002c0f)
+Operador (Roberto): Segue a certidão requerida. Podemos ajudar em algo mais?
+Eleitor: Não obrigado
+Operador (Roberto): Se não há mais dúvidas vou encerrar o atendimento, mas se precisar, continuamos à disposição por este mesmo canal de atendimento. O TRE-PB agradece seu contato.
+Eleitor: 5"
+2026102000797,2,20/10/2026,15:25:55,Roberto,Multa / Quitação Eleitoral,Resolvido,Respeitoso e Cortês,O eleitor pagou sua multa e recebeu a certidão de quitação eleitoral. O operador sugeriu horários menos congestionados para acessar o aplicativo. O atendimento foi respeitoso e eficaz.,00:05:29,False,True,10,0.0,"Eleitor: Boa tarde
+Eleitor: S***Flavio
+Eleitor: 1
+Eleitor: 031.***.***-**
+Eleitor: 8
+Eleitor: Como faço pra pagar minha multa ?
+Operador (Roberto): Arquivo | (https://tre-pb.sz.chat/config/storage/view/6ad7b233a603f03a7c0a45c7)
+Operador (Roberto): Segue a Guia para recolhimento via PIX.
+Eleitor: Não consigo baixar o e título
+Operador (Roberto): Arquivo | (https://tre-pb.sz.chat/config/storage/view/6ad7b25f88a39****-**18b53)
+Operador (Roberto): Segue uma cópia do seu título eleitoral; busque acessar a instalação do aplicativo em horários com menores acessos, horário noturno, por exemplo, dado que a mutiplicidade de acessos tem congestionado os servidores da J*******Eleitoral e impedindo baixar o aplicativo.
+Eleitor: [IMAGEM ANEXADA]
+Operador (Roberto): Agradecemos pelo pagamento.
+Operador (Roberto): Arquivo | (https://tre-pb.sz.chat/config/storage/view/6ad7b2f1b584ed583f0d142c)
+Operador (Roberto): Segue a certidão de quitação eleitoral, agradecemos.
+Operador (Roberto): Algo mais que possamos ajudar?
+Eleitor: Obrigado vou tentar baixar o aplicativo aqui
+Operador (Roberto): Nós é que agradecemos o seu contato.
+Operador (Roberto): Tenha um resto de dia muito abençoado."
+2026102000809,2,20/10/2026,16:02:56,André,Treinamento / Convocação de Mesário,Resolvido,Respeitoso e Cortês,O operador esclareceu sobre o treinamento do eleitor e informou sobre a necessidade de justificativa ou pagamento de multa para votar no segundo turno. Ele também forneceu um link para a justificativa eleitoral e um PIX para pagamento da multa. O atendimento foi respeitoso e eficaz.,01:12:19,False,True,10,0.0,"Eleitor: Boa tarde
+Eleitor: 1
+Eleitor: 072.***.***-**
+Eleitor: 1
+Eleitor: 072.***.***-**
+Eleitor: 8
+Eleitor: Eu fiz o treinamento pra o primeiro turno porém não trabalhei , fui convocada para o segundo aí fiz o treinamento on-line mais no certificado aparece 1T tá certo
+Operador (André): É um único treinamento, não tem problema
+Eleitor: Obg
+Eleitor: Eu não voltei no primeiro turno, posso votar no segundo ?
+Operador (André): Sim, pode votar
+Operador (André): Só lembrando que você tem q apresentar justificativa ou pagar a multa relativa à ausência pra ficar quite
+Operador (André): Mas a multa não impede o voto.
+Eleitor: A justificativa eu faço aonde ?
+Operador (André): https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/
+Operador (André): Justificativa eleitoral
+Operador (André): Mas tem que ter uma real justificativa pra ser liberada da multa de R$ 3,51
+Eleitor: A sim é melhor pagar
+Eleitor: Obrigada
+Operador (André): Se quiser, eu gero o pix
+Operador (André): 00****-**0212****-**14br.gov.bcb.pix2568apipix.tesouro.gov.br/v2/MafLvCifGPTUPaIrhWPyo4Q2RjJJucqjAki3L8oHDMA52****-**53039865802BR5916TESOURO NACIONAL6008BRASILIA62070503***6304453F
+Operador (André): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar. Tenha um ótimo dia!"
+2026102000856,2,20/10/2026,16:23:59,André,Situação Eleitoral / Título Cancelado ou Regular,Resolvido,Respeitoso e Cortês,"O eleitor foi informado que estava livre para participar de uma manifestação, sem impedimentos legais. O atendimento foi respeitoso e cortês, encerrando com uma mensagem de apoio e disponibilidade para futuras consultas.",00:49:57,False,True,3,193.0,"Eleitor: Ola
+Eleitor: 4
+Eleitor: 9
+Eleitor: 1
+Eleitor: 606.***.***-**
+Eleitor: 8
+Eleitor: Boa tarde Eu fui convocada e estou a serviço da eleição Hoje, 20/10 vai ter uma manifestação na minha cidade Gostaria de saber se tem algum impedimento para que eu participe do evento
+Operador (André): Você está a serviço da J*******Eleitoral hoje?
+Eleitor: Não
+Eleitor: Só no dia da eleição
+Operador (André): Não há impedimento, Daniela.
+Eleitor: MUITO obg, André
+Eleitor: Bom descanso
+Operador (André): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar.
+Eleitor: 5"
+2026102000858,2,20/10/2026,16:25:57,André,Local de Votação / Seção Eleitoral,Resolvido,Respeitoso e Cortês,"O operador informou os telefones da 68ª Zonal Eleitoral para o eleitor saber quando viriam receber a chave da escola para o 2º turno, atendendo adequadamente a dúvida do eleitor.",00:01:20,False,True,4,0.0,"Eleitor: Olá
+Eleitor: 1
+Eleitor: 365.***.***-**
+Eleitor: 8
+Eleitor: Sou gestora de uma escola e gostaria de saber se terá urna no 2º turno pois até agora não recebi nenhum contato do TRE
+Operador (André): Boa tarde. Não houve alteração de local de votação em Cajazeiras, então são os mesmos locais do 1º turno.
+Eleitor: Certo, mas queria o contato deles para saber que horas eles vão vir receber a chave da escola
+Operador (André): 3531-1283 / 3512-1568
+Operador (André): Esses são os telefones da 68ª Z****Eleitoral.
+Eleitor: Obrigada
+Operador (André): Disponha sempre. Tenha um ótimo dia."
+2026102000866,2,20/10/2026,17:48:19,André,Justificativa Eleitoral,Resolvido,Respeitoso e Cortês,O eleitor teve suas dúvidas sobre a localização de seu local de votação esclarecidas. O operador sugeriu que ele procure seu local de votação indicado e ofereceu auxílio caso necessário. O atendimento foi respeitoso e objetivo.,00:07:52,False,True,6,205.0,"Eleitor: Boa tarde
+Eleitor: 1
+Eleitor: 518.***.***-**
+Eleitor: 1
+Eleitor: 0
+Eleitor: 5
+Eleitor: O
+Eleitor: 0
+Eleitor: 8
+Eleitor: na votação passada, eu não voltei, porém os mesários não me acharam,eu fui para vários seções e não contava meu nome
+Eleitor: *contava
+Operador (André): Ok
+Operador (André): Deseja algo?
+Eleitor: Não
+Operador (André): Você pode ir no seu local de votação indicado acima e votar
+Operador (André): A questão é que talvez você estivesse indo em outras salas
+Operador (André): MAs se tiver algum problema pra localizar no dia, pode entrar em contato com a gente.
+Operador (André): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar.
+Eleitor: 5"
+2026102000867,2,20/10/2026,17:51:00,André,Local de Votação / Seção Eleitoral,Resolvido,Respeitoso e Cortês,"O eleitor solicitou informações sobre sua seção de votação. O operador confirmou o local de votação e a seção, informando que a seção correspondente é 197. O atendimento foi respeitoso e o eleitor não solicitou mais informações, sendo encerrado com a informação fornecida.",00:20:40,False,True,5,78.0,"Eleitor: Boa tarde
+Eleitor: 1
+Eleitor: **** **** 1287
+Eleitor: 1
+Eleitor: 0
+Eleitor: 8
+Eleitor: Ai diz q esse título na escola dom Moisés, mais no título diz seção 42 q é no C*************Senhora de Lurdes
+Operador (André): Local de votação - EEEF DOM MOISÉS COELHO End. local de votação RUA PADRE JOSE TOMAZ, 387 CAJAZEIRAS Bairro CENTRO Seção 0197
+Operador (André): Esse é o seu local de votação
+Eleitor: Qual seção?
+Operador (André): 197, como consta aí
+Operador (André): Algo mais em que possa ajudar?
+Eleitor: Não
+Eleitor: Obg
+Operador (André): Disponha sempre.
+Eleitor: 4"
+2026102000868,2,20/10/2026,16:36:08,André,Justificativa Eleitoral,Resolvido,Respeitoso e Cortês,O operador orientou o eleitor sobre como obter uma certidão de dados cadastrais e encaminhou-o ao cartório eleitoral para o requerimento. Ele explicou que não poderia fornecer documentos de outra pessoa e encorajou o eleitor a comprovar sua relação com o requerente para que o juiz liberasse a declaração necessária.,00:34:57,False,True,12,0.0,"Eleitor: Boa tarde
+Eleitor: 1
+Eleitor: 414.***.***-**
+Eleitor: 8
+Eleitor: Boa tarde André como obter minha certidão de dados cadastrais?
+Operador (André): QUal certidão você está precisando?
+Eleitor: Certidão de dados cadastrais
+Operador (André): https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/
+Operador (André): Nesse link, há vários tipos de certidão fornecidos.
+Operador (André): Não há essa que você pediu. Mas posso te ajudar se precisar de alguma informação específica.
+Eleitor: Mas conhecidos meus conseguiram aqui mesmo pelo WhatsApp. Posso mandar a foto do modelo pra você ver qual é?
+Operador (André): POis não
+Eleitor: [IMAGEM ANEXADA] | É essa certidão
+Operador (André): E pra que o senhor está precisando?
+Eleitor: É para uma comprovação de auxílio que me solicitaram
+Operador (André): Tem certeza que você é G***********Araújo?
+Eleitor: Eu sou a esposa dele, estou precisando pra da entrada em uma pensão.
+Operador (André): A senhora já foi orientada hoje. A orientação é a mesma. A senhora pode ir até o cartório eleitoral, com a documentação, e faz o requerimento da certidão e o juiz vai analisar o seu pedido.
+Eleitor: Ok. Obrigado
+Operador (André): Sra. Maria, não há dificuldades. Vá ao cartório que isso é facilmente resolvido.
+Operador (André): É que não podemos fornecer documento de outra pessoa.
+Operador (André): Mas a senhora comprovando que é esposa, o juiz vai liberar a declaração que a senhora precisa.
+Operador (André): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar."
+2026102000879,2,20/10/2026,17:03:28,André,Documentação / Identificação,Não Resolvido,Neutro/Objetivo,"O eleitor não conseguiu regularizar sua biometria e, portanto, não pode votar sem documento de identificação com foto. O operador explicou que ele precisa levar um documento de identificação com foto para votar, mas não especificou como regularizar sua situação. O atendimento foi objetivo, mas não resolveu completamente o problema do eleitor.",02:24:45,False,True,8,0.0,"Eleitor: Boa tarde!
+Eleitor: 1
+Eleitor: 135.***.***-**
+Eleitor: 8
+Eleitor: Eu gostaria de fazer minha biometria e colocar a minha foto o meu título de eleitor. Porque eu perdi minha identidade e não tenho outro documento com foto válido
+Eleitor: Foi por esse motivo que também não votei no 1º turno
+Operador (André): Você pode fazer a partir de 3 de novembro
+Eleitor: Então não vou conseguir ir votar novamente né isso?
+Operador (André): Você não precisa ter a biometria para votar.
+Operador (André): Basta levar um documento de identificação com foto.
+Eleitor: Mas sem a minha identidade eu não tenho nenhum outro documento com foto
+Operador (André): Thais, verifiquei que você não tem biometria.
+Operador (André): Logo, você não consegue acessar o e-título como documento de identificação.
+Operador (André): E é obrigatório levar o documento com foto para conseguir votar.
+Eleitor: É justamente isso que estou tentando regularizar
+Eleitor: Por que só consigo em novembro?
+Operador (André): Porque o sistema está fechado desde maio, por causa das eleições.
+Operador (André): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar."
+2026102000885,2,20/10/2026,17:11:45,André,Outros Assuntos,Resolvido,Respeitoso e Cortês,O eleitor solicitou orientações sobre protocolar um ofício para um carreata no município de Manaíra. O operador explicou que deveria entrar em contato com o partido do evento para cadastrá-lo no sistema do TRE/PB. O atendimento foi respeitoso e eficiente.,00:56:57,False,True,4,0.0,"Eleitor: Boa tarde
+Eleitor: Tudo bem?
+Eleitor: 4
+Eleitor: 1
+Eleitor: 1
+Eleitor: 096.***.***-**
+Eleitor: 8
+Eleitor: Na verdade meu nome é JOSÉ ALBERTO TAVARES JÚNIOR
+Eleitor: Não sei pq está como erismar
+Eleitor: Mas enfim, gostaria de saber como faço pra protocolar um ofício
+Eleitor: De um carreata
+Eleitor: Aqui no município de Manaíra
+Eleitor: PB
+Operador (André): Quando será?
+Eleitor: Amanhã
+Operador (André): [IMAGEM ANEXADA]
+Operador (André): Você entra em contato com o partido do evento e eles cadastram no sistema do TRE/PB
+Eleitor: Ok
+Operador (André): Disponha sempre."
+2026102000894,2,20/10/2026,18:14:16,André,Local de Votação / Seção Eleitoral,Não Resolvido,Neutro/Objetivo,"O eleitor solicitou a regularização de sua seção eleitoral após mudar de endereço. O operador informou que a regularização só será possível a partir do dia 3 de novembro, sem dar mais detalhes. O atendimento foi neutro e objetivo.",01:14:22,False,True,6,0.0,"Eleitor: Oi
+Eleitor: 1
+Eleitor: 711.***.***-**
+Eleitor: 8
+Eleitor: Boa tarde, eu nunca sair do brasil, eu mudei de endereço, morava em S*****Rita na paraiba, e queria trocar pra João pessoa, onde moro atualmente, acredito que eu tenha feito alguma coisa errada, pois eu não pude vota , normalmente, apenas votei pra presidente.. quero concerta por favor me ajude.
+Eleitor: Nunca estive em KUALA LUMPUR-ZZ
+Eleitor: Sei nem onde fica isso
+Eleitor: No sistema so tinha essa opção, KUALA LUMPUR-ZZ*. Alterei porque só tinha essa opção, pra sair do endereço antigo na paraiba, alterei e adicionei o novo endereço
+Eleitor: Mudei apenas de cidade, nunca sair do estado da paraiba muito menos do Brasil, não dinheiro pra isso não!
+Operador (André): Olá
+Operador (André): Lembro dessa situação
+Operador (André): Você entrou em contato antes do 1º turno, certo?
+Operador (André): Bem, vocè só vai conseguir regularizar a partir do dia 3 de nobembro
+Operador (André): *novembro
+Operador (André): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar."
+2026102000895,2,20/10/2026,18:09:57,André,Documentação / Identificação,Não Resolvido,Neutro/Objetivo,O eleitor perguntou sobre como votar sem RG com foto. O operador informou que o e-título precisa de foto e que há problemas em alguns aplicativos. O atendimento foi objetivo sem dar solução definitiva.,01:17:26,False,True,5,0.0,"Eleitor: Boa tarde
+Eleitor: 1
+Eleitor: 077.***.***-**
+Eleitor: 8
+Eleitor: Gostaria de tirar uma dúvida , caso tenha perdido meu RG como voto domingo se não tenho outro documento com foto ?
+Eleitor: Gostaria de tirar uma dúvida , caso tenha perdido meu RG como voto domingo se não tenho outro documento com foto ?
+Operador (André): Pode levar o e-título
+Operador (André): O aplicativo
+Operador (André): Se tiver a biometria
+Eleitor: O etitulo tá sem foto
+Eleitor: Tem problema?
+Operador (André): Tem que ter a foto, e está ocorrendo problemas em alguns aplicativos.
+Operador (André): Espero ter ajudado. Caso necessite de algo a mais, é só nos chamar."
+2026102000905,2,20/10/2026,18:17:55,André,Treinamento / Convocação de Mesário,Resolvido,Respeitoso e Cortês,O operador explicou as regras de folgas para mesários e fornecendo a referência legal. Ele atendeu às dúvidas do eleitor sobre o uso das folgas e encaminhou o caso para o juiz eleitoral caso não haja acordo. O atendimento foi respeitoso e objetivo.,00:32:20,True,True,8,25.0,"Eleitor: Boa tarde
+Eleitor: 1
+Eleitor: 030.***.***-**
+Eleitor: 8
+Eleitor: Por favor, preciso que me mande as regras para gozo dos dias de despensa da justiça eleitoral, sou mesário presidente da seção 121 em Juripiranga e preciso saber se posso tirar os dias de dispensa em sequência?
+Eleitor: Por favor, preciso que me mande as regras para gozo dos dias de despensa da justiça eleitoral, sou mesário presidente da seção 121 em Juripiranga e preciso saber se posso tirar os dias de dispensa em sequência?
+Eleitor: Somando o primeiro e sugando turno tenho quantos dias de dispensa? Sou funcionário privado.
+Eleitor: Fiz o treinamento presencial e o online e vou participar do segundo turno.
+Eleitor: [MENSAGEM DE ÁUDIO]
+Eleitor: [MENSAGEM DE ÁUDIO]
+Eleitor: [MENSAGEM DE ÁUDIO]
+Eleitor: [MENSAGEM DE ÁUDIO]
+Eleitor: [MENSAGEM DE ÁUDIO]
+Operador (André): André, geralmente são 6 dias: 2 do 1º turno, 2 do 2º turno e 2 do treinamento concluído.
+Operador (André): https://www.tse.jus.br/legislacao/compilada/res/2008/resolucao-no-22-747-de-27-de-marco-de-2008
+Operador (André): Essa é a legislação que trata das folgas.
+Eleitor: Certo
+Operador (André): O uso das folgas é feito por acordo entre a empresa e o empregado. Não é obrigatório tirar tudo junto e também não é obrigatório ser em dias separados
+Eleitor: Obrigado
+Eleitor: [MENSAGEM DE ÁUDIO]
+Operador (André): Exato, buscar um acordo. Se não houver acordo, você pode levar para o juiz eleitoral decidir, conforme art. 3º.
+Eleitor: [MENSAGEM DE ÁUDIO]
+Eleitor: [MENSAGEM DE ÁUDIO]
+Eleitor: [MENSAGEM DE ÁUDIO]
+Eleitor: Se eu agir desta forma vou ser mandado embora
+Eleitor: Eu tenho certeza
+Operador (André): Entendo a sua situação
+Eleitor: Seja o que Deus quiser
+Operador (André): Mas como eu te disse, tem que ser por acordo entre a empresa e você.
+Eleitor: Entendo
+Operador (André): Disponha sempre.
+Eleitor: O juiz eleitoral deveria ter uma lei que desse direito ao colaborador que trabalha nas eleições com tanta responsabilidade decidir os dias que quer tirar suas folgas, eu acho muito injusto a maneira que as empresas impõem ao trabalhador tirar as folgas da maneira dela.
+Eleitor: 5"
+2026102000917,2,20/10/2026,19:27:51,André,Multa / Quitação Eleitoral / Certidões,Não Resolvido,Neutro/Objetivo,"O eleitor solicitou informações sobre pagamento de multa eleitoral, mas o operador encerrou o atendimento sem fornecer detalhes. O atendimento foi neutro e objetivo, sem demonstrar insatisfação.",00:00:00,False,True,1,0.0,"Eleitor: Pode sim
+Eleitor: Preciso muito pagar
+Eleitor: 1
+Eleitor: 090.***.***-**
+Eleitor: 8
+Eleitor: Obrigada
+Operador (André): Por falta de comunicação, estou encerrando este contato. Agradecemos sua compreensão e estaremos à disposição quando precisar."
+2026102000935,2,20/10/2026,18:45:04,André,Local de Votação / Seção Eleitoral,Resolvido,Respeitoso e Cortês,O eleitor perguntou sobre mudanças de local de votação em Monteiro. O operador informou que não havia mudanças e encerrou a consulta de forma respeitosa.,00:03:56,False,True,3,0.0,"Eleitor: Olá
+Eleitor: 4
+Eleitor: 1
+Eleitor: 1
+Eleitor: 061.***.***-**
+Eleitor: 8
+Eleitor: A E*******************Cruz em Monteiro tem urnas?
+Eleitor: Gostaria de saber se teve alguma mudança por lá de local de votação?
+Operador (André): Não houve mudança em Sumé.
+Eleitor: E***Monteiro alguma mudança?
+Operador (André): Não
+Eleitor: Muito obrigado, André
+Operador (André): Disponha sempre."
